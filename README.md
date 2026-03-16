@@ -4,6 +4,8 @@ A standalone application for OCR parameter optimization, ground truth generation
 
 ## Overview
 
+![OCR Finetuning Preview](documentation/image001.png)
+
 Components:
 - `frontend/`: Vue.js application (`/ocr_finetuning.html`) for visual finetuning and Ground Truth (GT) generation.
 - `backend/`: Node.js sidecar (WebSocket + Model Server).
@@ -36,6 +38,8 @@ npm --prefix backend run models:ocr
 # Start all services
 bash scripts/start_all.sh
 ```
+
+**Note:** You can find sample images to test the application in `ocr_trainingdata/sample/`.
 
 After starting, open in your browser: `http://localhost:5173/ocr_finetuning.html`
 
