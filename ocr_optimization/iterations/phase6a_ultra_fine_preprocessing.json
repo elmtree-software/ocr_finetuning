@@ -1,0 +1,228 @@
+{
+  "runTimestamp": "2026-02-26T20:10:34.707Z",
+  "runDirectory": "2026-02-26_19-09-08-150",
+  "configFile": "ocr_optimization/configs/phase6a_ultra_fine_preprocessing.json",
+  "phase": "6A - Ultra-fine preprocessing - push contrastBoost and clipLimit below Phase 4A boundaries",
+  "totalIterations": 100,
+  "completedIterations": 100,
+  "scoringMode": "fulltext",
+  "elapsedSeconds": null,
+  "best": {
+    "iterationId": 39,
+    "parameters": [
+      {
+        "path": "preprocessing.contrastBoost",
+        "value": 1.4
+      },
+      {
+        "path": "preprocessing.clahe.clipLimit",
+        "value": 0.7
+      },
+      {
+        "path": "preprocessing.clahe.tileSize",
+        "value": 16
+      },
+      {
+        "path": "preprocessing.dpiScaling.maxScale",
+        "value": 1.5
+      },
+      {
+        "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+        "value": 45
+      }
+    ],
+    "customWER": 0.4797484620862453,
+    "customCER": 0.3850723271069194,
+    "combinedScore": 0.5906089497385391,
+    "droppedImage": {
+      "filename": "000015.jpg",
+      "wer": 0.8260869565217391,
+      "cer": 0.6986607142857143
+    },
+    "perImage": [
+      {
+        "filename": "000015.jpg",
+        "wer": 0.8260869565217391,
+        "cer": 0.6986607142857143
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.7016574585635359,
+        "cer": 0.6671280276816609
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.7012987012987013,
+        "cer": 0.5754884547069272
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.6483180428134556,
+        "cer": 0.47470817120622566
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.5178571428571429,
+        "cer": 0.3142857142857143
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.4925373134328358,
+        "cer": 0.34388699464198735
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.4852941176470588,
+        "cer": 0.44244935543278086
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3238095238095238,
+        "cer": 0.2726045883940621
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.2808988764044944,
+        "cer": 0.22235649546827796
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16606498194945848,
+        "cer": 0.1527431421446384
+      }
+    ]
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "customWER": 0.4797484620862453,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.7
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "customWER": 0.4797484620862453,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.7
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "customWER": 0.4797484620862453,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.7
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "customWER": 0.4811530117971632,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.25
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "customWER": 0.48423023418631395,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.7
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        }
+      ]
+    }
+  ],
+  "notes": "Completed 100/100 iterations. 5 parameters optimized: contrastBoost (0.5-1.4), clahe.clipLimit (0.1-0.7), clahe.tileSize (16-32), dpiScaling.maxScale (1.5-3.5), dpiScaling.minCapitalHeightPx (25-45). Best custom WER (drop worst of 10) was 47.97%, improving slightly over Phase 5A (49.64%). Top configs consistently favor high contrastBoost (1.4), high clipLimit (0.7), small tileSize (16), low maxScale (1.5). The dpiScaling.minCapitalHeightPx parameter had minimal impact (top 3 results all identical WER with different values). Image 000015.jpg was dropped as worst performer (82.6% WER)."
+}

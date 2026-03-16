@@ -1,0 +1,54 @@
+{
+  "imagesDir": "./ocr_trainingdata",
+  "splitManifest": "./ocr_optimization/configs/run3_split_manifest.json",
+  "tuneSplit": "train",
+  "scoringMode": "customWER",
+  "appUrl": "http://localhost:5173/ocr_finetuning.html",
+  "rankSplit": "test",
+  "baseConfig": {
+    "engine": "tesseract"
+  },
+  "configs": [
+    {
+      "id": "A_run2_best",
+      "label": "Run2 Best",
+      "notes": "Bestwerte aus Run 2",
+      "parameters": [
+        { "path": "rectification.cannyLow", "value": 195.5 },
+        { "path": "rectification.cannyHigh", "value": 96.333 },
+        { "path": "preprocessing.contrastBoost", "value": 1.149 },
+        { "path": "preprocessing.dpiScaling.minCapitalHeightPx", "value": 46 },
+        { "path": "preprocessing.dpiScaling.maxScale", "value": 3.25 },
+        { "path": "preprocessing.clahe.tileSize", "value": 32 },
+        { "path": "layout.detectionThreshold", "value": 0.175 },
+        { "path": "layout.regionPadding", "value": 14 },
+        { "path": "layout.internalPadding", "value": 4 },
+        { "path": "layout.psmModes.regionOverrides.Caption", "value": 3 },
+        { "path": "layout.psmModes.regionOverrides.Footnote", "value": 3 },
+        { "path": "layout.psmModes.regionOverrides.Page-header", "value": 11 },
+        { "path": "output.minWordConfidence", "value": 0.45 }
+      ]
+    },
+    {
+      "id": "B_conservative",
+      "label": "Conservative",
+      "notes": "Mittelwerte zur Overfitting-Prüfung",
+      "parameters": [
+        { "path": "rectification.cannyLow", "value": 175 },
+        { "path": "rectification.cannyHigh", "value": 90 },
+        { "path": "layout.regionPadding", "value": 16 },
+        { "path": "layout.internalPadding", "value": 5 },
+        { "path": "layout.detectionThreshold", "value": 0.125 },
+        { "path": "preprocessing.dpiScaling.minCapitalHeightPx", "value": 40 },
+        { "path": "preprocessing.dpiScaling.maxScale", "value": 2.75 },
+        { "path": "preprocessing.clahe.tileSize", "value": 28 }
+      ]
+    },
+    {
+      "id": "C_defaults",
+      "label": "Defaults",
+      "notes": "Kontrollgruppe ohne Zusatz-Overrides",
+      "parameters": []
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+    "iterationName": "Phase0_Baseline",
+    "baseConfig": {
+        "engine": "tesseract",
+        "rectification": {
+            "enabled": true,
+            "minContourConfidence": 0.7,
+            "minDocumentArea": 0.1,
+            "cannyLow": 75,
+            "cannyHigh": 200,
+            "blurSize": 5,
+            "useAdaptiveThreshold": true
+        },
+        "preprocessing": {
+            "enabled": true,
+            "grayscale": true,
+            "contrastBoost": 2.0,
+            "dpiScaling": {
+                "enabled": true,
+                "minCapitalHeightPx": 20,
+                "maxScale": 4
+            },
+            "inversionDetection": {
+                "enabled": true,
+                "brightnessThreshold": 128
+            },
+            "clahe": {
+                "enabled": true,
+                "clipLimit": 2.0,
+                "tileSize": 8
+            },
+            "bilateralFilter": {
+                "enabled": false,
+                "diameter": 5,
+                "sigmaColor": 75,
+                "sigmaSpace": 75
+            },
+            "threshold": {
+                "enabled": false,
+                "type": "otsu",
+                "value": 128
+            }
+        },
+        "layout": {
+            "enabled": true,
+            "detectionThreshold": 0.3,
+            "regionPadding": 5,
+            "internalPadding": 10,
+            "nms": {
+                "iouThreshold": 0.45,
+                "containmentThreshold": 0.5
+            },
+            "xyCut": {
+                "enabled": true,
+                "minGapThreshold": 25,
+                "spanningThreshold": 0.7,
+                "maxDepth": 14
+            }
+        },
+        "rotation": {
+            "enabled": true,
+            "fastMode": false,
+            "skipThreshold": 70,
+            "minImprovement": 5,
+            "angleStep": 90
+        },
+        "fallback": {
+            "enabled": true,
+            "gridSize": 80,
+            "minAreaRatio": 0.14,
+            "minConfidence": 0.45
+        },
+        "table": {
+            "enabled": true,
+            "outputFormat": "markdown",
+            "rowClusterTolerance": 15,
+            "colClusterTolerance": 30
+        },
+        "output": {
+            "minTextLength": 2,
+            "minLineConfidence": 0.4,
+            "minWordConfidence": 0.5
+        },
+        "debug": {
+            "logTiming": false,
+            "verbose": false
+        }
+    },
+    "parameters": [],
+    "imageDir": "./ocr_trainingdata/sel_gt"
+}

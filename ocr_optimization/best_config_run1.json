@@ -1,0 +1,86 @@
+{
+    "_description": "Current best OCR parameters for Tesseract. Final optimized configuration.",
+    "_lastUpdated": "2026-02-26 - Phase 7 complete. Best overall: Phase 4A (47.28%)",
+    "_customWER": "47.28%",
+    "_notes": "Phase 4A achieved best WER. Phase 7 found contrastBoost=1.0, maxScale=3.0, tileSize=28 close at 48.20%. Keeping Phase 4A params as they produced the best single result.",
+    "engine": "tesseract",
+    "rectification": {
+        "enabled": true,
+        "minContourConfidence": 0.8,
+        "minDocumentArea": 0.475,
+        "cannyLow": 162.5,
+        "cannyHigh": 87.5,
+        "blurSize": 1,
+        "useAdaptiveThreshold": true
+    },
+    "preprocessing": {
+        "enabled": true,
+        "grayscale": true,
+        "contrastBoost": 1.2,
+        "dpiScaling": {
+            "enabled": true,
+            "minCapitalHeightPx": 35,
+            "maxScale": 2.5
+        },
+        "inversionDetection": {
+            "enabled": true,
+            "brightnessThreshold": 106.667
+        },
+        "clahe": {
+            "enabled": true,
+            "clipLimit": 0.5,
+            "tileSize": 24
+        },
+        "bilateralFilter": {
+            "enabled": false,
+            "diameter": 5,
+            "sigmaColor": 75,
+            "sigmaSpace": 75
+        },
+        "threshold": {
+            "enabled": false,
+            "type": "otsu",
+            "value": 128
+        }
+    },
+    "layout": {
+        "enabled": true,
+        "detectionThreshold": 0.1,
+        "regionPadding": 20,
+        "internalPadding": 5,
+        "nms": {
+            "iouThreshold": 0.6,
+            "containmentThreshold": 0.3
+        },
+        "xyCut": {
+            "enabled": true,
+            "minGapThreshold": 30,
+            "spanningThreshold": 0.7,
+            "maxDepth": 14
+        }
+    },
+    "rotation": {
+        "enabled": true,
+        "fastMode": true,
+        "skipThreshold": 65,
+        "minImprovement": 3,
+        "angleStep": 90
+    },
+    "fallback": {
+        "enabled": true,
+        "gridSize": 120,
+        "minAreaRatio": 0.053,
+        "minConfidence": 0.4
+    },
+    "table": {
+        "enabled": false,
+        "outputFormat": "markdown",
+        "rowClusterTolerance": 15,
+        "colClusterTolerance": 30
+    },
+    "output": {
+        "minTextLength": 1,
+        "minLineConfidence": 0.6,
+        "minWordConfidence": 0.15
+    }
+}

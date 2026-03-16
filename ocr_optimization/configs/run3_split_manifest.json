@@ -1,0 +1,535 @@
+{
+  "schema": "ocr-run3-split-manifest/v1",
+  "createdAt": "2026-03-01T11:49:43.851Z",
+  "seed": 20260301,
+  "imagesDir": "./ocr_trainingdata",
+  "ratios": {
+    "train": 0.6,
+    "val": 0.2,
+    "test": 0.2
+  },
+  "filters": {
+    "includeScripts": [
+      "print"
+    ],
+    "overridesFile": null
+  },
+  "summary": {
+    "totalImages": 31,
+    "splitTargets": {
+      "train": 19,
+      "val": 6,
+      "test": 6
+    },
+    "splitCounts": {
+      "train": 19,
+      "val": 6,
+      "test": 6
+    },
+    "byScript": {
+      "print": 31
+    },
+    "bySource": {
+      "batch_capture": 15,
+      "digital_capture": 3,
+      "phone_camera": 3,
+      "signal_mobile": 7,
+      "template_sample": 1,
+      "web_photo": 2
+    },
+    "byDocumentType": {
+      "dense_page": 4,
+      "general_letter": 3,
+      "invoice_form": 6,
+      "official_letter": 8,
+      "school_document": 6,
+      "shipping_document": 2,
+      "small_text": 2
+    },
+    "byCondition": {
+      "dense_text": 4,
+      "digital_clean": 3,
+      "low_resolution": 4,
+      "mobile_variant": 4,
+      "rotated": 1,
+      "standard": 14,
+      "upside_down": 1
+    },
+    "strataCount": 17
+  },
+  "splits": {
+    "train": [
+      "000001.jpg",
+      "000002.jpg",
+      "000010.jpg",
+      "000011.jpg",
+      "000012.jpg",
+      "000013.jpg",
+      "000015.jpg",
+      "000017.jpg",
+      "000019.jpg",
+      "bill_screenshot.png",
+      "chunk.jpeg",
+      "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+      "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+      "IMG_0173_3.jpg",
+      "IMG_0173.jpg",
+      "signal-2026-01-07-165410_002.jpg",
+      "signal-2026-01-12-111456.jpg",
+      "signal-2026-01-21-161952_002.jpg",
+      "signal-2026-01-30-094240_002.jpg"
+    ],
+    "val": [
+      "000006.jpg",
+      "000009.jpg",
+      "000014.jpg",
+      "000018.jpg",
+      "chunkchunk.png",
+      "IMG_0173_2.jpg"
+    ],
+    "test": [
+      "000003.jpg",
+      "000016.jpg",
+      "rechnung-schreiben-beispiel-muster.jpg",
+      "signal-2025-10-11-162347_002.jpg",
+      "signal-2026-01-30-094240_003.jpg",
+      "signal-2026-01-30-094240.jpg"
+    ]
+  },
+  "images": [
+    {
+      "filename": "000001.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "general_letter",
+      "condition": "standard",
+      "fullTextLength": 7046,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000002.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "dense_page",
+      "condition": "dense_text",
+      "fullTextLength": 16176,
+      "image": {
+        "width": 2048,
+        "height": 1536,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000003.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "dense_page",
+      "condition": "dense_text",
+      "fullTextLength": 42371,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000006.jpg",
+      "split": "val",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "dense_page",
+      "condition": "dense_text",
+      "fullTextLength": 17229,
+      "image": {
+        "width": 2048,
+        "height": 1536,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000009.jpg",
+      "split": "val",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "school_document",
+      "condition": "standard",
+      "fullTextLength": 1210,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000010.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "dense_page",
+      "condition": "dense_text",
+      "fullTextLength": 21617,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000011.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "official_letter",
+      "condition": "standard",
+      "fullTextLength": 2324,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000012.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "school_document",
+      "condition": "standard",
+      "fullTextLength": 1136,
+      "image": {
+        "width": 2048,
+        "height": 1536,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000013.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "shipping_document",
+      "condition": "standard",
+      "fullTextLength": 577,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000014.jpg",
+      "split": "val",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "shipping_document",
+      "condition": "standard",
+      "fullTextLength": 1449,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000015.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "small_text",
+      "condition": "rotated",
+      "fullTextLength": 448,
+      "image": {
+        "width": 2048,
+        "height": 1536,
+        "rotation": 90
+      }
+    },
+    {
+      "filename": "000016.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "official_letter",
+      "condition": "standard",
+      "fullTextLength": 2278,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000017.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "official_letter",
+      "condition": "standard",
+      "fullTextLength": 2186,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000018.jpg",
+      "split": "val",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "official_letter",
+      "condition": "standard",
+      "fullTextLength": 1542,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "000019.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "batch_capture",
+      "documentType": "official_letter",
+      "condition": "standard",
+      "fullTextLength": 2201,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "bill_screenshot.png",
+      "split": "train",
+      "script": "print",
+      "source": "digital_capture",
+      "documentType": "invoice_form",
+      "condition": "digital_clean",
+      "fullTextLength": 465,
+      "image": {
+        "width": 959,
+        "height": 1456,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "chunk.jpeg",
+      "split": "train",
+      "script": "print",
+      "source": "digital_capture",
+      "documentType": "official_letter",
+      "condition": "digital_clean",
+      "fullTextLength": 967,
+      "image": {
+        "width": 1179,
+        "height": 584,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "chunkchunk.png",
+      "split": "val",
+      "script": "print",
+      "source": "digital_capture",
+      "documentType": "official_letter",
+      "condition": "digital_clean",
+      "fullTextLength": 965,
+      "image": {
+        "width": 1339,
+        "height": 310,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "web_photo",
+      "documentType": "school_document",
+      "condition": "standard",
+      "fullTextLength": 1665,
+      "image": {
+        "width": 1080,
+        "height": 1392,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "web_photo",
+      "documentType": "school_document",
+      "condition": "standard",
+      "fullTextLength": 1609,
+      "image": {
+        "width": 1080,
+        "height": 1439,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "IMG_0173_2.jpg",
+      "split": "val",
+      "script": "print",
+      "source": "phone_camera",
+      "documentType": "invoice_form",
+      "condition": "low_resolution",
+      "fullTextLength": 745,
+      "image": {
+        "width": 768,
+        "height": 1024,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "IMG_0173_3.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "phone_camera",
+      "documentType": "invoice_form",
+      "condition": "low_resolution",
+      "fullTextLength": 745,
+      "image": {
+        "width": 768,
+        "height": 1024,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "IMG_0173.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "phone_camera",
+      "documentType": "invoice_form",
+      "condition": "low_resolution",
+      "fullTextLength": 745,
+      "image": {
+        "width": 768,
+        "height": 1024,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "rechnung-schreiben-beispiel-muster.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "template_sample",
+      "documentType": "invoice_form",
+      "condition": "low_resolution",
+      "fullTextLength": 1169,
+      "image": {
+        "width": 594,
+        "height": 837,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2025-10-11-162347_002.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "school_document",
+      "condition": "mobile_variant",
+      "fullTextLength": 1354,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2026-01-07-165410_002.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "official_letter",
+      "condition": "mobile_variant",
+      "fullTextLength": 1542,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2026-01-12-111456.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "invoice_form",
+      "condition": "standard",
+      "fullTextLength": 2063,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2026-01-21-161952_002.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "general_letter",
+      "condition": "mobile_variant",
+      "fullTextLength": 1992,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2026-01-30-094240_002.jpg",
+      "split": "train",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "general_letter",
+      "condition": "mobile_variant",
+      "fullTextLength": 954,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    },
+    {
+      "filename": "signal-2026-01-30-094240_003.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "school_document",
+      "condition": "upside_down",
+      "fullTextLength": 1231,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 180
+      }
+    },
+    {
+      "filename": "signal-2026-01-30-094240.jpg",
+      "split": "test",
+      "script": "print",
+      "source": "signal_mobile",
+      "documentType": "small_text",
+      "condition": "standard",
+      "fullTextLength": 503,
+      "image": {
+        "width": 1536,
+        "height": 2048,
+        "rotation": 0
+      }
+    }
+  ]
+}

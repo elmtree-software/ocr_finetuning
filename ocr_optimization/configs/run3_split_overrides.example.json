@@ -1,0 +1,10 @@
+{
+  "images": {
+    "example_handwriting.jpg": {
+      "script": "handwriting",
+      "source": "scanner_app",
+      "documentType": "school_document",
+      "condition": "low_contrast"
+    }
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "runTimestamp": "2026-03-01T11:19:27.118Z",
+  "configFile": "ocr_optimization/configs/run3_evaluate_configs.json",
+  "rankSplit": "test",
+  "sharedConfig": {
+    "imagesDir": "./ocr_trainingdata/sel_gt",
+    "splitManifest": "./ocr_optimization/configs/run3_split_manifest.json",
+    "tuneSplit": "train",
+    "scoringMode": "customWER",
+    "appUrl": "http://localhost:5174/ocr_finetuning.html"
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "id": "B_conservative",
+      "label": "Conservative",
+      "primarySplit": "test",
+      "werMean": 0.2883896338318721
+    },
+    {
+      "rank": 2,
+      "id": "A_run2_best",
+      "label": "Run2 Best",
+      "primarySplit": "test",
+      "werMean": 0.2973182052604435
+    },
+    {
+      "rank": 3,
+      "id": "C_defaults",
+      "label": "Defaults",
+      "primarySplit": "test",
+      "werMean": 0.2973182052604435
+    }
+  ],
+  "candidates": [
+    {
+      "id": "A_run2_best",
+      "label": "Run2 Best",
+      "notes": "Bestwerte aus Run 2",
+      "parameters": [
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.333
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 11
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "status": {
+        "tuningStatus": "completed",
+        "completedIterations": 1,
+        "configuredIterations": 1,
+        "timedOut": false,
+        "incomplete": false,
+        "elapsedMs": 4
+      },
+      "tuneSplit": "train",
+      "splitCounts": {
+        "train": 4,
+        "val": 1,
+        "test": 2
+      },
+      "metricsBySplit": {
+        "train": {
+          "imageCount": 4,
+          "werMean": 0.4580289697475441,
+          "cerMean": 0.3762371928320156,
+          "werDrop1": 0.4158523518202548,
+          "cerDrop1": 0.335289860547046,
+          "droppedImage": "000017.jpg",
+          "droppedWer": 0.5845588235294118,
+          "perDocument": [
+            {
+              "filename": "000011.jpg",
+              "wer": 0.5229357798165137,
+              "cer": 0.4492001729355815,
+              "lengthRatio": 0.9195849546044098,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "000017.jpg",
+              "wer": 0.5845588235294118,
+              "cer": 0.4990791896869245,
+              "lengthRatio": 0.6487108655616943,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+              "wer": 0.19850187265917604,
+              "cer": 0.1528700906344411,
+              "lengthRatio": 0.8918429003021148,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "signal-2026-01-12-111456.jpg",
+              "wer": 0.5261194029850746,
+              "cer": 0.40379931807111547,
+              "lengthRatio": 0.9556746225036532,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.4158523518202548,
+          "averageWER": 0.4580289697475441,
+          "averageCER": 0.3762371928320156,
+          "feasible": true
+        },
+        "val": {
+          "imageCount": 1,
+          "werMean": 0.3333333333333333,
+          "cerMean": 0.2901484480431849,
+          "werDrop1": 0.3333333333333333,
+          "cerDrop1": 0.2901484480431849,
+          "droppedImage": "IMG_0173.jpg",
+          "droppedWer": 0.3333333333333333,
+          "perDocument": [
+            {
+              "filename": "IMG_0173.jpg",
+              "wer": 0.3333333333333333,
+              "cer": 0.2901484480431849,
+              "lengthRatio": 0.728744939271255,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.5686274509803921,
+          "averageWER": 0.3333333333333333,
+          "averageCER": 0.2901484480431849,
+          "feasible": true
+        },
+        "test": {
+          "imageCount": 2,
+          "werMean": 0.2973182052604435,
+          "cerMean": 0.22528931999006813,
+          "werDrop1": 0.16606498194945848,
+          "cerDrop1": 0.1527431421446384,
+          "droppedImage": "rechnung-schreiben-beispiel-muster.jpg",
+          "droppedWer": 0.42857142857142855,
+          "perDocument": [
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+              "wer": 0.16606498194945848,
+              "cer": 0.1527431421446384,
+              "lengthRatio": 0.8871571072319202,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "rechnung-schreiben-beispiel-muster.jpg",
+              "wer": 0.42857142857142855,
+              "cer": 0.29783549783549784,
+              "lengthRatio": 0.90995670995671,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.16606498194945848,
+          "averageWER": 0.2973182052604435,
+          "averageCER": 0.22528931999006813,
+          "feasible": true
+        }
+      },
+      "best": {
+        "iterationId": 0,
+        "parameters": [],
+        "customWER": 0.4158523518202548,
+        "customCER": 0.335289860547046,
+        "originalWER": 0.4580289697475441,
+        "originalCER": 0.3762371928320156,
+        "combinedScore": 0.4158523518202548,
+        "feasible": true,
+        "droppedImage": "000017.jpg",
+        "droppedWER": 0.5845588235294118,
+        "imageScores": [
+          {
+            "filename": "000011.jpg",
+            "cer": 0.4492001729355815,
+            "wer": 0.5229357798165137,
+            "ocrLength": 2127,
+            "groundTruthLength": 2313,
+            "lengthRatio": 0.9195849546044098,
+            "underproductionRate": 0.08041504539559015,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "000017.jpg",
+            "cer": 0.4990791896869245,
+            "wer": 0.5845588235294118,
+            "ocrLength": 1409,
+            "groundTruthLength": 2172,
+            "lengthRatio": 0.6487108655616943,
+            "underproductionRate": 0.35128913443830573,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+            "cer": 0.1528700906344411,
+            "wer": 0.19850187265917604,
+            "ocrLength": 1476,
+            "groundTruthLength": 1655,
+            "lengthRatio": 0.8918429003021148,
+            "underproductionRate": 0.1081570996978852,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "signal-2026-01-12-111456.jpg",
+            "cer": 0.40379931807111547,
+            "wer": 0.5261194029850746,
+            "ocrLength": 1962,
+            "groundTruthLength": 2053,
+            "lengthRatio": 0.9556746225036532,
+            "underproductionRate": 0.04432537749634681,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          }
+        ]
+      },
+      "primarySplit": "test",
+      "primaryWerMean": 0.2973182052604435
+    },
+    {
+      "id": "B_conservative",
+      "label": "Conservative",
+      "notes": "Mittelwerte zur Overfitting-Prüfung",
+      "parameters": [
+        {
+          "path": "rectification.cannyLow",
+          "value": 175
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 90
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        }
+      ],
+      "status": {
+        "tuningStatus": "completed",
+        "completedIterations": 1,
+        "configuredIterations": 1,
+        "timedOut": false,
+        "incomplete": false,
+        "elapsedMs": 5
+      },
+      "tuneSplit": "train",
+      "splitCounts": {
+        "train": 4,
+        "val": 1,
+        "test": 2
+      },
+      "metricsBySplit": {
+        "train": {
+          "imageCount": 4,
+          "werMean": 0.4508975471703436,
+          "cerMean": 0.3655015964739188,
+          "werDrop1": 0.41369672956045805,
+          "cerDrop1": 0.32066879529855835,
+          "droppedImage": "000017.jpg",
+          "droppedWer": 0.5625,
+          "perDocument": [
+            {
+              "filename": "000011.jpg",
+              "wer": 0.5535168195718655,
+              "cer": 0.45698227410289666,
+              "lengthRatio": 0.9766536964980544,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "000017.jpg",
+              "wer": 0.5625,
+              "cer": 0.5,
+              "lengthRatio": 0.6413443830570903,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+              "wer": 0.2696629213483146,
+              "cer": 0.21812688821752266,
+              "lengthRatio": 0.8833836858006042,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "signal-2026-01-12-111456.jpg",
+              "wer": 0.417910447761194,
+              "cer": 0.2868972235752557,
+              "lengthRatio": 0.950803701899659,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.41369672956045805,
+          "averageWER": 0.4508975471703436,
+          "averageCER": 0.3655015964739188,
+          "feasible": true
+        },
+        "val": {
+          "imageCount": 1,
+          "werMean": 0.4095238095238095,
+          "cerMean": 0.3873144399460189,
+          "werDrop1": 0.4095238095238095,
+          "cerDrop1": 0.3873144399460189,
+          "droppedImage": "IMG_0173.jpg",
+          "droppedWer": 0.4095238095238095,
+          "perDocument": [
+            {
+              "filename": "IMG_0173.jpg",
+              "wer": 0.4095238095238095,
+              "cer": 0.3873144399460189,
+              "lengthRatio": 0.6275303643724697,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.7877914242620124,
+          "averageWER": 0.4095238095238095,
+          "averageCER": 0.3873144399460189,
+          "feasible": true
+        },
+        "test": {
+          "imageCount": 2,
+          "werMean": 0.2883896338318721,
+          "cerMean": 0.25342784812859626,
+          "werDrop1": 0.16606498194945848,
+          "cerDrop1": 0.1527431421446384,
+          "droppedImage": "rechnung-schreiben-beispiel-muster.jpg",
+          "droppedWer": 0.4107142857142857,
+          "perDocument": [
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+              "wer": 0.16606498194945848,
+              "cer": 0.1527431421446384,
+              "lengthRatio": 0.8871571072319202,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "rechnung-schreiben-beispiel-muster.jpg",
+              "wer": 0.4107142857142857,
+              "cer": 0.3541125541125541,
+              "lengthRatio": 0.8675324675324675,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.16606498194945848,
+          "averageWER": 0.2883896338318721,
+          "averageCER": 0.25342784812859626,
+          "feasible": true
+        }
+      },
+      "best": {
+        "iterationId": 0,
+        "parameters": [],
+        "customWER": 0.41369672956045805,
+        "customCER": 0.32066879529855835,
+        "originalWER": 0.4508975471703436,
+        "originalCER": 0.3655015964739188,
+        "combinedScore": 0.41369672956045805,
+        "feasible": true,
+        "droppedImage": "000017.jpg",
+        "droppedWER": 0.5625,
+        "imageScores": [
+          {
+            "filename": "000011.jpg",
+            "cer": 0.45698227410289666,
+            "wer": 0.5535168195718655,
+            "ocrLength": 2259,
+            "groundTruthLength": 2313,
+            "lengthRatio": 0.9766536964980544,
+            "underproductionRate": 0.023346303501945526,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "000017.jpg",
+            "cer": 0.5,
+            "wer": 0.5625,
+            "ocrLength": 1393,
+            "groundTruthLength": 2172,
+            "lengthRatio": 0.6413443830570903,
+            "underproductionRate": 0.35865561694290976,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+            "cer": 0.21812688821752266,
+            "wer": 0.2696629213483146,
+            "ocrLength": 1462,
+            "groundTruthLength": 1655,
+            "lengthRatio": 0.8833836858006042,
+            "underproductionRate": 0.11661631419939578,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "signal-2026-01-12-111456.jpg",
+            "cer": 0.2868972235752557,
+            "wer": 0.417910447761194,
+            "ocrLength": 1952,
+            "groundTruthLength": 2053,
+            "lengthRatio": 0.950803701899659,
+            "underproductionRate": 0.049196298100340964,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          }
+        ]
+      },
+      "primarySplit": "test",
+      "primaryWerMean": 0.2883896338318721
+    },
+    {
+      "id": "C_defaults",
+      "label": "Defaults",
+      "notes": "Kontrollgruppe ohne Zusatz-Overrides",
+      "parameters": [],
+      "status": {
+        "tuningStatus": "completed",
+        "completedIterations": 1,
+        "configuredIterations": 1,
+        "timedOut": false,
+        "incomplete": false,
+        "elapsedMs": 3
+      },
+      "tuneSplit": "train",
+      "splitCounts": {
+        "train": 4,
+        "val": 1,
+        "test": 2
+      },
+      "metricsBySplit": {
+        "train": {
+          "imageCount": 4,
+          "werMean": 0.4580289697475441,
+          "cerMean": 0.3762371928320156,
+          "werDrop1": 0.4158523518202548,
+          "cerDrop1": 0.335289860547046,
+          "droppedImage": "000017.jpg",
+          "droppedWer": 0.5845588235294118,
+          "perDocument": [
+            {
+              "filename": "000011.jpg",
+              "wer": 0.5229357798165137,
+              "cer": 0.4492001729355815,
+              "lengthRatio": 0.9195849546044098,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "000017.jpg",
+              "wer": 0.5845588235294118,
+              "cer": 0.4990791896869245,
+              "lengthRatio": 0.6487108655616943,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+              "wer": 0.19850187265917604,
+              "cer": 0.1528700906344411,
+              "lengthRatio": 0.8918429003021148,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "signal-2026-01-12-111456.jpg",
+              "wer": 0.5261194029850746,
+              "cer": 0.40379931807111547,
+              "lengthRatio": 0.9556746225036532,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.4158523518202548,
+          "averageWER": 0.4580289697475441,
+          "averageCER": 0.3762371928320156,
+          "feasible": true
+        },
+        "val": {
+          "imageCount": 1,
+          "werMean": 0.3333333333333333,
+          "cerMean": 0.2901484480431849,
+          "werDrop1": 0.3333333333333333,
+          "cerDrop1": 0.2901484480431849,
+          "droppedImage": "IMG_0173.jpg",
+          "droppedWer": 0.3333333333333333,
+          "perDocument": [
+            {
+              "filename": "IMG_0173.jpg",
+              "wer": 0.3333333333333333,
+              "cer": 0.2901484480431849,
+              "lengthRatio": 0.728744939271255,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.5686274509803921,
+          "averageWER": 0.3333333333333333,
+          "averageCER": 0.2901484480431849,
+          "feasible": true
+        },
+        "test": {
+          "imageCount": 2,
+          "werMean": 0.2973182052604435,
+          "cerMean": 0.22528931999006813,
+          "werDrop1": 0.16606498194945848,
+          "cerDrop1": 0.1527431421446384,
+          "droppedImage": "rechnung-schreiben-beispiel-muster.jpg",
+          "droppedWer": 0.42857142857142855,
+          "perDocument": [
+            {
+              "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+              "wer": 0.16606498194945848,
+              "cer": 0.1527431421446384,
+              "lengthRatio": 0.8871571072319202,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            },
+            {
+              "filename": "rechnung-schreiben-beispiel-muster.jpg",
+              "wer": 0.42857142857142855,
+              "cer": 0.29783549783549784,
+              "lengthRatio": 0.90995670995671,
+              "isEmptyOutput": false,
+              "isVeryShortOutput": false
+            }
+          ],
+          "combinedScore": 0.16606498194945848,
+          "averageWER": 0.2973182052604435,
+          "averageCER": 0.22528931999006813,
+          "feasible": true
+        }
+      },
+      "best": {
+        "iterationId": 0,
+        "parameters": [],
+        "customWER": 0.4158523518202548,
+        "customCER": 0.335289860547046,
+        "originalWER": 0.4580289697475441,
+        "originalCER": 0.3762371928320156,
+        "combinedScore": 0.4158523518202548,
+        "feasible": true,
+        "droppedImage": "000017.jpg",
+        "droppedWER": 0.5845588235294118,
+        "imageScores": [
+          {
+            "filename": "000011.jpg",
+            "cer": 0.4492001729355815,
+            "wer": 0.5229357798165137,
+            "ocrLength": 2127,
+            "groundTruthLength": 2313,
+            "lengthRatio": 0.9195849546044098,
+            "underproductionRate": 0.08041504539559015,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "000017.jpg",
+            "cer": 0.4990791896869245,
+            "wer": 0.5845588235294118,
+            "ocrLength": 1409,
+            "groundTruthLength": 2172,
+            "lengthRatio": 0.6487108655616943,
+            "underproductionRate": 0.35128913443830573,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+            "cer": 0.1528700906344411,
+            "wer": 0.19850187265917604,
+            "ocrLength": 1476,
+            "groundTruthLength": 1655,
+            "lengthRatio": 0.8918429003021148,
+            "underproductionRate": 0.1081570996978852,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          },
+          {
+            "filename": "signal-2026-01-12-111456.jpg",
+            "cer": 0.40379931807111547,
+            "wer": 0.5261194029850746,
+            "ocrLength": 1962,
+            "groundTruthLength": 2053,
+            "lengthRatio": 0.9556746225036532,
+            "underproductionRate": 0.04432537749634681,
+            "isEmptyOutput": false,
+            "isVeryShortOutput": false
+          }
+        ]
+      },
+      "primarySplit": "test",
+      "primaryWerMean": 0.2973182052604435
+    }
+  ]
+}

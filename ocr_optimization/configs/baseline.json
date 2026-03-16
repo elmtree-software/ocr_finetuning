@@ -1,0 +1,13 @@
+{
+    "baseConfig": {
+        "engine": "tesseract"
+    },
+    "iterateParams": {},
+    "optimizer": {
+        "iterations": 1,
+        "initialSamples": 1,
+        "candidateSamples": 50
+    },
+    "scoringMode": "fulltext",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

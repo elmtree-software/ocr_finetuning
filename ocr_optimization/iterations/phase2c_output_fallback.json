@@ -1,0 +1,3444 @@
+{
+  "runTimestamp": "2026-02-26T12:20:09.074Z",
+  "configFile": "ocr_optimization/configs/phase2c_output_fallback.json",
+  "totalIterations": 89,
+  "scoringMode": "fulltext",
+  "best": {
+    "iterationId": 1,
+    "parameters": [
+      {
+        "path": "output.minTextLength",
+        "value": 1
+      },
+      {
+        "path": "output.minLineConfidence",
+        "value": 0.5
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.325
+      },
+      {
+        "path": "fallback.enabled",
+        "value": true
+      },
+      {
+        "path": "fallback.gridSize",
+        "value": 120
+      },
+      {
+        "path": "fallback.minAreaRatio",
+        "value": 0.05
+      },
+      {
+        "path": "fallback.minConfidence",
+        "value": 0.4
+      }
+    ],
+    "customWER": 0.5792265469153093,
+    "customCER": 0.49370249504710234,
+    "originalWER": 0.6213038922237784,
+    "originalCER": 0.5436217659686797,
+    "combinedScore": 1.0391714478641978,
+    "feasible": true,
+    "droppedImage": "000013.jpg",
+    "droppedWER": 1,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.4578469520103761,
+        "wer": 0.5382262996941896,
+        "ocrLength": 1748,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.7557284911370514,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000013.jpg",
+        "cer": 0.9928952042628775,
+        "wer": 1,
+        "ocrLength": 4,
+        "groundTruthLength": 563,
+        "lengthRatio": 0.007104795737122558,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000014.jpg",
+        "cer": 0.6366782006920415,
+        "wer": 0.7348066298342542,
+        "ocrLength": 693,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.4795847750865052,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000015.jpg",
+        "cer": 0.9821428571428571,
+        "wer": 0.9855072463768116,
+        "ocrLength": 8,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.017857142857142856,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5732044198895028,
+        "wer": 0.6617647058823529,
+        "ocrLength": 1397,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6431860036832413,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.252361673414305,
+        "wer": 0.3333333333333333,
+        "ocrLength": 595,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.8029689608636977,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.21268882175226586,
+        "wer": 0.2808988764044944,
+        "ocrLength": 1540,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.9305135951661632,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.22443890274314215,
+        "wer": 0.20577617328519857,
+        "ocrLength": 1245,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.7761845386533666,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.7064935064935065,
+        "wer": 0.8869047619047619,
+        "ocrLength": 615,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.5324675324675324,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.39746712128592304,
+        "wer": 0.585820895522388,
+        "ocrLength": 1991,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9698002922552362,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 1,
+      "customWER": 0.5792265469153093,
+      "customCER": 0.49370249504710234,
+      "originalWER": 0.6213038922237784,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.5792265469153093,
+      "customCER": 0.49370249504710234,
+      "originalWER": 0.6213038922237784,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.5794715945875856,
+      "customCER": 0.5015114762555343,
+      "originalWER": 0.6215244351288269,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.5796233723121348,
+      "customCER": 0.4950605911420405,
+      "originalWER": 0.6216610350809213,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.5796233723121348,
+      "customCER": 0.4950605911420405,
+      "originalWER": 0.6216610350809213,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.5796233723121348,
+      "customCER": 0.4948681909496402,
+      "originalWER": 0.6216610350809213,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.5796233723121348,
+      "customCER": 0.4950605911420405,
+      "originalWER": 0.6216610350809213,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 81,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 82,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 85,
+      "customWER": 0.5807765776089865,
+      "customCER": 0.506903718011901,
+      "originalWER": 0.6226989198480879,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5081656140106391,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.5811734030058119,
+      "customCER": 0.5083580142030394,
+      "originalWER": 0.6230560627052306,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.5815613684567854,
+      "customCER": 0.5065253970720021,
+      "originalWER": 0.623405231611107,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.5816357287384972,
+      "customCER": 0.5004238865417481,
+      "originalWER": 0.6234721558646475,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.5823746623597906,
+      "customCER": 0.49225824479605623,
+      "originalWER": 0.6241371961238116,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.582431698426001,
+      "customCER": 0.49146190800578915,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.582431698426001,
+      "customCER": 0.4922315087753899,
+      "originalWER": 0.624188528583401,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 83,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 86,
+      "customWER": 0.5826962486905513,
+      "customCER": 0.49068101248805146,
+      "originalWER": 0.6244266238214962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.583081895247672,
+      "customCER": 0.5010573867874124,
+      "originalWER": 0.6247737057229049,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5086131935088045,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5086131935088045,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5087093936050047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 84,
+      "customWER": 0.5834043603627858,
+      "customCER": 0.5089017937974047,
+      "originalWER": 0.625063924326507,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.583451862482111,
+      "customCER": 0.5070550182482071,
+      "originalWER": 0.6251066762338999,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.275
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.584018233904836,
+      "customCER": 0.5081057640449009,
+      "originalWER": 0.6256164105143525,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.5840657360241613,
+      "customCER": 0.5073625922582033,
+      "originalWER": 0.6256591624217452,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.5840657360241613,
+      "customCER": 0.5073625922582033,
+      "originalWER": 0.6256591624217452,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.5840657360241613,
+      "customCER": 0.5073625922582033,
+      "originalWER": 0.6256591624217452,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.5840657360241613,
+      "customCER": 0.5073625922582033,
+      "originalWER": 0.6256591624217452,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 88,
+      "customWER": 0.5840657360241613,
+      "customCER": 0.5073625922582033,
+      "originalWER": 0.6256591624217452,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.5846544931159391,
+      "customCER": 0.4892811974594263,
+      "originalWER": 0.626189043804345,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.5846544931159391,
+      "customCER": 0.4892811974594263,
+      "originalWER": 0.626189043804345,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.5849760794466996,
+      "customCER": 0.48735811082632846,
+      "originalWER": 0.6264784715020297,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.5851135243511243,
+      "customCER": 0.49872961075721417,
+      "originalWER": 0.626602171916012,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.275
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 80
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.5851135243511243,
+      "customCER": 0.49872961075721417,
+      "originalWER": 0.626602171916012,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.275
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.585293483108262,
+      "customCER": 0.5064935084898298,
+      "originalWER": 0.6254654334987346,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.5863887735545503,
+      "customCER": 0.4985986369602416,
+      "originalWER": 0.6277498961990953,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.462
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.5895486730101189,
+      "customCER": 0.4886928269072356,
+      "originalWER": 0.630593805709107,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.388
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.5911908732753152,
+      "customCER": 0.4933921566653616,
+      "originalWER": 0.6320717859477837,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.5931750002594423,
+      "customCER": 0.49252635579956067,
+      "originalWER": 0.633857500233498,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.325
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.6019364530141522,
+      "customCER": 0.4934408514092866,
+      "originalWER": 0.641742807712737,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.6034396071798904,
+      "customCER": 0.49130442917759726,
+      "originalWER": 0.6430956464619013,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.275
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.6059047069824062,
+      "customCER": 0.4929598509282861,
+      "originalWER": 0.6453142362841655,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.188
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.6086072456941192,
+      "customCER": 0.49000215135017633,
+      "originalWER": 0.6477465211247072,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6557227116008977,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.163
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.6095331716200451,
+      "customCER": 0.5274709457433683,
+      "originalWER": 0.6569131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.6099299970168706,
+      "customCER": 0.49000215135017633,
+      "originalWER": 0.6489369973151835,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.6099299970168706,
+      "customCER": 0.49000215135017633,
+      "originalWER": 0.6489369973151835,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.25
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 80,
+      "customWER": 0.6099299970168706,
+      "customCER": 0.49000215135017633,
+      "originalWER": 0.6489369973151835,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 87,
+      "customWER": 0.6099299970168706,
+      "customCER": 0.49000215135017633,
+      "originalWER": 0.6489369973151835,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.6105913726782461,
+      "customCER": 0.5280011893492144,
+      "originalWER": 0.6519131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.6105913726782461,
+      "customCER": 0.5280011893492144,
+      "originalWER": 0.6519131877913739,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 2
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": false
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.6203676410180504,
+      "customCER": 0.5259972674272677,
+      "originalWER": 0.6666642102495787,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.6208119685342012,
+      "customCER": 0.526494185962759,
+      "originalWER": 0.6581355335855429,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 120
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.6246004452508546,
+      "customCER": 0.5254776811573237,
+      "originalWER": 0.661545162630531,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.624786025287181,
+      "customCER": 0.5245460132559224,
+      "originalWER": 0.6706407560917962,
+      "parameters": [
+        {
+          "path": "output.minTextLength",
+          "value": 1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.enabled",
+          "value": true
+        },
+        {
+          "path": "fallback.gridSize",
+          "value": 40
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.05
+        },
+        {
+          "path": "fallback.minConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

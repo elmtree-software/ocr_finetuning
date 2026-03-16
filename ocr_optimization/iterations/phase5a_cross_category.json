@@ -1,0 +1,276 @@
+{
+  "runTimestamp": "2026-02-26T15:47:06.824Z",
+  "runDirectory": "2026-02-26_16-47-06-824",
+  "configFile": "ocr_optimization/configs/phase5a_cross_category.json",
+  "phase": "5A - Cross-category optimization with extended ranges",
+  "totalIterations": 120,
+  "completedIterations": 89,
+  "scoringMode": "fulltext",
+  "elapsedSeconds": 7197,
+  "best": {
+    "iterationId": 29,
+    "parameters": [
+      {
+        "path": "preprocessing.contrastBoost",
+        "value": 1.4
+      },
+      {
+        "path": "preprocessing.clahe.clipLimit",
+        "value": 1
+      },
+      {
+        "path": "preprocessing.clahe.tileSize",
+        "value": 28
+      },
+      {
+        "path": "output.minLineConfidence",
+        "value": 0.5
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.6
+      },
+      {
+        "path": "preprocessing.dpiScaling.maxScale",
+        "value": 2.75
+      },
+      {
+        "path": "rotation.skipThreshold",
+        "value": 60
+      }
+    ],
+    "customWER": 0.49643990130725946,
+    "customCER": 0.4047431689373279,
+    "combinedScore": 0.6895490222389788,
+    "droppedImage": {
+      "filename": "000013.jpg",
+      "wer": 0.8571428571428571,
+      "cer": 0.7531083481349912
+    },
+    "perImage": [
+      {
+        "filename": "000013.jpg",
+        "wer": 0.8571428571428571,
+        "cer": 0.7531083481349912
+      },
+      {
+        "filename": "000015.jpg",
+        "wer": 0.8115942028985508,
+        "cer": 0.6629464285714286
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.712707182320442,
+        "cer": 0.701038062283737
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.636085626911315,
+        "cer": 0.5006485084306096
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.5772058823529411,
+        "cer": 0.5032228360957642
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.5178571428571429,
+        "cer": 0.37142857142857144
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.47761194029850745,
+        "cer": 0.33511933755479784
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3142857142857143,
+        "cer": 0.22941970310391363
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.250936329588015,
+        "cer": 0.18549848942598188
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16967509025270758,
+        "cer": 0.15336658354114713
+      }
+    ]
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "customWER": 0.49643990130725946,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "customWER": 0.4996099181064351,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.8
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.775
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 4
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "customWER": 0.501506820344281,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.125
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "customWER": 0.5026691593492771,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.7
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.375
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "customWER": 0.5041684737563112,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.5
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 40
+        }
+      ]
+    }
+  ],
+  "notes": "Completed 89/120 iterations (hit browser timeout). 7 parameters optimized simultaneously: contrastBoost, clahe.clipLimit, clahe.tileSize, minLineConfidence, minWordConfidence, dpiScaling.maxScale, rotation.skipThreshold. Best WER from script was 56.6% (original metric), custom WER (drop worst of 10) was 49.64%. Compared to Phase 4A best of 47.28%, this is slightly worse, possibly due to the larger parameter space making optimization harder in 89 iterations."
+}

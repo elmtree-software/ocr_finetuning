@@ -1,0 +1,745 @@
+/**
+ * Parameter Registry Composable
+ *
+ * Provides metadata for all OCRConfig parameters.
+ * Used to generate the UI and iteration configurations.
+ */
+
+import { computed } from "vue";
+import type { ParameterMetadata, ParameterGroup } from "../types/tuning";
+
+// =============================================================================
+// Parameter Definitions
+// =============================================================================
+
+const PARAMETER_REGISTRY: ParameterMetadata[] = [
+    // --- PaddleOCR Settings ---
+    {
+        path: "paddleocr.version",
+        label: "Version",
+        type: "enum",
+        group: "paddleocr",
+        description: "PaddleOCR Modellversion. v5 ist aktuell und genauer.",
+        options: ["v5", "v3"],
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.language",
+        label: "Sprache",
+        type: "enum",
+        group: "paddleocr",
+        description: "Primärsprache für die Texterkennung.",
+        options: ["german", "latin", "english"],
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.useWebGPU",
+        label: "WebGPU",
+        type: "boolean",
+        group: "paddleocr",
+        description: "Nutzt Grafikkarte für Beschleunigung.",
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.detThreshold",
+        label: "Detection Threshold",
+        type: "number",
+        group: "paddleocr",
+        description: "Erkennungsschwelle. Niedrig: mehr Erkennung, auch Rauschen.",
+        min: 0.1,
+        max: 0.9,
+        step: 0.05,
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.boxThreshold",
+        label: "Box Threshold",
+        type: "number",
+        group: "paddleocr",
+        description: "Box-Schwelle. Hoch: präzisere Umrandung einzelner Wörter.",
+        min: 0.1,
+        max: 0.9,
+        step: 0.05,
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.detInputSize",
+        label: "Detection Input Size",
+        type: "number",
+        group: "paddleocr",
+        description: "Eingabegröße für Texterkennung. Höher = kleinere Texte erkennbar.",
+        min: 640,
+        max: 1920,
+        step: 160,
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.recInputHeight",
+        label: "Recognition Input Height",
+        type: "number",
+        group: "paddleocr",
+        description: "Zielhöhe für Texterkennung (32-64).",
+        min: 32,
+        max: 64,
+        step: 8,
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.unclipRatio",
+        label: "Unclip Ratio",
+        type: "number",
+        group: "paddleocr",
+        description: "Expansions-Faktor der Boxen. Verhindert abgeschnittene Ränder.",
+        min: 1.5,
+        max: 2.5,
+        step: 0.1,
+        engineSpecific: "paddleocr",
+    },
+    {
+        path: "paddleocr.regionPadding",
+        label: "Region Padding",
+        type: "number",
+        group: "paddleocr",
+        description: "Padding um Textregionen (Pixel).",
+        min: 0,
+        max: 20,
+        step: 2,
+        engineSpecific: "paddleocr",
+    },
+
+    // --- Rectification ---
+    {
+        path: "rectification.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "rectification",
+        description: "Automatische Entzerrung/Deskewing von Dokumenten.",
+    },
+    {
+        path: "rectification.minContourConfidence",
+        label: "Min Contour Confidence",
+        type: "number",
+        group: "rectification",
+        description: "Wie sicher muss die Erkennung der Blattränder sein.",
+        min: 0.5,
+        max: 0.95,
+        step: 0.05,
+    },
+    {
+        path: "rectification.minDocumentArea",
+        label: "Min Document Area",
+        type: "number",
+        group: "rectification",
+        description: "Minimaler Flächenanteil des Dokuments am Gesamtbild.",
+        min: 0.05,
+        max: 0.5,
+        step: 0.05,
+    },
+    {
+        path: "rectification.cannyLow",
+        label: "Canny Low",
+        type: "number",
+        group: "rectification",
+        description: "Kantenerkennung niedrige Schwelle. Niedrig = empfindlicher.",
+        min: 25,
+        max: 150,
+        step: 25,
+    },
+    {
+        path: "rectification.cannyHigh",
+        label: "Canny High",
+        type: "number",
+        group: "rectification",
+        description: "Kantenerkennung hohe Schwelle. Hoch = ignoriert schwache Kanten.",
+        min: 100,
+        max: 300,
+        step: 25,
+    },
+    {
+        path: "rectification.blurSize",
+        label: "Blur Size",
+        type: "number",
+        group: "rectification",
+        description: "Glättung vor Kantenerkennung. Höher = weniger Rauschen.",
+        min: 3,
+        max: 11,
+        step: 2,
+    },
+    {
+        path: "rectification.useAdaptiveThreshold",
+        label: "Adaptive Threshold",
+        type: "boolean",
+        group: "rectification",
+        description: "Robuster gegen Schatten, aber langsamer.",
+    },
+
+    // --- Preprocessing ---
+    {
+        path: "preprocessing.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Bildvorbereitung vor dem Scan.",
+    },
+    {
+        path: "preprocessing.grayscale",
+        label: "Graustufen",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Umwandlung in Graustufen (fast immer sinnvoll).",
+    },
+    {
+        path: "preprocessing.contrastBoost",
+        label: "Kontrast-Boost",
+        type: "number",
+        group: "preprocessing",
+        description: "Kontrast-Multiplikator. Höher = schärferer Text.",
+        min: 1.0,
+        max: 3.0,
+        step: 0.25,
+    },
+    {
+        path: "preprocessing.dpiScaling.enabled",
+        label: "DPI Scaling",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Automatisches Hochskalieren kleiner Texte.",
+    },
+    {
+        path: "preprocessing.dpiScaling.minCapitalHeightPx",
+        label: "Min Capital Height",
+        type: "number",
+        group: "preprocessing",
+        description: "Mindesthöhe für Großbuchstaben (Pixel).",
+        min: 15,
+        max: 35,
+        step: 5,
+    },
+    {
+        path: "preprocessing.dpiScaling.maxScale",
+        label: "Max Scale",
+        type: "number",
+        group: "preprocessing",
+        description: "Maximaler Skalierungsfaktor.",
+        min: 2,
+        max: 6,
+        step: 1,
+    },
+    {
+        path: "preprocessing.inversionDetection.enabled",
+        label: "Inversions-Erkennung",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Erkennt und korrigiert invertierte Bilder.",
+    },
+    {
+        path: "preprocessing.inversionDetection.brightnessThreshold",
+        label: "Brightness Threshold",
+        type: "number",
+        group: "preprocessing",
+        description: "Helligkeitsschwelle für Inversions-Erkennung.",
+        min: 64,
+        max: 192,
+        step: 16,
+    },
+    {
+        path: "preprocessing.clahe.enabled",
+        label: "CLAHE",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Lokaler Kontrastausgleich (hilft bei Schatten).",
+    },
+    {
+        path: "preprocessing.clahe.clipLimit",
+        label: "CLAHE Clip Limit",
+        type: "number",
+        group: "preprocessing",
+        description: "Stärke des lokalen Kontrastausgleichs.",
+        min: 1.0,
+        max: 4.0,
+        step: 0.5,
+    },
+    {
+        path: "preprocessing.clahe.tileSize",
+        label: "CLAHE Tile Size",
+        type: "number",
+        group: "preprocessing",
+        description: "Kachelgröße für CLAHE.",
+        min: 4,
+        max: 16,
+        step: 2,
+    },
+    {
+        path: "preprocessing.bilateralFilter.enabled",
+        label: "Bilateral Filter",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Rauschunterdrückung unter Erhalt der Kanten.",
+    },
+    {
+        path: "preprocessing.bilateralFilter.diameter",
+        label: "Bilateral Diameter",
+        type: "number",
+        group: "preprocessing",
+        description: "Suchradius für die Glättung.",
+        min: 3,
+        max: 9,
+        step: 2,
+    },
+    {
+        path: "preprocessing.bilateralFilter.sigmaColor",
+        label: "Bilateral Sigma Color",
+        type: "number",
+        group: "preprocessing",
+        description: "Wie stark Farbunterschiede ignoriert werden.",
+        min: 50,
+        max: 150,
+        step: 25,
+    },
+    {
+        path: "preprocessing.bilateralFilter.sigmaSpace",
+        label: "Bilateral Sigma Space",
+        type: "number",
+        group: "preprocessing",
+        description: "Wie stark räumliche Unterschiede ignoriert werden.",
+        min: 50,
+        max: 150,
+        step: 25,
+    },
+    {
+        path: "preprocessing.threshold.enabled",
+        label: "Binarisierung",
+        type: "boolean",
+        group: "preprocessing",
+        description: "Schwarz-Weiß-Umwandlung.",
+    },
+    {
+        path: "preprocessing.threshold.type",
+        label: "Threshold Type",
+        type: "enum",
+        group: "preprocessing",
+        description: "Art der Binarisierung.",
+        options: ["otsu", "binary", "adaptive"],
+    },
+    {
+        path: "preprocessing.threshold.value",
+        label: "Threshold Value",
+        type: "number",
+        group: "preprocessing",
+        description: "Schwellenwert für binary-Typ.",
+        min: 64,
+        max: 192,
+        step: 16,
+    },
+
+    // --- Layout Detection ---
+    {
+        path: "layout.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "layout",
+        description: "Layout-Erkennung für komplexe Dokumente.",
+    },
+    {
+        path: "layout.detectionThreshold",
+        label: "Detection Threshold",
+        type: "number",
+        group: "layout",
+        description: "Erkennungsschwelle für Layout-Blöcke.",
+        min: 0.1,
+        max: 0.9,
+        step: 0.1,
+    },
+    {
+        path: "layout.regionPadding",
+        label: "Region Padding",
+        type: "number",
+        group: "layout",
+        description: "Weißer Rand um erkannte Boxen (Pixel).",
+        min: 0,
+        max: 20,
+        step: 5,
+    },
+    {
+        path: "layout.internalPadding",
+        label: "Internal Padding",
+        type: "number",
+        group: "layout",
+        description: "Interner weißer Rand um Textregionen.",
+        min: 5,
+        max: 25,
+        step: 5,
+    },
+    {
+        path: "layout.nms.iouThreshold",
+        label: "NMS IoU Threshold",
+        type: "number",
+        group: "layout",
+        description: "Threshold für Non-Maximum-Suppression.",
+        min: 0.3,
+        max: 0.7,
+        step: 0.05,
+    },
+    {
+        path: "layout.nms.containmentThreshold",
+        label: "NMS Containment Threshold",
+        type: "number",
+        group: "layout",
+        description: "Threshold gegen Schachtelungen.",
+        min: 0.3,
+        max: 0.7,
+        step: 0.1,
+    },
+    {
+        path: "layout.psmModes.default",
+        label: "PSM Default",
+        type: "number",
+        group: "layout",
+        description: "Standard Page Segmentation Mode für Textblöcke (3-13).",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Title",
+        label: "PSM Title",
+        type: "number",
+        group: "layout",
+        description: "PSM für Title-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Section-header",
+        label: "PSM Section-header",
+        type: "number",
+        group: "layout",
+        description: "PSM für Section-header-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.List-item",
+        label: "PSM List-item",
+        type: "number",
+        group: "layout",
+        description: "PSM für List-item-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Table",
+        label: "PSM Table",
+        type: "number",
+        group: "layout",
+        description: "PSM für Table-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Caption",
+        label: "PSM Caption",
+        type: "number",
+        group: "layout",
+        description: "PSM für Caption-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Footnote",
+        label: "PSM Footnote",
+        type: "number",
+        group: "layout",
+        description: "PSM für Footnote-Regionen.",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.psmModes.regionOverrides.Text",
+        label: "PSM Text",
+        type: "number",
+        group: "layout",
+        description: "PSM für Text-Regionen (überschreibt Default).",
+        min: 3,
+        max: 13,
+        step: 1,
+        engineSpecific: "tesseract",
+    },
+    {
+        path: "layout.xyCut.enabled",
+        label: "XY-Cut",
+        type: "boolean",
+        group: "layout",
+        description: "Bestimmt logische Lesereihenfolge.",
+    },
+    {
+        path: "layout.xyCut.minGapThreshold",
+        label: "XY-Cut Min Gap",
+        type: "number",
+        group: "layout",
+        description: "Mindestabstand zwischen Blöcken.",
+        min: 10,
+        max: 50,
+        step: 5,
+    },
+    {
+        path: "layout.xyCut.spanningThreshold",
+        label: "XY-Cut Spanning Threshold",
+        type: "number",
+        group: "layout",
+        description: "Toleranz gegenüber Ausreißern.",
+        min: 0.5,
+        max: 0.9,
+        step: 0.1,
+    },
+    {
+        path: "layout.xyCut.maxDepth",
+        label: "XY-Cut Max Depth",
+        type: "number",
+        group: "layout",
+        description: "Analyse-Tiefe für komplexe Layouts.",
+        min: 6,
+        max: 16,
+        step: 2,
+    },
+
+    // --- Rotation Detection ---
+    {
+        path: "rotation.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "rotation",
+        description: "Automatische Drehungskorrektur (90/180/270°).",
+    },
+    {
+        path: "rotation.fastMode",
+        label: "Fast Mode",
+        type: "boolean",
+        group: "rotation",
+        description: "Prüft nur 0° und 180° (schneller).",
+    },
+    {
+        path: "rotation.skipThreshold",
+        label: "Skip Threshold",
+        type: "number",
+        group: "rotation",
+        description: "Bei hoher Konfidenz wird Drehungstest übersprungen.",
+        min: 30,
+        max: 90,
+        step: 10,
+    },
+    {
+        path: "rotation.minImprovement",
+        label: "Min Improvement",
+        type: "number",
+        group: "rotation",
+        description: "Mindest-Verbesserung durch Drehung (%).",
+        min: 3,
+        max: 20,
+        step: 2,
+    },
+    {
+        path: "rotation.angleStep",
+        label: "Angle Step",
+        type: "number",
+        group: "rotation",
+        description: "Schrittweite für Drehungstest (Grad).",
+        min: 10,
+        max: 90,
+        step: 10,
+    },
+
+    // --- Fallback OCR ---
+    {
+        path: "fallback.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "fallback",
+        description: "Sucht Text in ignorierten Bereichen.",
+    },
+    {
+        path: "fallback.gridSize",
+        label: "Grid Size",
+        type: "number",
+        group: "fallback",
+        description: "Gründlichkeit der Suche. Kleiner = gründlicher.",
+        min: 40,
+        max: 150,
+        step: 20,
+    },
+    {
+        path: "fallback.minAreaRatio",
+        label: "Min Area Ratio",
+        type: "number",
+        group: "fallback",
+        description: "Minimalfläche der Detektion.",
+        min: 0.05,
+        max: 0.3,
+        step: 0.05,
+    },
+    {
+        path: "fallback.minConfidence",
+        label: "Min Confidence",
+        type: "number",
+        group: "fallback",
+        description: "Mindestsicherheit für Fallback-Text.",
+        min: 0.3,
+        max: 0.7,
+        step: 0.05,
+    },
+
+    // --- Table Processing ---
+    {
+        path: "table.enabled",
+        label: "Aktiviert",
+        type: "boolean",
+        group: "table",
+        description: "Spezielle Tabellen-Erkennung.",
+    },
+    {
+        path: "table.outputFormat",
+        label: "Output Format",
+        type: "enum",
+        group: "table",
+        description: "Ausgabeformat für Tabellen.",
+        options: ["markdown", "tsv", "text"],
+    },
+    {
+        path: "table.rowClusterTolerance",
+        label: "Row Cluster Tolerance",
+        type: "number",
+        group: "table",
+        description: "Toleranz beim Zusammenfassen zu Zeilen.",
+        min: 5,
+        max: 40,
+        step: 5,
+    },
+    {
+        path: "table.colClusterTolerance",
+        label: "Col Cluster Tolerance",
+        type: "number",
+        group: "table",
+        description: "Toleranz beim Zusammenfassen zu Spalten.",
+        min: 10,
+        max: 80,
+        step: 10,
+    },
+
+    // --- Output Filtering ---
+    {
+        path: "output.minTextLength",
+        label: "Min Text Length",
+        type: "number",
+        group: "output",
+        description: "Ignoriert Fragmente unter X Zeichen.",
+        min: 1,
+        max: 5,
+        step: 1,
+    },
+    {
+        path: "output.minLineConfidence",
+        label: "Min Line Confidence",
+        type: "number",
+        group: "output",
+        description: "Minimale Zeilen-Konfidenz.",
+        min: 0.2,
+        max: 0.8,
+        step: 0.1,
+    },
+    {
+        path: "output.minWordConfidence",
+        label: "Min Word Confidence",
+        type: "number",
+        group: "output",
+        description: "Minimale Wort-Konfidenz.",
+        min: 0.3,
+        max: 0.9,
+        step: 0.1,
+    },
+];
+
+// =============================================================================
+// Group Labels
+// =============================================================================
+
+export const GROUP_LABELS: Record<ParameterGroup, string> = {
+    engine: "Engine",
+    paddleocr: "PaddleOCR",
+    rectification: "Entzerrung",
+    preprocessing: "Vorverarbeitung",
+    layout: "Layout-Erkennung",
+    rotation: "Drehungs-Erkennung",
+    fallback: "Fallback-OCR",
+    table: "Tabellen",
+    output: "Ausgabe-Filter",
+};
+
+// =============================================================================
+// Composable
+// =============================================================================
+
+export function useParameterRegistry() {
+    const allParameters = computed(() => PARAMETER_REGISTRY);
+
+    const parametersByGroup = computed(() => {
+        const groups = new Map<ParameterGroup, ParameterMetadata[]>();
+
+        for (const param of PARAMETER_REGISTRY) {
+            const existing = groups.get(param.group) ?? [];
+            existing.push(param);
+            groups.set(param.group, existing);
+        }
+
+        return groups;
+    });
+
+    const orderedGroups = computed<ParameterGroup[]>(() => [
+        "paddleocr",
+        "rectification",
+        "preprocessing",
+        "layout",
+        "rotation",
+        "fallback",
+        "table",
+        "output",
+    ]);
+
+    const getParameter = (path: string): ParameterMetadata | undefined => {
+        return PARAMETER_REGISTRY.find((p) => p.path === path);
+    };
+
+    const getParametersForEngine = (
+        engine: "tesseract" | "paddleocr"
+    ): ParameterMetadata[] => {
+        return PARAMETER_REGISTRY.filter(
+            (p) => !p.engineSpecific || p.engineSpecific === engine
+        );
+    };
+
+    const getGroupParameters = (group: ParameterGroup): ParameterMetadata[] => {
+        return PARAMETER_REGISTRY.filter((p) => p.group === group);
+    };
+
+    return {
+        allParameters,
+        parametersByGroup,
+        orderedGroups,
+        groupLabels: GROUP_LABELS,
+        getParameter,
+        getParametersForEngine,
+        getGroupParameters,
+    };
+}

@@ -1,0 +1,3111 @@
+{
+  "runTimestamp": "2026-02-26T11:45:27.687Z",
+  "configFile": "ocr_optimization/configs/phase2b_xycut_rotation.json",
+  "totalIterations": 80,
+  "scoringMode": "fulltext",
+  "best": {
+    "iterationId": 0,
+    "parameters": [
+      {
+        "path": "layout.xyCut.minGapThreshold",
+        "value": 30
+      },
+      {
+        "path": "layout.xyCut.spanningThreshold",
+        "value": 0.7
+      },
+      {
+        "path": "layout.xyCut.maxDepth",
+        "value": 16
+      },
+      {
+        "path": "rotation.enabled",
+        "value": true
+      },
+      {
+        "path": "rotation.fastMode",
+        "value": true
+      },
+      {
+        "path": "rotation.skipThreshold",
+        "value": 55
+      },
+      {
+        "path": "rotation.minImprovement",
+        "value": 3
+      }
+    ],
+    "customWER": 0.5595916401858811,
+    "customCER": 0.46978038698783664,
+    "originalWER": 0.6021832008049743,
+    "originalCER": 0.5210166340033386,
+    "combinedScore": 0.9621650973294743,
+    "feasible": true,
+    "droppedImage": "000015.jpg",
+    "droppedWER": 0.9855072463768116,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.4591439688715953,
+        "wer": 0.5382262996941896,
+        "ocrLength": 1734,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.7496757457846952,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000013.jpg",
+        "cer": 0.6909413854351687,
+        "wer": 0.7922077922077922,
+        "ocrLength": 184,
+        "groundTruthLength": 563,
+        "lengthRatio": 0.3268206039076377,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000014.jpg",
+        "cer": 0.6429065743944636,
+        "wer": 0.7292817679558011,
+        "ocrLength": 667,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.4615916955017301,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000015.jpg",
+        "cer": 0.9821428571428571,
+        "wer": 0.9855072463768116,
+        "ocrLength": 8,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.017857142857142856,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5755064456721916,
+        "wer": 0.6617647058823529,
+        "ocrLength": 1374,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6325966850828729,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.291497975708502,
+        "wer": 0.3523809523809524,
+        "ocrLength": 559,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7543859649122807,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.24108761329305137,
+        "wer": 0.29213483146067415,
+        "ocrLength": 1550,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.9365558912386707,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.22443890274314215,
+        "wer": 0.20577617328519857,
+        "ocrLength": 1245,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.7761845386533666,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.6987012987012987,
+        "wer": 0.875,
+        "ocrLength": 614,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.5316017316017316,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.40379931807111547,
+        "wer": 0.5895522388059702,
+        "ocrLength": 1955,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9522649780808573,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 0,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 55
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": true
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": false
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.5595916401858811,
+      "customCER": 0.46978038698783664,
+      "originalWER": 0.6021832008049743,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 30
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.5810693573157723,
+      "customCER": 0.5021361060664685,
+      "originalWER": 0.6229624215841951,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 11
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.5810693573157723,
+      "customCER": 0.5021361060664685,
+      "originalWER": 0.6229624215841951,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.5810693573157723,
+      "customCER": 0.5021361060664685,
+      "originalWER": 0.6229624215841951,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.5963598771934481,
+      "customCER": 0.5134249565252281,
+      "originalWER": 0.6367238894741033,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.5963598771934481,
+      "customCER": 0.5134249565252281,
+      "originalWER": 0.6367238894741033,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.5963598771934481,
+      "customCER": 0.5134249565252281,
+      "originalWER": 0.6367238894741033,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 10
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 6
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.5963598771934481,
+      "customCER": 0.5134249565252281,
+      "originalWER": 0.6367238894741033,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 50
+        },
+        {
+          "path": "layout.xyCut.spanningThreshold",
+          "value": 0.9
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 16
+        },
+        {
+          "path": "rotation.enabled",
+          "value": true
+        },
+        {
+          "path": "rotation.fastMode",
+          "value": false
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 80
+        },
+        {
+          "path": "rotation.minImprovement",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

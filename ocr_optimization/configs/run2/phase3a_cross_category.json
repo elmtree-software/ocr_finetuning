@@ -1,0 +1,137 @@
+{
+    "_description": "Run 2 Phase 3A: Cross-Category - Top parameters from Phase 1+2 combined. Updated with Phase 2A+2B best values.",
+    "baseConfig": {
+        "engine": "tesseract",
+        "rectification": {
+            "enabled": true,
+            "minContourConfidence": 0.8,
+            "minDocumentArea": 0.475,
+            "cannyLow": 195.5,
+            "cannyHigh": 96.333,
+            "blurSize": 1,
+            "useAdaptiveThreshold": true
+        },
+        "preprocessing": {
+            "enabled": true,
+            "grayscale": true,
+            "contrastBoost": 1.149,
+            "dpiScaling": {
+                "enabled": true,
+                "minCapitalHeightPx": 46,
+                "maxScale": 3.25
+            },
+            "inversionDetection": {
+                "enabled": true,
+                "brightnessThreshold": 106.667
+            },
+            "clahe": {
+                "enabled": true,
+                "clipLimit": 0.5,
+                "tileSize": 32
+            },
+            "bilateralFilter": {
+                "enabled": false
+            },
+            "threshold": {
+                "enabled": false
+            }
+        },
+        "layout": {
+            "enabled": true,
+            "detectionThreshold": 0.175,
+            "regionPadding": 14,
+            "internalPadding": 4,
+            "psmModes": {
+                "default": 6,
+                "regionOverrides": {
+                    "Caption": 3,
+                    "Footnote": 3,
+                    "Page-header": 11,
+                    "Page-footer": 7
+                }
+            },
+            "nms": {
+                "iouThreshold": 0.6,
+                "containmentThreshold": 0.3
+            },
+            "xyCut": {
+                "enabled": true,
+                "minGapThreshold": 30,
+                "spanningThreshold": 0.7,
+                "maxDepth": 14
+            }
+        },
+        "rotation": {
+            "enabled": true,
+            "fastMode": true,
+            "skipThreshold": 65,
+            "minImprovement": 3,
+            "angleStep": 90
+        },
+        "fallback": {
+            "enabled": true,
+            "gridSize": 120,
+            "minAreaRatio": 0.053,
+            "minConfidence": 0.4
+        },
+        "table": {
+            "enabled": false
+        },
+        "output": {
+            "minTextLength": 1,
+            "minLineConfidence": 0.6,
+            "minWordConfidence": 0.45
+        }
+    },
+    "iterateParams": {
+        "layout.regionPadding": {
+            "enabled": true,
+            "min": 10,
+            "max": 18,
+            "steps": 9
+        },
+        "layout.internalPadding": {
+            "enabled": true,
+            "min": 2,
+            "max": 6,
+            "steps": 5
+        },
+        "layout.detectionThreshold": {
+            "enabled": true,
+            "min": 0.1,
+            "max": 0.25,
+            "steps": 7
+        },
+        "preprocessing.contrastBoost": {
+            "enabled": true,
+            "min": 0.9,
+            "max": 1.4,
+            "steps": 6
+        },
+        "preprocessing.clahe.tileSize": {
+            "enabled": true,
+            "min": 24,
+            "max": 40,
+            "steps": 9
+        },
+        "preprocessing.dpiScaling.minCapitalHeightPx": {
+            "enabled": true,
+            "min": 35,
+            "max": 55,
+            "steps": 5
+        },
+        "output.minWordConfidence": {
+            "enabled": true,
+            "min": 0.3,
+            "max": 0.6,
+            "steps": 7
+        }
+    },
+    "optimizer": {
+        "iterations": 120,
+        "initialSamples": 30,
+        "candidateSamples": 400
+    },
+    "scoringMode": "customWER",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

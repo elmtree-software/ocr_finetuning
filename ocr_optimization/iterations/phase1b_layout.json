@@ -1,0 +1,3111 @@
+{
+  "runTimestamp": "2026-02-26T11:51:51.930Z",
+  "configFile": "ocr_optimization/configs/phase1b_layout.json",
+  "totalIterations": 80,
+  "scoringMode": "fulltext",
+  "best": {
+    "iterationId": 9,
+    "parameters": [
+      {
+        "path": "layout.enabled",
+        "value": true
+      },
+      {
+        "path": "layout.detectionThreshold",
+        "value": 0.1
+      },
+      {
+        "path": "layout.regionPadding",
+        "value": 7.5
+      },
+      {
+        "path": "layout.internalPadding",
+        "value": 5
+      },
+      {
+        "path": "layout.nms.iouThreshold",
+        "value": 0.3
+      },
+      {
+        "path": "layout.nms.containmentThreshold",
+        "value": 0.7
+      },
+      {
+        "path": "layout.xyCut.enabled",
+        "value": true
+      }
+    ],
+    "customWER": 0.586675241218546,
+    "customCER": 0.505178416850458,
+    "originalWER": 0.6280077170966913,
+    "originalCER": 0.554660575165412,
+    "combinedScore": 1.2598172345793521,
+    "feasible": true,
+    "droppedImage": "000013.jpg",
+    "droppedWER": 1,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.7029831387808041,
+        "wer": 0.7859327217125383,
+        "ocrLength": 802,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.346735840899265,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000013.jpg",
+        "cer": 1,
+        "wer": 1,
+        "ocrLength": 0,
+        "groundTruthLength": 563,
+        "lengthRatio": 0,
+        "isEmptyOutput": true,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000014.jpg",
+        "cer": 0.6546712802768166,
+        "wer": 0.7624309392265194,
+        "ocrLength": 689,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.47681660899653977,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000015.jpg",
+        "cer": 0.9821428571428571,
+        "wer": 0.9855072463768116,
+        "ocrLength": 8,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.017857142857142856,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5013812154696132,
+        "wer": 0.5772058823529411,
+        "ocrLength": 1389,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6395027624309392,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.291497975708502,
+        "wer": 0.3523809523809524,
+        "ocrLength": 559,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7543859649122807,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.15891238670694863,
+        "wer": 0.20599250936329588,
+        "ocrLength": 1463,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8839879154078549,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.22443890274314215,
+        "wer": 0.20577617328519857,
+        "ocrLength": 1245,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.7761845386533666,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.6701298701298701,
+        "wer": 0.875,
+        "ocrLength": 628,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.5437229437229437,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.3604481246955675,
+        "wer": 0.5298507462686567,
+        "ocrLength": 1919,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9347296639064783,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 9,
+      "customWER": 0.586675241218546,
+      "customCER": 0.505178416850458,
+      "originalWER": 0.6280077170966913,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.5898214424330405,
+      "customCER": 0.5087027279510168,
+      "originalWER": 0.6308392981897364,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.5898214424330405,
+      "customCER": 0.5087027279510168,
+      "originalWER": 0.6308392981897364,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.5904353159750908,
+      "customCER": 0.5079337929260261,
+      "originalWER": 0.6313917843775817,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.5904353159750908,
+      "customCER": 0.5079337929260261,
+      "originalWER": 0.6313917843775817,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.6002084990556611,
+      "customCER": 0.5139040493909055,
+      "originalWER": 0.640187649150095,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.6002084990556611,
+      "customCER": 0.5139040493909055,
+      "originalWER": 0.640187649150095,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.6008223725977113,
+      "customCER": 0.5122892858384258,
+      "originalWER": 0.6407401353379403,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.6094294432616161,
+      "customCER": 0.5373079765214883,
+      "originalWER": 0.6484864989354545,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.6162669722927175,
+      "customCER": 0.5395812821576401,
+      "originalWER": 0.6546402750634458,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.6162669722927175,
+      "customCER": 0.5395812821576401,
+      "originalWER": 0.6546402750634458,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.6162669722927175,
+      "customCER": 0.5376589445951642,
+      "originalWER": 0.6546402750634458,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.6234572289450904,
+      "customCER": 0.5395778873163969,
+      "originalWER": 0.6611115060505813,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.6234572289450904,
+      "customCER": 0.5395778873163969,
+      "originalWER": 0.6611115060505813,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.6259127231132917,
+      "customCER": 0.5420384793963662,
+      "originalWER": 0.6633214508019625,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.6259127231132917,
+      "customCER": 0.5420384793963662,
+      "originalWER": 0.6633214508019625,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.627099484859055,
+      "customCER": 0.5679993919914589,
+      "originalWER": 0.6643895363731495,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.6317993815443768,
+      "customCER": 0.5863373997928666,
+      "originalWER": 0.6673207420912377,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.6317993815443768,
+      "customCER": 0.5863373997928666,
+      "originalWER": 0.6673207420912377,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.6317993815443768,
+      "customCER": 0.5863373997928666,
+      "originalWER": 0.6673207420912377,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.6317993815443768,
+      "customCER": 0.5863373997928666,
+      "originalWER": 0.6673207420912377,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.6320560766397898,
+      "customCER": 0.5711040333155896,
+      "originalWER": 0.6688504689758108,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.638688144348204,
+      "customCER": 0.5830609702167171,
+      "originalWER": 0.6748193299133836,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.638688144348204,
+      "customCER": 0.5830609702167171,
+      "originalWER": 0.6748193299133836,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.638688144348204,
+      "customCER": 0.5830609702167171,
+      "originalWER": 0.6748193299133836,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.6390210625640335,
+      "customCER": 0.5790485009612117,
+      "originalWER": 0.6751189563076301,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 12.5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.6390210625640335,
+      "customCER": 0.5790485009612117,
+      "originalWER": 0.6751189563076301,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 12.5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 12.5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 7.5
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 12.5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 12.5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.6393743648588635,
+      "customCER": 0.46977561918295024,
+      "originalWER": 0.6754369283729771,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": false
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.6409904750067135,
+      "customCER": 0.582813283531991,
+      "originalWER": 0.676891427506042,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.6409904750067135,
+      "customCER": 0.582813283531991,
+      "originalWER": 0.676891427506042,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.6409904750067135,
+      "customCER": 0.582813283531991,
+      "originalWER": 0.676891427506042,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.6561594636359593,
+      "customCER": 0.5975490280568699,
+      "originalWER": 0.6905435172723633,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.45
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.6561594636359593,
+      "customCER": 0.5975490280568699,
+      "originalWER": 0.6905435172723633,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.6561594636359593,
+      "customCER": 0.5975490280568699,
+      "originalWER": 0.6905435172723633,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.6
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": false
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.6561594636359593,
+      "customCER": 0.5975490280568699,
+      "originalWER": 0.6905435172723633,
+      "parameters": [
+        {
+          "path": "layout.enabled",
+          "value": true
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.5
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 0
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 20
+        },
+        {
+          "path": "layout.nms.iouThreshold",
+          "value": 0.3
+        },
+        {
+          "path": "layout.nms.containmentThreshold",
+          "value": 0.7
+        },
+        {
+          "path": "layout.xyCut.enabled",
+          "value": true
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

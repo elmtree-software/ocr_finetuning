@@ -1,0 +1,2589 @@
+{
+  "runTimestamp": "2026-02-26T12:09:39.952Z",
+  "configFile": "ocr_optimization/configs/phase1a_rectification.json",
+  "totalIterations": 74,
+  "scoringMode": "fulltext",
+  "best": {
+    "iterationId": 9,
+    "parameters": [
+      {
+        "path": "rectification.enabled",
+        "value": true
+      },
+      {
+        "path": "rectification.minContourConfidence",
+        "value": 0.5
+      },
+      {
+        "path": "rectification.minDocumentArea",
+        "value": 0.3
+      },
+      {
+        "path": "rectification.cannyLow",
+        "value": 25
+      },
+      {
+        "path": "rectification.cannyHigh",
+        "value": 100
+      },
+      {
+        "path": "rectification.blurSize",
+        "value": 3
+      }
+    ],
+    "customWER": 0.5785868335328366,
+    "customCER": 0.5053967613751864,
+    "originalWER": 0.6207281501795529,
+    "originalCER": 0.5548570852376676,
+    "combinedScore": 1.2597979662685694,
+    "feasible": true,
+    "droppedImage": "000013.jpg",
+    "droppedWER": 1,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.5538261997405967,
+        "wer": 0.6238532110091743,
+        "ocrLength": 1438,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.6217034154777346,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000013.jpg",
+        "cer": 1,
+        "wer": 1,
+        "ocrLength": 0,
+        "groundTruthLength": 563,
+        "lengthRatio": 0,
+        "isEmptyOutput": true,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000014.jpg",
+        "cer": 0.8442906574394463,
+        "wer": 0.9060773480662984,
+        "ocrLength": 247,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.17093425605536333,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000015.jpg",
+        "cer": 0.9910714285714286,
+        "wer": 1,
+        "ocrLength": 5,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.011160714285714286,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": true
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.4581031307550645,
+        "wer": 0.5073529411764706,
+        "ocrLength": 1315,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6054327808471455,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.31713900134952766,
+        "wer": 0.38095238095238093,
+        "ocrLength": 510,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.6882591093117408,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.17583081570996978,
+        "wer": 0.2209737827715356,
+        "ocrLength": 1457,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8803625377643505,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.22443890274314215,
+        "wer": 0.20577617328519857,
+        "ocrLength": 1245,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.7761845386533666,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.6735930735930736,
+        "wer": 0.8809523809523809,
+        "ocrLength": 663,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.574025974025974,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.3102776424744277,
+        "wer": 0.48134328358208955,
+        "ocrLength": 1687,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.821724305893814,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 9,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.5785868335328366,
+      "customCER": 0.5053967613751864,
+      "originalWER": 0.6207281501795529,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.725
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.725
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.599817670243415,
+      "customCER": 0.5064454448993383,
+      "originalWER": 0.6398359032190737,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": false
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.725
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.725
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.725
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.175
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.95
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.05
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 300
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.6205988629439795,
+      "customCER": 0.5156954368494059,
+      "originalWER": 0.6585389766495816,
+      "parameters": [
+        {
+          "path": "rectification.enabled",
+          "value": true
+        },
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.3
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 100
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

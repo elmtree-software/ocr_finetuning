@@ -1,0 +1,265 @@
+{
+  "runTimestamp": "2026-02-26T13:34:19.187Z",
+  "runDirectory": "2026-02-26_14-34-19-187",
+  "configFile": "ocr_optimization/configs/phase4b_finetune_layout_output.json",
+  "phase": "4B - Fine-tune Layout + Output",
+  "totalIterations": 100,
+  "completedIterations": 100,
+  "scoringMode": "fulltext",
+  "elapsedSeconds": 6450,
+  "best": {
+    "iterationId": 12,
+    "parameters": [
+      {
+        "path": "layout.xyCut.minGapThreshold",
+        "value": 30
+      },
+      {
+        "path": "layout.xyCut.maxDepth",
+        "value": 14
+      },
+      {
+        "path": "rotation.skipThreshold",
+        "value": 65
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.4
+      },
+      {
+        "path": "output.minLineConfidence",
+        "value": 0.6
+      },
+      {
+        "path": "fallback.minAreaRatio",
+        "value": 0.053
+      }
+    ],
+    "customWER": 0.5498239988456866,
+    "customCER": 0.438428015308374,
+    "combinedScore": 0.7788276365359422,
+    "droppedImage": {
+      "filename": "000015.jpg",
+      "wer": 0.8260869565217391,
+      "cer": 0.6584821428571429
+    },
+    "perImage": [
+      {
+        "filename": "000015.jpg",
+        "wer": 0.8260869565217391,
+        "cer": 0.6584821428571429
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.75,
+        "cer": 0.5844155844155844
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.712707182320442,
+        "cer": 0.6754325259515571
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.6941896024464832,
+        "cer": 0.4751405101599654
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.6865671641791045,
+        "cer": 0.44422795908426693
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.6764705882352942,
+        "cer": 0.5741252302025782
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.6623376623376623,
+        "cer": 0.5293072824156305
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3904761904761905,
+        "cer": 0.3684210526315789
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.20599250936329588,
+        "cer": 0.1564954682779456
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16967509025270758,
+        "cer": 0.1552369077306733
+      }
+    ]
+  },
+  "top5": [
+    {
+      "iterationId": 12,
+      "customWER": 0.5498239988456866,
+      "customCER": 0.438428015308374,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 14
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 65
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.053
+        }
+      ]
+    },
+    {
+      "iterationId": 74,
+      "customWER": 0.5514177616334792,
+      "customCER": 0.4523436333664335,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 20
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 18
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.15
+        }
+      ]
+    },
+    {
+      "iterationId": 5,
+      "customWER": 0.5523243664726684,
+      "customCER": 0.4483400858009574,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 30
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 12
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 65
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.118
+        }
+      ]
+    },
+    {
+      "iterationId": 43,
+      "customWER": 0.5527252134531585,
+      "customCER": 0.44677128844993785,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 20
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 12
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.118
+        }
+      ]
+    },
+    {
+      "iterationId": 14,
+      "customWER": 0.5529371202294279,
+      "customCER": 0.4532239248019077,
+      "parameters": [
+        {
+          "path": "layout.xyCut.minGapThreshold",
+          "value": 40
+        },
+        {
+          "path": "layout.xyCut.maxDepth",
+          "value": 18
+        },
+        {
+          "path": "rotation.skipThreshold",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "fallback.minAreaRatio",
+          "value": 0.085
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "previousPhase": "4C",
+    "previousCustomWER": 0.5522,
+    "previousCustomCER": 0.4302,
+    "wer_delta": -0.0024,
+    "cer_delta": 0.0082
+  },
+  "errors": [],
+  "notes": "Layout + output parameters showed marginal improvement. Best custom WER of 54.98% found at iteration 12 (during initial random sampling), a small improvement of -0.24% over the Phase 4C baseline of 55.22%. CER increased slightly by +0.82% to 43.84%. The optimizer found output.minLineConfidence=0.6 consistently across all top 5 results. output.minWordConfidence=0.4 appeared in 3 of top 5. The layout and rotation parameters showed more variance, suggesting they have less impact. The consistent convergence on minLineConfidence=0.6 (up from 0.5) is the primary driver of the small WER improvement. 000015.jpg remains the hardest image at 82.6% WER."
+}

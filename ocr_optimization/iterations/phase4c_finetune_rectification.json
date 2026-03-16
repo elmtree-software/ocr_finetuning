@@ -1,0 +1,241 @@
+{
+  "runTimestamp": "2026-02-26T13:34:23.149Z",
+  "runDirectory": "2026-02-26_14-34-23-149",
+  "configFile": "ocr_optimization/configs/phase4c_finetune_rectification.json",
+  "phase": "4C - Fine-tune Rectification",
+  "totalIterations": 80,
+  "completedIterations": 80,
+  "scoringMode": "fulltext",
+  "elapsedSeconds": 5260,
+  "best": {
+    "iterationId": 1,
+    "parameters": [
+      {
+        "path": "rectification.minContourConfidence",
+        "value": 0.8
+      },
+      {
+        "path": "rectification.minDocumentArea",
+        "value": 0.475
+      },
+      {
+        "path": "rectification.cannyLow",
+        "value": 162.5
+      },
+      {
+        "path": "rectification.cannyHigh",
+        "value": 87.5
+      },
+      {
+        "path": "rectification.blurSize",
+        "value": 1
+      }
+    ],
+    "customWER": 0.5522345994667472,
+    "customCER": 0.43021461599939914,
+    "combinedScore": 0.765835060720944,
+    "droppedImage": {
+      "filename": "000015.jpg",
+      "wer": 0.8405797101449275,
+      "cer": 0.6629464285714286
+    },
+    "perImage": [
+      {
+        "filename": "000015.jpg",
+        "wer": 0.8405797101449275,
+        "cer": 0.6629464285714286
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.7619047619047619,
+        "cer": 0.580952380952381
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.7513812154696132,
+        "cer": 0.643598615916955
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.6828358208955224,
+        "cer": 0.4310764734534827
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.6764705882352942,
+        "cer": 0.5741252302025782
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.672782874617737,
+        "cer": 0.4565499351491569
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.6623376623376623,
+        "cer": 0.5275310834813499
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3904761904761905,
+        "cer": 0.3481781376518219
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.20224719101123595,
+        "cer": 0.15468277945619335
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16967509025270758,
+        "cer": 0.1552369077306733
+      }
+    ]
+  },
+  "top5": [
+    {
+      "iterationId": 1,
+      "customWER": 0.5522345994667472,
+      "customCER": 0.43021461599939914,
+      "parameters": [
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.475
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 162.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87.5
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "iterationId": 2,
+      "customWER": 0.5522345994667472,
+      "customCER": 0.43021461599939914,
+      "parameters": [
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.1
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 87.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87.5
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "iterationId": 5,
+      "customWER": 0.5522345994667472,
+      "customCER": 0.43021461599939914,
+      "parameters": [
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.475
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 200
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 200
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "iterationId": 6,
+      "customWER": 0.5522345994667472,
+      "customCER": 0.43021461599939914,
+      "parameters": [
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.35
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.6
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 125
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 162.5
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "iterationId": 9,
+      "customWER": 0.5522345994667472,
+      "customCER": 0.43021461599939914,
+      "parameters": [
+        {
+          "path": "rectification.minContourConfidence",
+          "value": 0.65
+        },
+        {
+          "path": "rectification.minDocumentArea",
+          "value": 0.35
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 50
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87.5
+        },
+        {
+          "path": "rectification.blurSize",
+          "value": 1
+        }
+      ]
+    }
+  ],
+  "comparison": {
+    "previousPhase": "3B",
+    "previousCustomWER": 0.5534,
+    "previousCustomCER": 0.4329,
+    "wer_delta": -0.0011654005332527584,
+    "cer_delta": -0.0026853840006008656
+  },
+  "errors": [],
+  "notes": "Rectification parameters had minimal impact. Best WER found at iteration 2 (during initial random sampling) and was never improved across 78 Bayesian iterations. Many iterations converged to the same WER of 58.1% (original) / 55.22% (custom). This suggests rectification parameters have limited sensitivity in the current pipeline."
+}

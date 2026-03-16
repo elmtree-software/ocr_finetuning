@@ -1,0 +1,2109 @@
+{
+  "runTimestamp": "2026-02-27T10:18:15.228Z",
+  "configFile": "ocr_optimization/configs/run2/phase1a_psm_core.json",
+  "totalIterations": 80,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 0,
+    "parameters": [
+      {
+        "path": "layout.psmModes.default",
+        "value": 4
+      },
+      {
+        "path": "layout.psmModes.regionOverrides.Title",
+        "value": 8
+      },
+      {
+        "path": "layout.psmModes.regionOverrides.Section-header",
+        "value": 4
+      },
+      {
+        "path": "layout.psmModes.regionOverrides.List-item",
+        "value": 4
+      }
+    ],
+    "customWER": 0.38803273277525346,
+    "customCER": 0.3107235248330955,
+    "originalWER": 0.4265269644845118,
+    "originalCER": 0.33970854657733923,
+    "combinedScore": 0.38803273277525346,
+    "feasible": true,
+    "droppedImage": "000011.jpg",
+    "droppedWER": 0.6574923547400612,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.5136186770428015,
+        "wer": 0.6574923547400612,
+        "ocrLength": 1849,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.7993947254647644,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5713627992633518,
+        "wer": 0.6507352941176471,
+        "ocrLength": 1408,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6482504604051565,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.2982456140350877,
+        "wer": 0.3333333333333333,
+        "ocrLength": 561,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.757085020242915,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.17583081570996978,
+        "wer": 0.23595505617977527,
+        "ocrLength": 1535,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.9274924471299094,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.15211970074812967,
+        "wer": 0.1624548736462094,
+        "ocrLength": 1423,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8871571072319202,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.2883116883116883,
+        "wer": 0.43452380952380953,
+        "ocrLength": 1068,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.9246753246753247,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.3784705309303458,
+        "wer": 0.5111940298507462,
+        "ocrLength": 1904,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.927423283000487,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 0,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 11
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 11
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 7
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 12
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 12
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 10
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 10
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 12
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 11
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 10
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 12
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 11
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 7
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 7
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 9
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 10
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.default",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Title",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Section-header",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.List-item",
+          "value": 13
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

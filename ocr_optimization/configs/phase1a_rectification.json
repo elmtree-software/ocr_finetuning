@@ -1,0 +1,47 @@
+{
+    "baseConfig": {
+        "engine": "tesseract"
+    },
+    "iterateParams": {
+        "rectification.enabled": {
+            "enabled": true
+        },
+        "rectification.minContourConfidence": {
+            "enabled": true,
+            "min": 0.5,
+            "max": 0.95,
+            "steps": 3
+        },
+        "rectification.minDocumentArea": {
+            "enabled": true,
+            "min": 0.05,
+            "max": 0.3,
+            "steps": 3
+        },
+        "rectification.cannyLow": {
+            "enabled": true,
+            "min": 25,
+            "max": 125,
+            "steps": 3
+        },
+        "rectification.cannyHigh": {
+            "enabled": true,
+            "min": 100,
+            "max": 300,
+            "steps": 3
+        },
+        "rectification.blurSize": {
+            "enabled": true,
+            "min": 3,
+            "max": 9,
+            "steps": 3
+        }
+    },
+    "optimizer": {
+        "iterations": 80,
+        "initialSamples": 20,
+        "candidateSamples": 400
+    },
+    "scoringMode": "fulltext",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

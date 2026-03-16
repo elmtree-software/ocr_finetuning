@@ -1,0 +1,100 @@
+{
+  "runTimestamp": "2026-02-27T09:05:28.855Z",
+  "configFile": "ocr_optimization/configs/run2/phase0_baseline.json",
+  "totalIterations": 1,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 0,
+    "parameters": [],
+    "customWER": 0.38803273277525346,
+    "customCER": 0.3107235248330955,
+    "originalWER": 0.4265269644845118,
+    "originalCER": 0.33970854657733923,
+    "combinedScore": 0.38803273277525346,
+    "feasible": true,
+    "droppedImage": "000011.jpg",
+    "droppedWER": 0.6574923547400612,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.5136186770428015,
+        "wer": 0.6574923547400612,
+        "ocrLength": 1849,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.7993947254647644,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5713627992633518,
+        "wer": 0.6507352941176471,
+        "ocrLength": 1408,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6482504604051565,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.2982456140350877,
+        "wer": 0.3333333333333333,
+        "ocrLength": 561,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.757085020242915,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.17583081570996978,
+        "wer": 0.23595505617977527,
+        "ocrLength": 1535,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.9274924471299094,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.15211970074812967,
+        "wer": 0.1624548736462094,
+        "ocrLength": 1423,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8871571072319202,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.2883116883116883,
+        "wer": 0.43452380952380953,
+        "ocrLength": 1068,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.9246753246753247,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.3784705309303458,
+        "wer": 0.5111940298507462,
+        "ocrLength": 1904,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.927423283000487,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 0,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [],
+      "feasible": true
+    }
+  ]
+}

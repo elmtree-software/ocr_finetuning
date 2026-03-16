@@ -1,0 +1,1609 @@
+{
+  "runTimestamp": "2026-02-27T10:00:29.535Z",
+  "configFile": "ocr_optimization/configs/run2/phase1b_psm_singleline.json",
+  "totalIterations": 60,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 16,
+    "parameters": [
+      {
+        "path": "layout.psmModes.regionOverrides.Caption",
+        "value": 3
+      },
+      {
+        "path": "layout.psmModes.regionOverrides.Footnote",
+        "value": 3
+      },
+      {
+        "path": "layout.psmModes.regionOverrides.Page-header",
+        "value": 11
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.45
+      }
+    ],
+    "customWER": 0.3852061371864897,
+    "customCER": 0.31711700864456477,
+    "originalWER": 0.42410416826557146,
+    "originalCER": 0.34636216700446365,
+    "combinedScore": 0.3852061371864897,
+    "feasible": true,
+    "droppedImage": "000011.jpg",
+    "droppedWER": 0.6574923547400612,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.5218331171638565,
+        "wer": 0.6574923547400612,
+        "ocrLength": 1805,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.7803718115002162,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5722836095764272,
+        "wer": 0.6470588235294118,
+        "ocrLength": 1405,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6468692449355433,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.3049932523616734,
+        "wer": 0.3238095238095238,
+        "ocrLength": 550,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7422402159244265,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.18731117824773413,
+        "wer": 0.22846441947565543,
+        "ocrLength": 1499,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.9057401812688822,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.15211970074812967,
+        "wer": 0.1624548736462094,
+        "ocrLength": 1423,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8871571072319202,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.2943722943722944,
+        "wer": 0.43452380952380953,
+        "ocrLength": 1056,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.9142857142857143,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.39162201656113005,
+        "wer": 0.5149253731343284,
+        "ocrLength": 1869,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9103750608865075,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 16,
+      "customWER": 0.3852061371864897,
+      "customCER": 0.31711700864456477,
+      "originalWER": 0.42410416826557146,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 11
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.3852061371864897,
+      "customCER": 0.31711700864456477,
+      "originalWER": 0.42410416826557146,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.3852061371864897,
+      "customCER": 0.31711700864456477,
+      "originalWER": 0.42410416826557146,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3142662607772706,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 12
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3151726051881467,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3151726051881467,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3151726051881467,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 12
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3151726051881467,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3151726051881467,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.38583268608991267,
+      "customCER": 0.3142662607772706,
+      "originalWER": 0.42464121018279105,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 7
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 9
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 11
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 9
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 12
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.3864255950070712,
+      "customCER": 0.3195836256126923,
+      "originalWER": 0.4251494178260697,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31087699321860807,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 12
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31277687245987706,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31087699321860807,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 10
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31087699321860807,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31087699321860807,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 7
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31277687245987706,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.3116826326949424,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.3116826326949424,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.3116826326949424,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.38741998767721425,
+      "customCER": 0.31277687245987706,
+      "originalWER": 0.4260017544004781,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 6
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 6
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 10
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 7
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 10
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 11
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 4
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.1
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.1
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 4
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.1
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 9
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 9
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 7
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 11
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 12
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 9
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 5
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 13
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 9
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3071247843922498,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.05
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.38803273277525346,
+      "customCER": 0.3107235248330955,
+      "originalWER": 0.4265269644845118,
+      "parameters": [
+        {
+          "path": "layout.psmModes.regionOverrides.Caption",
+          "value": 3
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Footnote",
+          "value": 8
+        },
+        {
+          "path": "layout.psmModes.regionOverrides.Page-header",
+          "value": 13
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.1
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

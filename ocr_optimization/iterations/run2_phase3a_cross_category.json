@@ -1,0 +1,3858 @@
+{
+  "runTimestamp": "2026-02-27T13:47:29.168Z",
+  "configFile": "ocr_optimization/configs/run2/phase3a_cross_category.json",
+  "totalIterations": 101,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 1,
+    "parameters": [
+      {
+        "path": "layout.regionPadding",
+        "value": 15
+      },
+      {
+        "path": "layout.internalPadding",
+        "value": 3
+      },
+      {
+        "path": "layout.detectionThreshold",
+        "value": 0.1
+      },
+      {
+        "path": "preprocessing.contrastBoost",
+        "value": 0.9
+      },
+      {
+        "path": "preprocessing.clahe.tileSize",
+        "value": 32
+      },
+      {
+        "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+        "value": 40
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.5
+      }
+    ],
+    "customWER": 0.3573947760675673,
+    "customCER": 0.30110185229382597,
+    "originalWER": 0.397724934108335,
+    "originalCER": 0.3420125847864469,
+    "combinedScore": 0.3573947760675673,
+    "feasible": true,
+    "droppedImage": "000017.jpg",
+    "droppedWER": 0.6397058823529411,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.479031560743623,
+        "wer": 0.5657492354740061,
+        "ocrLength": 1954,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.8447903156074362,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.5874769797421732,
+        "wer": 0.6397058823529411,
+        "ocrLength": 1195,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.5501841620626151,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.2726045883940621,
+        "wer": 0.3142857142857143,
+        "ocrLength": 545,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7354925775978407,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.16858006042296073,
+        "wer": 0.21722846441947566,
+        "ocrLength": 1464,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8845921450151057,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.22443890274314215,
+        "wer": 0.20577617328519857,
+        "ocrLength": 1245,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.7761845386533666,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.3463203463203463,
+        "wer": 0.40476190476190477,
+        "ocrLength": 992,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.8588744588744589,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.31563565513882125,
+        "wer": 0.43656716417910446,
+        "ocrLength": 1830,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.8913784705309303,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 1,
+      "customWER": 0.3573947760675673,
+      "customCER": 0.30110185229382597,
+      "originalWER": 0.397724934108335,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.35809512423592943,
+      "customCER": 0.29901106796398874,
+      "originalWER": 0.3956236932070309,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.3639794828726179,
+      "customCER": 0.267628890105487,
+      "originalWER": 0.3933899769160254,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.36407346658182743,
+      "customCER": 0.3013348916272957,
+      "originalWER": 0.40293234662889704,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.36911496795621956,
+      "customCER": 0.30151088951234467,
+      "originalWER": 0.4014682918616335,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.3691848887832134,
+      "customCER": 0.29771328337061986,
+      "originalWER": 0.4088811651755275,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.3712909905191233,
+      "customCER": 0.2976775899090697,
+      "originalWER": 0.4099925397110179,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.37191960156445375,
+      "customCER": 0.31074635335939665,
+      "originalWER": 0.41446319714698926,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.3733139169929393,
+      "customCER": 0.3065668667891233,
+      "originalWER": 0.406117811204032,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.37344092996945943,
+      "customCER": 0.2980266308489241,
+      "originalWER": 0.4188317214864274,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 82,
+      "customWER": 0.3738108290720989,
+      "customCER": 0.2925952316020851,
+      "originalWER": 0.4149470971878495,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.37406671436939215,
+      "customCER": 0.3166682702015122,
+      "originalWER": 0.39678407450149583,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.37464368102238704,
+      "customCER": 0.32190998003618343,
+      "originalWER": 0.41767186638965637,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 99,
+      "customWER": 0.3752987486297243,
+      "customCER": 0.2973278882832806,
+      "originalWER": 0.4146468265565704,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.3757607580440729,
+      "customCER": 0.30699599762794905,
+      "originalWER": 0.4118915741218103,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.3759553549386783,
+      "customCER": 0.29908106553364694,
+      "originalWER": 0.4136340017121444,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.3764262038084191,
+      "customCER": 0.32184867702655706,
+      "originalWER": 0.4226947190354383,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 96,
+      "customWER": 0.3766366107952957,
+      "customCER": 0.31681887352523275,
+      "originalWER": 0.4259331718568677,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.3767399529035628,
+      "customCER": 0.3097792414896053,
+      "originalWER": 0.41422620690117523,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.3782574101329543,
+      "customCER": 0.313932587949677,
+      "originalWER": 0.4145567717105994,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.37872080301192357,
+      "customCER": 0.2988936412920156,
+      "originalWER": 0.41863043619509416,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.378787297499627,
+      "customCER": 0.3110345366029342,
+      "originalWER": 0.4142335857117816,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 88,
+      "customWER": 0.3800304884704644,
+      "customCER": 0.31404597619953084,
+      "originalWER": 0.4109304580074492,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.380651312014918,
+      "customCER": 0.32880183069881863,
+      "originalWER": 0.4192347380295935,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.38066199505094583,
+      "customCER": 0.31878206524535163,
+      "originalWER": 0.4219566772782681,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.38395801620919817,
+      "customCER": 0.32142070686265484,
+      "originalWER": 0.41648127033746035,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.3851163992850195,
+      "customCER": 0.3260331910776833,
+      "originalWER": 0.4241123758577478,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.38531147237554336,
+      "customCER": 0.3150274237730088,
+      "originalWER": 0.41482579985130613,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.38551815726587946,
+      "customCER": 0.3039370672560181,
+      "originalWER": 0.41710379866487146,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 80,
+      "customWER": 0.38559168592166243,
+      "customCER": 0.32216918830134433,
+      "originalWER": 0.41962904664844985,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 81,
+      "customWER": 0.38567389279000114,
+      "customCER": 0.321922304233296,
+      "originalWER": 0.41408602575277415,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.38570446805167585,
+      "customCER": 0.30684999341414704,
+      "originalWER": 0.4232206930176443,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.3864330031347383,
+      "customCER": 0.32307845483852266,
+      "originalWER": 0.42306502309508176,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.38645104302466904,
+      "customCER": 0.3130614156807234,
+      "originalWER": 0.4260449744055923,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.38709083406115513,
+      "customCER": 0.3135955105271196,
+      "originalWER": 0.42527953843897326,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.3878830849245664,
+      "customCER": 0.32478948471289976,
+      "originalWER": 0.4165048290950065,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.3879472019128305,
+      "customCER": 0.31460119224935384,
+      "originalWER": 0.4175601866735826,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.38841011093652317,
+      "customCER": 0.3208312221998096,
+      "originalWER": 0.41965764610885653,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.38896170797093976,
+      "customCER": 0.3316481828198254,
+      "originalWER": 0.4325656928960173,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 90,
+      "customWER": 0.39006192610581647,
+      "customCER": 0.28402921800843517,
+      "originalWER": 0.4299270290991032,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.3903988174210255,
+      "customCER": 0.30587663830836,
+      "originalWER": 0.4342343729925959,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 84,
+      "customWER": 0.3907997897624496,
+      "customCER": 0.30785242636348276,
+      "originalWER": 0.4219087756723138,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.39135268672759715,
+      "customCER": 0.32287290895326975,
+      "originalWER": 0.43243074327634146,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.3917856465538642,
+      "customCER": 0.3363201133427492,
+      "originalWER": 0.4280337524832696,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.3929317500707499,
+      "customCER": 0.3189602224210796,
+      "originalWER": 0.4241730422187903,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 83,
+      "customWER": 0.39344472839603833,
+      "customCER": 0.3078965968727837,
+      "originalWER": 0.433351784003327,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.3937501888504625,
+      "customCER": 0.333259928283906,
+      "originalWER": 0.43011702513089006,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 85,
+      "customWER": 0.39387818222402365,
+      "customCER": 0.3177944369032517,
+      "originalWER": 0.43284796571582984,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.3952849266215202,
+      "customCER": 0.3126342568742118,
+      "originalWER": 0.4328282564318914,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.39547061107329395,
+      "customCER": 0.33626961956483487,
+      "originalWER": 0.43508664872250014,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.3956878865407461,
+      "customCER": 0.32227251154097936,
+      "originalWER": 0.4352744909845051,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.3957733828276842,
+      "customCER": 0.33186508599974174,
+      "originalWER": 0.43578303936562535,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.39613811859431913,
+      "customCER": 0.29601689245137586,
+      "originalWER": 0.4351351940892482,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.3963194287214502,
+      "customCER": 0.3108917197134036,
+      "originalWER": 0.4336298467241089,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.3973434573866612,
+      "customCER": 0.33022644222640374,
+      "originalWER": 0.4248018547322766,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.3977113465169558,
+      "customCER": 0.3561999757553252,
+      "originalWER": 0.42739609517967114,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.39794490366356383,
+      "customCER": 0.32415761276963445,
+      "originalWER": 0.4428868068972967,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 91,
+      "customWER": 0.3980321387449392,
+      "customCER": 0.3017196144122917,
+      "originalWER": 0.43885948026877136,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.3985458015491854,
+      "customCER": 0.3080820811216089,
+      "originalWER": 0.4302957023326788,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 97,
+      "customWER": 0.39888533682305405,
+      "customCER": 0.3014354670095654,
+      "originalWER": 0.4369647424869875,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.2
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.3992624795787194,
+      "customCER": 0.3199403171683443,
+      "originalWER": 0.43746307773414045,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.3999859717701859,
+      "customCER": 0.3624310128948795,
+      "originalWER": 0.4267245419891239,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.4007847824627973,
+      "customCER": 0.31395491272889264,
+      "originalWER": 0.4364919984134901,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.40239416966279246,
+      "customCER": 0.3358043374913205,
+      "originalWER": 0.4309730715938834,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 92,
+      "customWER": 0.40253541111198715,
+      "customCER": 0.34754965983319347,
+      "originalWER": 0.4341522396687281,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.4026487696478854,
+      "customCER": 0.285642597103536,
+      "originalWER": 0.4338880210427253,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 98,
+      "customWER": 0.40327996452624576,
+      "customCER": 0.33269878937745734,
+      "originalWER": 0.42985221449188415,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.40357808571893244,
+      "customCER": 0.3317125852562646,
+      "originalWER": 0.4367934487464157,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.4038307852169885,
+      "customCER": 0.3290790046818594,
+      "originalWER": 0.43910285791708253,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.4041536790790627,
+      "customCER": 0.3089891328317295,
+      "originalWER": 0.4341275232442386,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.4064597260999295,
+      "customCER": 0.3561512311115255,
+      "originalWER": 0.44363214618089203,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 95,
+      "customWER": 0.407486002651598,
+      "customCER": 0.3199415714165916,
+      "originalWER": 0.4388324758420425,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.4076507469830049,
+      "customCER": 0.30308183704760955,
+      "originalWER": 0.43678932528643755,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.410311862425569,
+      "customCER": 0.3563967586815406,
+      "originalWER": 0.442128385355599,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.4114638918055656,
+      "customCER": 0.3407367760793864,
+      "originalWER": 0.45097953504697236,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.41179216246715894,
+      "customCER": 0.3715480506541417,
+      "originalWER": 0.4477659339277264,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.41223125581935305,
+      "customCER": 0.31871926124460165,
+      "originalWER": 0.44682847137457155,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.4126376915941999,
+      "customCER": 0.31753514357021523,
+      "originalWER": 0.44350037430763356,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.4127200034295044,
+      "customCER": 0.294433684945142,
+      "originalWER": 0.4437556342196101,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.41283400005951637,
+      "customCER": 0.33301729957912385,
+      "originalWER": 0.44166898563423823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.4133955697877487,
+      "customCER": 0.30865571344505693,
+      "originalWER": 0.44520843509111535,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.41362216855844736,
+      "customCER": 0.35429210941643663,
+      "originalWER": 0.44568467326331734,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.41418392563081197,
+      "customCER": 0.35031725495387095,
+      "originalWER": 0.4448257177675866,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 34
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.4152306903299548,
+      "customCER": 0.33829208815922057,
+      "originalWER": 0.4494026275348936,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.41552398641797056,
+      "customCER": 0.3266939072363058,
+      "originalWER": 0.4500908961782692,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.4162761346743409,
+      "customCER": 0.35831146006916614,
+      "originalWER": 0.44796457802018336,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.4170918029706272,
+      "customCER": 0.31947535846334724,
+      "originalWER": 0.4515198647311259,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 17
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 36
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.41788767988814896,
+      "customCER": 0.35605534170152864,
+      "originalWER": 0.4469499441058083,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.41799911882097923,
+      "customCER": 0.3126177308514109,
+      "originalWER": 0.4465331022834257,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 89,
+      "customWER": 0.4182694071076924,
+      "customCER": 0.36567829002859437,
+      "originalWER": 0.4496730972487703,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 87,
+      "customWER": 0.41915731072935847,
+      "customCER": 0.3421927609986101,
+      "originalWER": 0.44708896620838845,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 45
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.4199836463505319,
+      "customCER": 0.3295304766235717,
+      "originalWER": 0.448234125880185,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 50
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 93,
+      "customWER": 0.4204798748044602,
+      "customCER": 0.34273140921006395,
+      "originalWER": 0.45171756853051587,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 11
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.25
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 86,
+      "customWER": 0.42266437965356585,
+      "customCER": 0.35759430205784487,
+      "originalWER": 0.44221572677788634,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 2
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.175
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 38
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.42387049111777036,
+      "customCER": 0.3095690784152129,
+      "originalWER": 0.45522932852111403,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 40
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.35
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.4260537948993506,
+      "customCER": 0.3298309509042481,
+      "originalWER": 0.45184863092213234,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.125
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.45
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.4279417432233577,
+      "customCER": 0.3235053429896092,
+      "originalWER": 0.4537447357816636,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.4289312960567567,
+      "customCER": 0.37672383458860104,
+      "originalWER": 0.4602722598791423,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 55
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.43053446136554757,
+      "customCER": 0.35230216389940927,
+      "originalWER": 0.46732573752695694,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.225
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 94,
+      "customWER": 0.4314768375953902,
+      "customCER": 0.3474784663192863,
+      "originalWER": 0.4650753846055726,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 35
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.55
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 100,
+      "customWER": 0.4566591040222338,
+      "customCER": 0.3903134782633737,
+      "originalWER": 0.49016158496023404,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 18
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 6
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.1
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.9
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 40
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.3
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

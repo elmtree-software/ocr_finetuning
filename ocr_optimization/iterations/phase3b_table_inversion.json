@@ -1,0 +1,4490 @@
+{
+  "runTimestamp": "2026-02-26T13:05:31.473Z",
+  "runDirectory": "2026-02-26_12-56-05-684",
+  "configFile": "ocr_optimization/configs/phase3b_table_inversion.json",
+  "phase": "3B - Table Processing + Inversion Detection",
+  "totalIterations": 60,
+  "completedIterations": 60,
+  "scoringMode": "fulltext",
+  "elapsedSeconds": 4014,
+  "best": {
+    "iterationId": 2,
+    "parameters": [
+      {
+        "path": "preprocessing.inversionDetection.enabled",
+        "value": true
+      },
+      {
+        "path": "preprocessing.inversionDetection.brightnessThreshold",
+        "value": 106.667
+      },
+      {
+        "path": "table.enabled",
+        "value": false
+      },
+      {
+        "path": "table.outputFormat",
+        "value": "markdown"
+      },
+      {
+        "path": "table.rowClusterTolerance",
+        "value": 40
+      },
+      {
+        "path": "table.colClusterTolerance",
+        "value": 10
+      }
+    ],
+    "customWER": 0.5533741139622351,
+    "customCER": 0.43288710421087867,
+    "originalWER": 0.5849932243051421,
+    "originalCER": 0.45638040071020597,
+    "combinedScore": 0.7375425169487553,
+    "feasible": true,
+    "droppedImage": "000015.jpg",
+    "droppedWER": 0.8695652173913043,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "ocrText": "Techniker Krankenkasse, 20905 Hamburg\n00 3020 B310 EF ADDO 50AB\nDV 01 1.10 Deutsche Post\n*K4000*\n\nFachzentrum\nAmbulante Leistungen\n\nTel. 040 - 46 06 62 01 90\n\nHerrn\nReyk Buchenberg\nVorderhs Etage 3 re\nKörtestr 16\n10967 Berlın\n\nGeschäftszeichen\nH041574180\n\nInformation zur Früherkennung und Vorbeugung von Darmkrebs\n\nGuten Tag Herr Buchenberg,\n\nalle gesetzlich Krankenversicherten ab 50 Jahre haben in Deutschland Anspruch auf eine\nkostenfreie Darmkrebs-Früherkennung. Wir möchten Sie über diese Angebote informieren und\nIhnen dabei helfen, zu entscheiden, ob Sie die Darmkrebs-Früherkennung wahrnehmen wollen\n\neinen Darmkrebs entdecken, bevor er Beschwerden verur-\ngschancen. Zum anderen sollen sie Darmpolypen finden, aus\nDie Untersuchungen sollen zum\ntwickeln kann. Die Entfernung von Polypen senkt das Risiko,\nsacht. Das verbessert dıe Heılun\ndenen sich mit der Zeıt Krebs en\nan Darmkrebs zu erkranken.\n\nZur Früherkennung von Darmkrebs gibt es 2 Möglichkeiten:\n\nauf nicht sichtbares Blut untersucht. Dies\nn Finden sich Blutspuren, wird zu ener\nst wird eine Stuhlprobe\nt manchmal Darmkrebs,\n= Stuhltest Bei diesem Te\nkann auf Darmpolypen oder Darmkrebs hinweise\nDer Nachteil des Stuhltests: Er ubersieh\nDarmspiegelung geraten\nkann aber auch falschen Alarm auslosen.\n\n| - 8696/59 -\n\n= Darmspiegelung Hierbe\nden wird, kann er vorsorg\nund viele Polypen. Ihr Nachtel\nlen Komplikationen wie Blutung\n| wird der ganze Dickdarm u\nlich entfernt werden. Die Dar\n| Es ist eine Vorbereitung nötig und e\nen und Darmverletzungen auftreten.\nntersucht. Wenn dabei ein Polyp gefun-\nmspiegelung findet fast alle Tumore\ns können In seltenen Fal-\n\n-\nund Nachteilen enthalt die beiliegende\nur Untersuchung und ihren Vor-\nr Ihrem Arzt beraten \\assen.\nNähere Informationen z\nkönnen Sie sich von Ihrer Arztin ode\nBroschüre. Außerdem\n— . 84 . - um Ihrar\n\nen Stuhltest zum Beispiel In Ihrer\nSie einen Termin bei einer Fach-\nen. können Sie d\nterologie (Magen-\nWenn Sie das Angebot annehmen mocht\nHausarztpraxis erhalten. Zur Darmspiegelung vereinbaren\nmit Schwerpunkt Gastroen\närztin bzw. einem Facharzt fur Innere Medizin\nDarm-Spezialistinnen).\n\nkasse, Tel 040 - 46 06 62 01 90\nTechniker Kranken\n8-18 Uhr, Fr. 8 - 16 Uhr | tk de\nTelefonservice: Mo - Do\n\norsitzender), Thomas Ballast (stellv Vorsitzender), Karen \\Walkenhorst\nts: Dominik Kruchen, Dieter F.Märtens\nVorstand: Dr. Jens Baas (V\nVorsitzende des Verwaltungsra",
+        "groundTruth": "Kein Text erkennbar.\nHerrn\nReyk Buchenberg\nVorderhs Etage 3 re\nKörtestr. 16\n10967 Berlin\nTK\nDie Techniker\n\nFachzentrum\nAmbulante Leistungen\nTel. 040 - 46 06 62 01 90\nGeschäftszeichen\nH041574180\n16. Januar 2026\n\nvon Darmkrebs\nInformation zur Früherkennung und Vorbeugung von Darmkrebs\n\nGuten Tag Herr Buchenberg,\n\nalle gesetzlich Krankenversicherten ab 50 Jahre haben in Deutschland Anspruch auf eine\nkostenfreie Darmkrebs-Früherkennung. Wir möchten Sie über diese Angebote informieren und\nIhnen dabei helfen, zu entscheiden, ob Sie die Darmkrebs-Früherkennung wahrnehmen wollen.\n\nDie Untersuchungen sollen zum einen Darmkrebs entdecken, bevor er Beschwerden verur-\nsacht. Das verbessert die Heilungschancen. Zum anderen sollen sie Darmpolypen finden, aus\ndenen sich mit der Zeit Krebs entwickeln kann. Die Entfernung von Polypen senkt das Risiko,\nan Darmkrebs zu erkranken.\n\nZur Früherkennung von Darmkrebs gibt es 2 Möglichkeiten:\n\n- Stuhltest: Bei diesem Test wird eine Stuhlprobe auf nicht sichtbares Blut untersucht. Dies\nkann auf Darmpolypen oder Darmkrebs hinweisen. Finden sich Blutspuren, wird zu einer\nDarmspiegelung geraten. Der Nachteil des Stuhltests: Er übersieht manchmal Darmkrebs,\nkann aber auch falschen Alarm auslösen.\n\n- Darmspiegelung: Hierbei wird der ganze Dickdarm untersucht. Wenn dabei ein Polyp gefun-\nden wird, kann er vorsorglich entfernt werden. Die Darmspiegelung findet fast alle Tumore\nund viele Polypen. Ihr Nachteil: Es ist eine Vorbereitung nötig und es können in seltenen Fäl-\nlen Komplikationen wie Blutungen und Darmverletzungen auftreten.\n\nNähere Informationen zur Untersuchung und ihren Vor- und Nachteilen enthält die beiliegende\nBroschüre. Außerdem können Sie sich von Ihrer Ärztin oder Ihrem Arzt beraten lassen.\n\nWenn Sie das Angebot annehmen möchten, können Sie den Stuhltest zum Beispiel in Ihrer\nHausarztpraxis erhalten. Zur Darmspiegelung vereinbaren Sie einen Termin bei einer Fach-\närztin bzw. einem Facharzt für Innere Medizin mit Schwerpunkt Gastroenterologie (Magen-\nDarm-Spezialist:innen).\n\nTechniker Krankenkasse, Tel. 040 - 46 06 62 01 90\nTelefon service: Mo.- Do. 8 - 18 Uhr, Fr. 8 - 16 Uhr | tk.de\nVorstand: Dr. Jens Baas (Vorsitzender), Thomas Ballast (stellv. Vorsitzender), Karen Walkenhorst\nVorsitzende des Verwaltungsrats: Dominik Kruchen, Dieter F. Märtens\n510",
+        "cer": 0.490272373540856,
+        "wer": 0.7217125382262997,
+        "ocrLength": 2379,
+        "groundTruthLength": 2313,
+        "lengthRatio": 1.0285343709468222,
+        "underproductionRate": 0,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8565211296081543,
+              "bbox": {
+                "x": 2147,
+                "y": 623,
+                "width": 281,
+                "height": 213
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7176832556724548,
+              "bbox": {
+                "x": 732,
+                "y": 922,
+                "width": 686,
+                "height": 154
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.23146319389343262,
+              "bbox": {
+                "x": 2024,
+                "y": 925,
+                "width": 417,
+                "height": 75
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.20032215118408203,
+              "bbox": {
+                "x": 2023,
+                "y": 1030,
+                "width": 430,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2676941156387329,
+              "bbox": {
+                "x": 721,
+                "y": 1083,
+                "width": 375,
+                "height": 184
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.4415958821773529,
+              "bbox": {
+                "x": 2149,
+                "y": 1102,
+                "width": 326,
+                "height": 70
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8296308517456055,
+              "bbox": {
+                "x": 705,
+                "y": 1449,
+                "width": 1268,
+                "height": 39
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8362331390380859,
+              "bbox": {
+                "x": 705,
+                "y": 1585,
+                "width": 547,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8701766133308411,
+              "bbox": {
+                "x": 699,
+                "y": 1635,
+                "width": 1779,
+                "height": 147
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.62126225233078,
+              "bbox": {
+                "x": 689,
+                "y": 1809,
+                "width": 1780,
+                "height": 206
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8434855937957764,
+              "bbox": {
+                "x": 682,
+                "y": 2054,
+                "width": 1154,
+                "height": 44
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8985581994056702,
+              "bbox": {
+                "x": 677,
+                "y": 2122,
+                "width": 1827,
+                "height": 209
+              }
+            },
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.5585823655128479,
+              "bbox": {
+                "x": 436,
+                "y": 2237,
+                "width": 83,
+                "height": 651
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8772661685943604,
+              "bbox": {
+                "x": 665,
+                "y": 2350,
+                "width": 1916,
+                "height": 222
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.47394242882728577,
+              "bbox": {
+                "x": 652,
+                "y": 2592,
+                "width": 1935,
+                "height": 148
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9470868706703186,
+              "bbox": {
+                "x": 644,
+                "y": 2742,
+                "width": 1909,
+                "height": 265
+              }
+            },
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.7167273759841919,
+              "bbox": {
+                "x": 459,
+                "y": 3285,
+                "width": 42,
+                "height": 266
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.43110933899879456,
+              "bbox": {
+                "x": 2013,
+                "y": 3288,
+                "width": 784,
+                "height": 81
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5564169883728027,
+              "bbox": {
+                "x": 1453,
+                "y": 3391,
+                "width": 1351,
+                "height": 91
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000013.jpg",
+        "ocrText": "Packliste\n\nEmpfänger: Buchenberg Revk\n\nWeserstr. 14\n12047 Berlin\nVS Unternehmen: DHL\nS. Material Bezeichnung\n1 10349432 VT WL FRITZBox 753\nEAN Code\nKunden Material-Nr\n\nIstmenge Gewicht (Kg)\n1 0,75\n0,89\n\nGesamt Brutto (Kg)\nGesamtanzahl Packstücke\n\nGepackt von: TWISNER\n\nAchtung bitt\n\nnd erforderlich.\n\naufbewahren: Packliste ist im Reklamationsfall als Nachweis zwi\n\nv3\n2024 11",
+        "groundTruth": "Packliste\n\nEmpfänger: Buchenberg Reyk\n-\nWeserstr. 14\n12047\n\nDatum: 25 November 2024\nLieferschein Nr: 6086161956\nBestell Nr: H XX 6000\nWeserstr. 14\n12047 Berlin\nLieferchein Nr:\n25 November 2024\n6086161956\nBestell Nr:\nH-XX-62061798-1-D010-1\nVersand Nr:\n00340434325968315431\n\nIstmenge  Gewicht (Kg)\n1          0,75\n\n0,89\n1\nGesamt Brutto (Kg)\nGesamtanzahl Packstücke\n0,89\n1\nGepackt von: TWISNER\nAchtung bitte aufbewahren: Packliste ist im Reklamationsfall als Nachweis zwingend erforderlich.\nSeite 1 / 1\nDruckzeitpunkt: 25.11.2024 11:09\nVersand-Nr: 00340434325968315431\nSeite 1 / 1",
+        "cer": 0.5275310834813499,
+        "wer": 0.6623376623376623,
+        "ocrLength": 367,
+        "groundTruthLength": 563,
+        "lengthRatio": 0.6518650088809946,
+        "underproductionRate": 0.3481349911190053,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.18740206956863403,
+              "bbox": {
+                "x": 2912,
+                "y": 2,
+                "width": 146,
+                "height": 2470
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11627990007400513,
+              "bbox": {
+                "x": 1437,
+                "y": 283,
+                "width": 342,
+                "height": 79
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.10180643200874329,
+              "bbox": {
+                "x": 355,
+                "y": 367,
+                "width": 816,
+                "height": 44
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.4988126754760742,
+              "bbox": {
+                "x": 2030,
+                "y": 709,
+                "width": 743,
+                "height": 115
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11214014887809753,
+              "bbox": {
+                "x": 345,
+                "y": 1316,
+                "width": 596,
+                "height": 109
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.39834314584732056,
+              "bbox": {
+                "x": 359,
+                "y": 1467,
+                "width": 824,
+                "height": 57
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.10200536251068115,
+              "bbox": {
+                "x": 744,
+                "y": 1620,
+                "width": 1537,
+                "height": 52
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000014.jpg",
+        "ocrText": "Absender:\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\n\nK\nTeleton 0800 / 9898 666\n\nDHL Retoure\n\nAuftrag 62061798-1\n25. November 2024\n\nRetourenlager 10527054\n\nOpmunder Weg 80\n59494 Soest\n\nAit diesem Adre ufkleber ist Ihre Rücksendung für Sie kostenfrei. Unfreie Pakete können wır leider nich\n\n2024-11-25 102206\n\nBestellnummer:\n\nLieferanschrift\n\nBuchenberg Reyk\nWeserstr 14\n12047 Berlin\n\nH-XX-62061798-1-D010-1\n\nVT WL FRITZBox 7530AX FTTX VDSL\n\nMAINGAU Energie GmbH | Ringstr. 4-6 | 63179 Obertshausen\nGaschafisfuhrer Betriebswirt (VWA) Dirk Schneider\n\nStellv. Geschäftsführer BetrieDsw\n\n5065 2124 0014 1210 40. BIL\n\n- -\n-\n- ’ ‘ 4\ny / » -",
+        "groundTruth": "MAINGAU\nAbsender:\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\nMAINGAU\nEnergie\n\nKundenbetreuung\nTelefon: 0800 / 9898 666\n\nMaingau Energie\nEmail: dsl@maingau-energie.de\nAuftrag: 62061798-1\n\n25. November 2024\n\nte können wir leider nicht annehmen.\nMit diesem Adressaufkleber ist Ihre Rücksendung für Sie kostenfrei. Unfreie Pakete können wir leider nicht annehmen.\nLieferanschrift\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\nBestellnummer:\nH-XX-62061798-1-D010-1\n2024-11-25 10:22:06\nMaterial\nbezeichnung\nMenge\ngeliefert\nEinheit\n10349432\nVT WL FRITZBox 7530AX FTTX VDSL\n1\nST\nMAINGAU Energie GmbH | Ringstr. 4-6 | 63179 Obertshausen\nGeschäftsführung: Dipl.-Kfm. Richard Schmitz Stellv. Geschäftsführer: Betriebswirt (VWA) Dirk Schneider\nSitz der Gesellschaft: Obertshausen | Amtsgericht Offenbach / Main HRB 12523\nSparkasse Langen-Seligenstadt, IBAN DE19 5065 2124 0014 1210 40, BIC HELADEF1SLS\n(hier abtrennen)\nTrennen Sie bitte diesen Abschnitt ab und legen ihn ausgefüllt der Rücksendung bei.\nBuchenberg Reyk Weserstr. 14, 12047 Berlin,\n2024-11-25* 10:22:06\nBestellnummer:\nH-XX-62061798-1-D010-1\n7061382180\nArt.-Nr.\nBezeichnung\nRetourengrund**\nAnzahl\nL F DL D U K\n10349432\nVT WL FRITZBox 7530AX FTTX VDSL\n**Zutreffendes bitte ankreuzen. Pro Artikel bitte nur einen Retourengrund ankreuzen.\nBedeutung: L=Leitung nicht geschaltet, F=Falschlieferung, DL=Doppellieferung, D=Gerät defekt, U=Paketinhalt unvollständig, K=Kündigung\nBemerkung:\nKein Text erkennbar.",
+        "cer": 0.6678200692041523,
+        "wer": 0.712707182320442,
+        "ocrLength": 617,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.4269896193771626,
+        "underproductionRate": 0.5730103806228374,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.5187809467315674,
+              "bbox": {
+                "x": 1900,
+                "y": 472,
+                "width": 588,
+                "height": 168
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5574613809585571,
+              "bbox": {
+                "x": 472,
+                "y": 560,
+                "width": 346,
+                "height": 165
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7790336608886719,
+              "bbox": {
+                "x": 1422,
+                "y": 562,
+                "width": 375,
+                "height": 266
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.35759204626083374,
+              "bbox": {
+                "x": 2069,
+                "y": 678,
+                "width": 292,
+                "height": 56
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3112356662750244,
+              "bbox": {
+                "x": 2082,
+                "y": 785,
+                "width": 195,
+                "height": 31
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.34206485748291016,
+              "bbox": {
+                "x": 471,
+                "y": 793,
+                "width": 431,
+                "height": 84
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.43041107058525085,
+              "bbox": {
+                "x": 2097,
+                "y": 841,
+                "width": 369,
+                "height": 108
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.41723138093948364,
+              "bbox": {
+                "x": 1082,
+                "y": 945,
+                "width": 456,
+                "height": 42
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.9143350124359131,
+              "bbox": {
+                "x": 479,
+                "y": 950,
+                "width": 481,
+                "height": 329
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7844651937484741,
+              "bbox": {
+                "x": 1089,
+                "y": 1034,
+                "width": 352,
+                "height": 87
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15470772981643677,
+              "bbox": {
+                "x": 540,
+                "y": 1423,
+                "width": 1516,
+                "height": 40
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1694408655166626,
+              "bbox": {
+                "x": 2348,
+                "y": 1463,
+                "width": 262,
+                "height": 32
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.21144479513168335,
+              "bbox": {
+                "x": 1271,
+                "y": 1474,
+                "width": 251,
+                "height": 41
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.1124250590801239,
+              "bbox": {
+                "x": 514,
+                "y": 1484,
+                "width": 257,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1501634418964386,
+              "bbox": {
+                "x": 518,
+                "y": 1530,
+                "width": 288,
+                "height": 118
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.20397481322288513,
+              "bbox": {
+                "x": 1272,
+                "y": 1533,
+                "width": 839,
+                "height": 77
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11803320050239563,
+              "bbox": {
+                "x": 856,
+                "y": 1885,
+                "width": 592,
+                "height": 40
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.18021076917648315,
+              "bbox": {
+                "x": 546,
+                "y": 2223,
+                "width": 1306,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.21030756831169128,
+              "bbox": {
+                "x": 547,
+                "y": 2266,
+                "width": 1004,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.28577280044555664,
+              "bbox": {
+                "x": 551,
+                "y": 2341,
+                "width": 1765,
+                "height": 56
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.5630778074264526,
+              "bbox": {
+                "x": 547,
+                "y": 2439,
+                "width": 2227,
+                "height": 738
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4102
+        }
+      },
+      {
+        "filename": "000015.jpg",
+        "ocrText": "Absender:\n\nPaketinhaltsschein\n\nBAUHAUS E-Business GmbH and Co.KG\nVor der Hecke 13\n34355 Staufenberg DE\nDE\n\n34129424\n\nLieferanschrift:\n\nLS-Nummer:\n\n7013626669\n\nReyk Buchenberg\nWeserstraße 14\n12047 Berlin\nDE\n\nKunden-Nr:\n\n1024282277\n\nDO-Nummer:\n\nPos Artikel-Nr\n\n13688773\nKOMPLETTSPUELE SAMARA 100X60 M. ST\n\n10\n\nBAUHAUS dankt für Ihren Einkauf\n\n» * A\n- ih 4\n\\ NIN\n-\n¥ - > Ad P\n| >) - -",
+        "groundTruth": "Absender\nBAU\nVord\n34355\nDE\nLiefers\nReyk\nWesen\n12047\nDE\nPos\n10\nKOMPLETTSPUELE\nAbsender:\nRAUHAUS E-Business GmbH and Co.\nfor der Hecke 13\n4355 Staufenberg DE\nReferanschrift:\neyk Buchenberg\neserstraße 14\n047 Berlin\nPos\nArtikel-Nr\n10\n13688773\nBAUHAUS dankt für Ihren Einkauf\nSPUELE SAMARA 100X60 M. ST\nH and Co.KG\nBAUHAUS\nPaketinhaltsschein\n18-11-2024 1\nSe\nLS-Nummer:\n34129424\nKunden-Nr:\n7013626669\nDO-Nummer:\n1024282277\nSeite 1 / 1\n24 11:08:22\nMenge\n1",
+        "cer": 0.6339285714285714,
+        "wer": 0.8695652173913043,
+        "ocrLength": 366,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.8169642857142857,
+        "underproductionRate": 0.18303571428571427,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7705045938491821,
+              "bbox": {
+                "x": 1062,
+                "y": 319,
+                "width": 1176,
+                "height": 201
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.20825731754302979,
+              "bbox": {
+                "x": 2429,
+                "y": 337,
+                "width": 411,
+                "height": 120
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.351302832365036,
+              "bbox": {
+                "x": 347,
+                "y": 706,
+                "width": 246,
+                "height": 41
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.12855717539787292,
+              "bbox": {
+                "x": 2191,
+                "y": 712,
+                "width": 433,
+                "height": 54
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8125708103179932,
+              "bbox": {
+                "x": 329,
+                "y": 780,
+                "width": 971,
+                "height": 223
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6464536786079407,
+              "bbox": {
+                "x": 2116,
+                "y": 788,
+                "width": 602,
+                "height": 144
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3823001980781555,
+              "bbox": {
+                "x": 2304,
+                "y": 975,
+                "width": 215,
+                "height": 51
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6615843176841736,
+              "bbox": {
+                "x": 319,
+                "y": 1129,
+                "width": 376,
+                "height": 45
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1092546284198761,
+              "bbox": {
+                "x": 1926,
+                "y": 1138,
+                "width": 280,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.14602625370025635,
+              "bbox": {
+                "x": 2317,
+                "y": 1158,
+                "width": 283,
+                "height": 55
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8335710763931274,
+              "bbox": {
+                "x": 303,
+                "y": 1226,
+                "width": 423,
+                "height": 224
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11684966087341309,
+              "bbox": {
+                "x": 1925,
+                "y": 1238,
+                "width": 270,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.12230616807937622,
+              "bbox": {
+                "x": 2328,
+                "y": 1258,
+                "width": 273,
+                "height": 54
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15923523902893066,
+              "bbox": {
+                "x": 1923,
+                "y": 1335,
+                "width": 303,
+                "height": 53
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.3825191557407379,
+              "bbox": {
+                "x": 2285,
+                "y": 1346,
+                "width": 543,
+                "height": 86
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.28076523542404175,
+              "bbox": {
+                "x": 355,
+                "y": 1649,
+                "width": 534,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.23593491315841675,
+              "bbox": {
+                "x": 2703,
+                "y": 1698,
+                "width": 138,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3672547936439514,
+              "bbox": {
+                "x": 680,
+                "y": 1810,
+                "width": 1123,
+                "height": 113
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15787085890769958,
+              "bbox": {
+                "x": 395,
+                "y": 1810,
+                "width": 58,
+                "height": 46
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2587059736251831,
+              "bbox": {
+                "x": 1262,
+                "y": 2077,
+                "width": 850,
+                "height": 53
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000017.jpg",
+        "ocrText": "B Deutschlandradio\n\nARD®\n\nBEITRAGSSERVICE\n\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären,\nKostenpflichtig erreichen Sie uns\nMontag - Freitag 7 - 19 Uhr für\n20 Cent pro Anruf aus allen deutschen Netzen\nunter 01806 999 555 20\n\n07 2FC7 F7B2 04 C003 1DB2\nDV 08 0,95 Deutsche Post\n* 8268 * 0012763 °\n\n* 8268 * 0012763 *\n* 0300\nReyk Buchenberg\nZusatz: Hinterhaus 3. Etage rechts\nWeserstr. 14\n12047 Berlin\n\nPostanschrift\nARD ZDF Deutschlandradio\nBeitragsservice, 50656 Köln\n\nDatum 19.08.2025\n\nBeitragsnummer 182 889 190\n\nZahlungserinnerung - Beitragsnummer 182 889 190 -\n\nSehr geehrte Dame, sehr geehrter Herr,\n\nEUR fiir den Zeitraum vom 01.01 2025 bis 31.07.2025 waren am\nIhre Rundfunkbeitrage von 128,52\nfür das Beitragskonto 182 889 190 jedoch nicht erfolgt.\n15.07.2025 fällig. Eine Zahlung Ist\n\nZahlen Sie umgehend den rückständigen Betrag von 128,52 EUR.\n\nh. erhalten Sie einen förmlichen Festsetzungsbescheid, der zu-\nr Festsetzungsbescheid ist ein vollstreckbarer Titel, der im Wege\nane durchgesetzt werden kann.\nKommen Sie dieser Aufforderung nicht nac\nsätzlich einen Säumniszuschlag enthält. De\nder Zwangsvollstreckung durch die zuständigen Vollstreckungsorg\n\nEinfach zahlen Sie die Rundfunkbeiträge im | astschriftverfahren. Ein Formular zur Erteilung eines SEPA-\nLastschriftmandats finden Sie unter rundfunkbeitrag.de.\n\nMit freundlichen Grüßen\nIhr Beitragsservice von ARD, ZDF und Deutschlandradio",
+        "groundTruth": "EU-Datenschutzinfo\nrundfunkbeitrag.de/EU-DSGVO\n\nARD\nZDF\nDeutschlandradio\n\nBEITRAGSSERVICE\n\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären.\nKostenpflichtig erreichen Sie uns\nReyk Buchenberg\nZusatz: Hinterhaus 3. Etage rechts\nWeserstr. 14\n12047 Berlin\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären.\nKostenpflichtig erreichen Sie uns\nMontag - Freitag 7 - 19 Uhr für\n20 Cent pro Anruf aus allen deutschen Netzen\nunter 01806 999 555 20.\n\nPostanschrift\nARD ZDF Deutschlandradio\nBeitragsservice, 50656 Köln\n\nDatum 19.08.2025\n\nBeitragsnummer 182 889 190\nZahlungserinnerung - Beitragsnummer 182 889 190 -\n\nSehr geehrte Dame, sehr geehrter Herr,\n\nIhre Rundfunkbeiträge von 128,52 EUR für den Zeitraum vom 01.01.2025 bis 31.07.2025 waren am\n15.07.2025 fällig. Eine Zahlung ist für das Beitragskonto 182 889 190 jedoch nicht erfolgt.\n\nZahlen Sie umgehend den rückständigen Betrag von 128,52 EUR.\n\nKommen Sie dieser Aufforderung nicht nach, erhalten Sie einen förmlichen Festsetzungsbescheid, der zu-\nsätzlich einen Säumniszuschlag enthält. Der Festsetzungsbescheid ist ein vollstreckbarer Titel, der im Wege\nder Zwangsvollstreckung durch die zuständigen Vollstreckungsorgane durchgesetzt werden kann.\n\nEinfach zahlen Sie die Rundfunkbeiträge im Lastschriftverfahren. Ein Formular zur Erteilung eines SEPA-\nLastschriftmandats finden Sie unter rundfunkbeitrag.de.\n\nMit freundlichen Grüßen\nIhr Beitragsservice von ARD, ZDF und Deutschlandradio\n\nSEPA-Überweisung/Zahlschein\n\nName und Sitz des überweisenden Kreditinstituts\nAngaben zum Zahlungsempfänger: Name, Vorname/Firma (max. 27 Stellen, bei maschineller Beschriftung max. 35 Stellen)\nRundfunk ARD, ZDF, DRadio\nIBAN\nDE8550050000000234567\nBIC des Kreditinstituts/Zahlungsdienstleisters (8 oder 11 Stellen)\nHELADEFFXXX\nBetrag: Euro, Cent\n128,52\nKunden-Referenznummer\nRF41X182889190\nDieser Beleg wird maschinell verarbeitet.\nZusätzliche Angaben sowie Änderungen der\nvorgedruckten Daten sind nicht möglich.\nAngaben zum Kontoinhaber/Zahler: Name, Vorname/Firma, Ort (max. 27 Stellen, keine Straßen- oder Postfachangaben)\nIBAN\nDE\n07\nDatum\nUnterschrift(en)",
+        "cer": 0.5741252302025782,
+        "wer": 0.6764705882352942,
+        "ocrLength": 1436,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6611418047882136,
+        "underproductionRate": 0.3388581952117864,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.10023146867752075,
+              "bbox": {
+                "x": 183,
+                "y": 230,
+                "width": 132,
+                "height": 1164
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.13218900561332703,
+              "bbox": {
+                "x": 2290,
+                "y": 130,
+                "width": 389,
+                "height": 44
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8294512629508972,
+              "bbox": {
+                "x": 548,
+                "y": 132,
+                "width": 901,
+                "height": 326
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.26078277826309204,
+              "bbox": {
+                "x": 1723,
+                "y": 142,
+                "width": 220,
+                "height": 73
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.35318657755851746,
+              "bbox": {
+                "x": 2013,
+                "y": 273,
+                "width": 380,
+                "height": 50
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.918246865272522,
+              "bbox": {
+                "x": 2018,
+                "y": 494,
+                "width": 555,
+                "height": 214
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3524423837661743,
+              "bbox": {
+                "x": 546,
+                "y": 587,
+                "width": 798,
+                "height": 160
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5347211956977844,
+              "bbox": {
+                "x": 544,
+                "y": 700,
+                "width": 675,
+                "height": 253
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9053983688354492,
+              "bbox": {
+                "x": 2023,
+                "y": 735,
+                "width": 449,
+                "height": 113
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6240277290344238,
+              "bbox": {
+                "x": 2025,
+                "y": 881,
+                "width": 306,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5429733395576477,
+              "bbox": {
+                "x": 2030,
+                "y": 948,
+                "width": 496,
+                "height": 35
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6475002765655518,
+              "bbox": {
+                "x": 528,
+                "y": 1352,
+                "width": 1120,
+                "height": 43
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5837917923927307,
+              "bbox": {
+                "x": 535,
+                "y": 1456,
+                "width": 802,
+                "height": 43
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8798414468765259,
+              "bbox": {
+                "x": 542,
+                "y": 1533,
+                "width": 1979,
+                "height": 102
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8906177878379822,
+              "bbox": {
+                "x": 553,
+                "y": 1693,
+                "width": 1312,
+                "height": 41
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8135571479797363,
+              "bbox": {
+                "x": 558,
+                "y": 1770,
+                "width": 2135,
+                "height": 149
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7870054841041565,
+              "bbox": {
+                "x": 561,
+                "y": 1959,
+                "width": 2083,
+                "height": 104
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8418568968772888,
+              "bbox": {
+                "x": 560,
+                "y": 2122,
+                "width": 1119,
+                "height": 91
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6393885016441345,
+              "bbox": {
+                "x": 983,
+                "y": 2631,
+                "width": 1869,
+                "height": 1382
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "ocrText": "33 VJ\n\nKundennummer _ 254\n\nFa. HEYSE GmbH & Co. KG\n\nHannoversche Straße 14\n\n30916 Isernhagen\n\nRECHNUNG\n\nRechnungsnummer:\n\nAussenaufnahmen Am Ortfelde 97 (Ish), Grimmstr. 9, Haltenhoffsstr.20,\nErnst-Grote-Str. 14\n\nX Honorar\n\na 100,00 400,00 EUR\n\nVielen Dank für Ihren Auftrag!\n\nBitte zahlen Sie den vollen Betrag umgehend ohne\nAbzug\nLieferung wie Rechnungsdatum\n\nSparkasse Hannover, BLZ 250 501 80, Kio Nr.\n32660197\nIBAN: DE43 2505 0180 0032 6601 97, BIC/SWIFT: SPKHDE 2H\nSteuernummer 26/139/15557 Ust-ident-Nr_DE 173549620",
+        "groundTruth": "Fa. HEYSE GmbH & Co. KG\nFa. HEYSE GmbH & Co. KG\nHannoversche Straße 14\n30916 Isernhagen\nKundennummer: 254\nDatum: 23.06.2013\nRechnungsnummer: 2248\nstr. 9. Haltenhoffsstr.20.\nRECHNUNG\nRechnungsnummer: 2248\nAussenaufnahmen Am Ortfelde 97 (Ish), Grimmstr. 9, Haltenhoffsstr.20,\nErnst-Grote-Str. 14\n\n4 x Honorar\ná 100,00 400,00 EUR\n\nNettosumme: 400,00 EUR\nMehrwertsteuer 7% 28,00 EUR\nENDBETRAG: 428,00 EUR\n\nVielen Dank für Ihren Auftrag!\n\nBitte zahlen Sie den vollen Betrag umgehend ohne\nBitte zahlen Sie den vollen Betrag umgehend ohne\nAbzug\nLieferung wie Rechnungsdatum\nBankverbindung: Sparkasse Hannover, BLZ 250 501 80, Kto.Nr.\n32660197\nIBAN: DE43 2505 0180 0032 6601 97, BIC/SWIFT: SPKHDE 2H\nSteuernummer 26/139/15557 Ust-Ident-Nr.: DE 173549620",
+        "cer": 0.3481781376518219,
+        "wer": 0.3904761904761905,
+        "ocrLength": 510,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.6882591093117408,
+        "underproductionRate": 0.3117408906882591,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.5049787163734436,
+              "bbox": {
+                "x": 1374,
+                "y": 2,
+                "width": 147,
+                "height": 42
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.793259859085083,
+              "bbox": {
+                "x": 182,
+                "y": 269,
+                "width": 471,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7644387483596802,
+              "bbox": {
+                "x": 180,
+                "y": 403,
+                "width": 408,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8212418556213379,
+              "bbox": {
+                "x": 179,
+                "y": 460,
+                "width": 323,
+                "height": 35
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.3302912414073944,
+              "bbox": {
+                "x": 175,
+                "y": 621,
+                "width": 365,
+                "height": 62
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1509862244129181,
+              "bbox": {
+                "x": 932,
+                "y": 669,
+                "width": 238,
+                "height": 25
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.522291898727417,
+              "bbox": {
+                "x": 177,
+                "y": 717,
+                "width": 1012,
+                "height": 62
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.24321913719177246,
+              "bbox": {
+                "x": 203,
+                "y": 978,
+                "width": 238,
+                "height": 26
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5008985996246338,
+              "bbox": {
+                "x": 962,
+                "y": 989,
+                "width": 362,
+                "height": 30
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.3250386118888855,
+              "bbox": {
+                "x": 794,
+                "y": 1505,
+                "width": 533,
+                "height": 188
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7149861454963684,
+              "bbox": {
+                "x": 162,
+                "y": 1586,
+                "width": 420,
+                "height": 31
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5402796268463135,
+              "bbox": {
+                "x": 146,
+                "y": 1783,
+                "width": 602,
+                "height": 87
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7518510222434998,
+              "bbox": {
+                "x": 144,
+                "y": 1892,
+                "width": 624,
+                "height": 98
+              }
+            }
+          ],
+          "imageWidth": 1534,
+          "imageHeight": 2046
+        }
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "ocrText": "Dear |\n\nGood afternoon. Your second grader participated in gifted screening through the\nIowa and CogAT assessments in December. Because your child showed such strong\npotential, we followed up with a second assessment (the NNAT-3) in January to see\nif they met the state’s criteria for gifted identification in cognition.\n\nWhile your child’s score was above average, it did not quite x 6 thresho\non the NNAT-3 required by the state for formal ed in this speciiiC\ncategory at this time.\n\nThe Good News: Please know that an \"above average\" score is a wonderful J\nachievement! We are sharing these results with your child’s teachers to ensure their\nlessons continue to challenge and support their high ability.\n\nWhat Happens Next?\n\ne Other Areas: Please keep in mind that students can be identified as gifted In\nseveral different categories. Your child may already be identified—or could\nqualify in the future—in areas such as Math, Reading, or Creative Thinking.\n\ne Future Testing: State rules require us to wait until next school year for\nanother cognitive re-test. If you would like to request a re-test then, please\nreach out to me.\n\ne 4th Grade Screening: All students will participate in another full\nround of gifted screening in the fourth grade.\n\nWe are so proud of the hard work your student put into these assessments. If you\nhave any questions about these results, please feel free to contact me using the\ninformation in the letterhead.\n\nSincerely,\n\nElementary Gilted Coordinator",
+        "groundTruth": "Gifted Education Services\nElementary Gifted Coordinator\nElementary G\nSecondary G\nGifted Coordinator,\nJanuary 2026\n\nated in gifted screening through the\nbecause your child showed such strong\nessment (the NNAT-3) in January to see\nification in cognition.\n\nit did not quite reach the 126 threshold\npotential, we followed up with a second assessment (the NNAT-3) in January to see\nif they met the state's criteria for gifted identification in cognition.\n\nWhile your child's score was above average, it did not quite reach the 126 threshold\non the NNAT-3 required by the state for formal gifted identification in this specific\ncategory at this time.\n\nThe Good News: Please know that an \"above average\" score is a wonderful\nachievement! We are sharing these results with your child's teachers to ensure their\nlessons continue to challenge and support their high ability.\n\nWhat Happens Next?\n\n• Other Areas: Please keep in mind that students can be identified as gifted in\nseveral different categories. Your child may already be identified—or could\nqualify in the future—in areas such as Math, Reading, or Creative Thinking.\n\n• Future Testing: State rules require us to wait until next school year for\nanother cognitive re-test. If you would like to request a re-test then, please\nreach out to me.\n\n• 4th Grade Screening: All [redacted] students will participate in another full\nround of gifted screening in the fourth grade.\n\nWe are so proud of the hard work your student put into these assessments. If you\nhave any questions about these results, please feel free to contact me using the\ninformation in the letterhead.\n\nSincerely,\nSincerely,\nElementary Gifted Coordinator",
+        "cer": 0.15468277945619335,
+        "wer": 0.20224719101123595,
+        "ocrLength": 1476,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8918429003021148,
+        "underproductionRate": 0.1081570996978852,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.1896660029888153,
+              "bbox": {
+                "x": 113,
+                "y": 24,
+                "width": 141,
+                "height": 48
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8974413871765137,
+              "bbox": {
+                "x": 244,
+                "y": 122,
+                "width": 512,
+                "height": 434
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7087873220443726,
+              "bbox": {
+                "x": 893,
+                "y": 88,
+                "width": 1200,
+                "height": 482
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1815119981765747,
+              "bbox": {
+                "x": 209,
+                "y": 722,
+                "width": 115,
+                "height": 39
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.931439995765686,
+              "bbox": {
+                "x": 196,
+                "y": 800,
+                "width": 1834,
+                "height": 189
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9121497273445129,
+              "bbox": {
+                "x": 179,
+                "y": 1027,
+                "width": 1868,
+                "height": 158
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9147621989250183,
+              "bbox": {
+                "x": 164,
+                "y": 1226,
+                "width": 1930,
+                "height": 157
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8612970113754272,
+              "bbox": {
+                "x": 151,
+                "y": 1443,
+                "width": 524,
+                "height": 46
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8498086929321289,
+              "bbox": {
+                "x": 213,
+                "y": 1530,
+                "width": 1875,
+                "height": 181
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6903228163719177,
+              "bbox": {
+                "x": 191,
+                "y": 1708,
+                "width": 1894,
+                "height": 178
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8569796085357666,
+              "bbox": {
+                "x": 190,
+                "y": 1882,
+                "width": 1910,
+                "height": 123
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.880614697933197,
+              "bbox": {
+                "x": 88,
+                "y": 2044,
+                "width": 2043,
+                "height": 216
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2162831425666809,
+              "bbox": {
+                "x": 70,
+                "y": 2399,
+                "width": 272,
+                "height": 60
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.36989283561706543,
+              "bbox": {
+                "x": 59,
+                "y": 2518,
+                "width": 837,
+                "height": 69
+              }
+            }
+          ],
+          "imageWidth": 2158,
+          "imageHeight": 2782
+        }
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "ocrText": "Your child was recently administered the Naglieri Nonverbal Ability Test® - Third Edition (NNAT3). This report contains an explanation of NNAT3\nand how your child performed.\n\nYour child's score has been placed on the graph to show how it\nrelates to the scores of other students of the same age. Most\nchildren’s scores will fall between 90 and 110. Scores in this range\nare considered to be average. Fewer children will have scores that\nfall between 70 and 89, or between 111 and 130, and an extremely\nsmall number of children will have scores that fall below 70 or above\n130. Use the Description on the graph to help you understand where\nyour child's score falls.\n\nPercentile Ranks range from a low of 1 to a high of 99. This score is\nused to compare your child's performance to that of a national sample\nof students of the same age. For example, if a child who is six years\nold has a Percentile Rank of 75, this means the student scored as\nwell as or higher than 75 percent of six year old students who were\ntested. Please note that Percentile Rank and percent correct\nrepresent two different performance measurements and have\ndifferent interpretations.\n\nFor Explanation of Scores, visit the Support section of the Platform.\n\nLevels A - D normative data copyright © 2015, 2018 Pearson Education, Inc. All rights reserved.\nLevels E - G normative data copyright © 2016 Pearson Education, Inc. All rights reserved.\n\n01/16/2026",
+        "groundTruth": "Home Report\nSCHOOL: \nElementary School -\nDISTRICT: \nCity School District\nSTUDENT NUMBER:\nTEST DATE: 01/13/2026\nElementary School -\nCity School District\nTEST NUMBER:\n01/13/2026\nAGE:\n8 YRS 1 MOS\n2\nLEVEL/FORM:\nLEVEL C FORM 1\nedition (NNAT3). This report contains an explanation of the NNAT3\n143 NAGLIERI ABILITY INDEX (NAI)\nYour child's score has been placed on the graph to show how it relates to the scores of other students of the same age. Most children's scores will fall between 90 and 110. Scores in this range are considered to be average. Fewer children will have scores that fall between 70 and 89, or between 111 and 130, and an extremely small number of children will have scores that fall below 70 or above 130. Use the Description on the graph to help you understand where your child's score falls.\n\n99 PERCENTILE RANK\nPercentile Ranks range from a low of 1 to a high of 99. This score is used to compare your child's performance to that of a national sample of students of the same age. For example, if a child who is six years old has a Percentile Rank of 75, this means the student scored as well as or higher than 75 percent of six year old students who were tested. Please note that Percentile Rank and percent correct represent two different performance measurements and have different interpretations.\n\nFor Explanation of Scores, visit the Support section of the Platform.\n\nLevels A - D normative data copyright © 2015, 2018 Pearson Education, Inc. All rights reserved.\nLevels E - G normative data copyright © 2016 Pearson Education, Inc. All rights reserved.\n01/16/2026\nKein Text erkennbar.",
+        "cer": 0.1552369077306733,
+        "wer": 0.16967509025270758,
+        "ocrLength": 1419,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8846633416458853,
+        "underproductionRate": 0.11533665835411472,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6253080368041992,
+              "bbox": {
+                "x": 6,
+                "y": 2,
+                "width": 2150,
+                "height": 142
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.2361253798007965,
+              "bbox": {
+                "x": 13,
+                "y": 262,
+                "width": 2112,
+                "height": 307
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2974815368652344,
+              "bbox": {
+                "x": 38,
+                "y": 643,
+                "width": 2071,
+                "height": 91
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.4642409086227417,
+              "bbox": {
+                "x": 75,
+                "y": 798,
+                "width": 2014,
+                "height": 1046
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9268211126327515,
+              "bbox": {
+                "x": 94,
+                "y": 1862,
+                "width": 961,
+                "height": 291
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9262288212776184,
+              "bbox": {
+                "x": 1121,
+                "y": 1867,
+                "width": 978,
+                "height": 295
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.45473816990852356,
+              "bbox": {
+                "x": 1188,
+                "y": 2205,
+                "width": 942,
+                "height": 30
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.508460283279419,
+              "bbox": {
+                "x": 67,
+                "y": 2321,
+                "width": 1324,
+                "height": 72
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.41690003871917725,
+              "bbox": {
+                "x": 1969,
+                "y": 2377,
+                "width": 162,
+                "height": 31
+              }
+            },
+            {
+              "label": "Page-footer",
+              "labelId": 4,
+              "score": 0.5498917698860168,
+              "bbox": {
+                "x": 4,
+                "y": 2454,
+                "width": 79,
+                "height": 23
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.1912512481212616,
+              "bbox": {
+                "x": 2,
+                "y": 2569,
+                "width": 2154,
+                "height": 305
+              }
+            }
+          ],
+          "imageWidth": 2158,
+          "imageHeight": 2876
+        }
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "ocrText": "Mustermarn GmbH\nkauptstraße 123\n10115 Berlin, Deutschland\nTel +49 1234 456789\n\nbs\nv\n™\narn |\nbe\n\nABC GmbH\nMichael Mayer\nABC Allee 17\n12345 Munchen\n\nDatum 29.04 2025\nKundennummer 21\n\nRechnung\n\nRechnung Re-172/2025\n\nSehr geehrte Damen und Herren\n\nhiermit erlauben wir uns Ihnen die nachstehenden Positionen ın Rechnung zu stel en\n\nPos. Bezeichnung\n1. Material\n1 Farbe blau Eimer 2 5\nPinsel Bren\nZum Malen\n2. Arbeit\nSumme Matenal\nSumme Arbeit.\nNetto\n19% USt.\nBrutto\nGesamtpreis\n41513 ¢\n315.10 ¢\n31510 €\n730.23 €\n138.74 €\n868.97 ¢\n\nBEISPIEL-RECHNUNG - ERSTELLT MIT DER RECHNUNGSSOFTWARE EA\n\nschone Gruße\n\nMax Mustermann\n\n.-",
+        "groundTruth": "MM\nMax Mustermann GmbH\n\nAbs.: Mustermann GmbH | Hauptstraße 123 | 10115 Berlin\n\nMustermann GmbH\nHauptstraße 123\n10115 Berlin Deutschland\nABC GmbH\nMichael Mayer\nABC-Allee 11\n12345 München\nHauptstraße 123\n10115 Berlin, Deutschland\nTel.: +49 1234 456789\noffice@mustermaenn.com\n\nRechnung: Re-172/2025\nDatum: 29.04.2025\nKundennummer: 21\nRechnung Re-172/2025\n\nRechnung\n\nSehr geehrte Damen und Herren,\nhiermit erlauben wir uns, Ihnen die nachstehenden Positionen in Rechnung zu stellen:\n\nPos. Bezeichnung Menge Einzelpreis Gesamtpreis\n1. Material\n1.1 Farbe blau - Eimer 2,5 Liter\n1 Eimer Farbe mit 2,5 Liter Inhalt.\n7,00 Eimer 42,02 294,12 €\n1.2 Pinsel - Breit\nPinsel zum Malen.\n12,00 10,08 121,01 €\n\nSumme Material: 415,13 €\n\n2. Arbeit\n2.1 Arbeitsstunde Meister\n5,00 Std. 63,02 315,10 €\n\nSumme Arbeit: 315,10 €\n\nNetto: 730,23 €\n19% USt.: 138,74 €\nBrutto: 868,97 €\n\nLeistungsdatum = Datum des Dokuments\n\nBEISPIEL-RECHNUNG - ERSTELLT MIT DER RECHNUNGS SOFTWARE EASYFIRMA\n\nschöne Grüße\n\nMax Mustermann\nMustermann GmbH\nHauptstraße 123 | 10115 | Berlin | Deutschland\nTel.: +49 1234 456789 | office@mustermann.com\nSt.-Nr.: 23/123/456/789 UID: DE123456789 IBAN: DE491700000122001632",
+        "cer": 0.580952380952381,
+        "wer": 0.7619047619047619,
+        "ocrLength": 606,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.5246753246753246,
+        "underproductionRate": 0.4753246753246753,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.9389350414276123,
+              "bbox": {
+                "x": 186,
+                "y": 21,
+                "width": 248,
+                "height": 129
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9137293100357056,
+              "bbox": {
+                "x": 755,
+                "y": 187,
+                "width": 228,
+                "height": 126
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6329167485237122,
+              "bbox": {
+                "x": 129,
+                "y": 237,
+                "width": 402,
+                "height": 17
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8743879795074463,
+              "bbox": {
+                "x": 145,
+                "y": 284,
+                "width": 143,
+                "height": 106
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8799989819526672,
+              "bbox": {
+                "x": 858,
+                "y": 427,
+                "width": 213,
+                "height": 77
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.873083770275116,
+              "bbox": {
+                "x": 528,
+                "y": 522,
+                "width": 149,
+                "height": 29
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.7493137121200562,
+              "bbox": {
+                "x": 129,
+                "y": 565,
+                "width": 220,
+                "height": 19
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3940907418727875,
+              "bbox": {
+                "x": 129,
+                "y": 607,
+                "width": 288,
+                "height": 17
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8488509654998779,
+              "bbox": {
+                "x": 130,
+                "y": 643,
+                "width": 748,
+                "height": 18
+              }
+            },
+            {
+              "label": "Table",
+              "labelId": 8,
+              "score": 0.8865796327590942,
+              "bbox": {
+                "x": 124,
+                "y": 693,
+                "width": 954,
+                "height": 396
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.4817195534706116,
+              "bbox": {
+                "x": 241,
+                "y": 1172,
+                "width": 628,
+                "height": 19
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6503319144248962,
+              "bbox": {
+                "x": 126,
+                "y": 1231,
+                "width": 120,
+                "height": 18
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2759384512901306,
+              "bbox": {
+                "x": 125,
+                "y": 1286,
+                "width": 157,
+                "height": 16
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8527835011482239,
+              "bbox": {
+                "x": 340,
+                "y": 1548,
+                "width": 519,
+                "height": 79
+              }
+            }
+          ],
+          "imageWidth": 1186,
+          "imageHeight": 1672
+        }
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "ocrText": "Agentur für Arbeit Berlin Mitte, 10956 Berlin\n\nIhr Zeichen\nIhre Nachricht\nMein Zeichen\nKundennummer 9220567410\n(Bei jeder Antwort bitte angeben)\n\nReyk Christoph Joachim Buchenberg\nKörtestr. 16\n10967 Berlin\n\nHerr Altun\n\nName\n\n26. September 2025\n\nDatum\n\n. . .. se\nIhr Antrag auf Förderung einer Existenzgründung mit einem Gründungszuschuss (1. Pha )\nvom 26.09.2025\n\nSehr geehrter Herr Buchenberg,\n\nein Grundungszuschuss kann grundsätzlich gezahlt werden, wenn eine fachkundige Stelle Ihre\nGeschäftsidee geprüft hat und für tragfähig hält. Nur wenn zu erwarten ist, dass Sie nach einer\nAnlaufphase von der Umsetzung Ihrer Geschäftsidee leben können, kommt eine Forderung Ihrer\nselbständigen Tätigkeit in Betracht.\n\nFachkundige Stellen sind insbesondere:\n\ne Industrie- und Handelskammern,\n\nHandwerkskammern\n\ne berufsständische Kammern,\n\ne Fachverbände\n\ne Kreditinstitute\n\neuerberatende und unternehmensberatende\nEinrichtungen sein, deren Ta-\ntung ausgerichtet Ist.\nAls weitere fachkundige Stellen kommen aber auch st\nBerufe in Frage. Darüber hinaus können fachkundige Stellen auch\ntigkeitsschwerpunkt auf Existenzgründungsberatung und -vorberel\n\ne wählen. Bıtte beachten Sie aber,\nge Stelle Si\nKostenübernahme\nSie können selbst entscheiden, welche fachkundı\nIbst tragen mussen Eine\nSie Kosten die möglicherweise anfallen, Se\nurch die Agentur für Arbeit ist nicht möglich.\n\nDie fachkundige Stelle benötigt von Ihnen für ihre Stellungnahme folgende Unterlagen.\n\ne Beschreibung des Existenzgründungsvorhabens (Businessplan)\n\n© Kapitalbedarfs- und Finanzierungsplan\n\nÖffnungszeiten Sie erreichen uns:\nMo 08 00-12 30 U-Bhf Kochstraße\nDi: 08 00-12 30\nDo: 08 00-12 30 u. 14:00-16:00\nFr. 08:00-12 30\n\\ \\ 1 \\\n\\ \\\n\\ \\ \\\n\\ \\ \\\n\\ \\\nan \\\n\nBA GZ 01\n\nJugendberufsagentur\nMo 0800 - 16.00 Uhr\nDi 08 00 - 16.00 Uhr\nMi 08 00 - 12 30 Uhr\nDo 0800 - 18.00 Uhr\nFr 0800 - 12 30 Uhr\n\nPostanschrift\nAgentur für Arbeit Berlin Mitte\n10956 Berlin\n\nBankverbindung\nBA-Service-Haus\nBundesbank\nIBAN\nDESO 7600 0000 0076 0016 17\nBIC\nMARKDEF 1760\nInternet: www arbeitsagentur de\n\nBesucheradresse\nCharlottenstr 87 - 90\n10969 Berlin",
+        "groundTruth": "Bundesagentur für Arbeit\nAgentur für Arbeit Berlin Mitte\nReyk Christoph Joachim Buchenberg\nKörtestr. 16\n10967 Berlin\nIhr Zeichen:\nIhre Nachricht:\nMein Zeichen: 227.P-922D567410\nKundennummer: 922D567410\n(Bei jeder Antwort bitte angeben)\nName: Herr Altun\nDatum: 26. September 2025\nIhr Antrag auf Förderung einer Existenzgründung mit einem Gründungszuschuss (1. Phase)\nvom 26.09.2025\n\nSehr geehrter Herr Buchenberg,\n\nein Gründungszuschuss kann grundsätzlich gezahlt werden, wenn eine fachkundige Stelle Ihre\nGeschäftsidee geprüft hat und für tragfähig hält. Nur wenn zu erwarten ist, dass Sie nach einer\nAnlaufphase von der Umsetzung Ihrer Geschäftsidee leben können, kommt eine Förderung Ihrer\nselbständigen Tätigkeit in Betracht.\n\nFachkundige Stellen sind insbesondere:\n• Industrie- und Handelskammern,\n• Handwerkskammern\n• berufsständische Kammern,\n• Fachverbände\n• Kreditinstitute\n\nAls weitere fachkundige Stellen kommen aber auch steuerberatende und unternehmensberatende\nEinrichtungen in Frage. Darüber hinaus können fachkundige Stellen auch Einrichtungen sein, deren Tä-\ntigkeitsschwerpunkt auf Existenzgründungsberatung und -vorbereitung ausgerichtet ist.\n\nSie können selbst entscheiden, welche fachkundige Stelle Sie wählen. Bitte beachten Sie aber,\ndass Sie Kosten, die möglicherweise anfallen, selbst tragen müssen. Eine Kostenübernahme\ndurch die Agentur für Arbeit ist nicht möglich.\n\nDie fachkundige Stelle benötigt von Ihnen für ihre Stellungnahme folgende Unterlagen:\n• Beschreibung des Existenzgründungsvorhabens (Businessplan)\n• Kapitalbedarfs- und Finanzierungsplan\nPostanschrift\nAgentur für Arbeit Berlin Mitte\n10956 Berlin\n\nBesucheradresse\nCharlottenstr. 87 - 90\n10969 Berlin\n\nBankverbindung\nBA-Service-Haus\nBundesbank\nIBAN:\nDE50 7600 0000 0076 0016 17\nBIC:\nMARKDEF1760\nInternet: www.arbeitsagentur.de\n\nÖffnungszeiten\nMo: 08:00-12:30\nDi: 08:00-12:30\nMi: 08:00 - 12:30 Uhr\nDo: 08:00-12:30 u. 14.00-16.00\nFr: 08:00-12:30\n\nU-Bhf Kochstraße\nMo. 08:00 - 16:00 Uhr\nDi. 08:00 - 16:00 Uhr\nMi. 08:00 - 12:30 Uhr\nDo. 08:00 - 18:00 Uhr\nFr. 08:00 - 12:30 Uhr",
+        "cer": 0.4310764734534827,
+        "wer": 0.6828358208955224,
+        "ocrLength": 2064,
+        "groundTruthLength": 2053,
+        "lengthRatio": 1.0053580126643935,
+        "underproductionRate": 0,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.43582963943481445,
+              "bbox": {
+                "x": 1828,
+                "y": 121,
+                "width": 909,
+                "height": 304
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8211766481399536,
+              "bbox": {
+                "x": 852,
+                "y": 222,
+                "width": 290,
+                "height": 230
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.2639070153236389,
+              "bbox": {
+                "x": 1655,
+                "y": 227,
+                "width": 145,
+                "height": 139
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.24726518988609314,
+              "bbox": {
+                "x": 539,
+                "y": 689,
+                "width": 557,
+                "height": 28
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8103100061416626,
+              "bbox": {
+                "x": 1861,
+                "y": 709,
+                "width": 604,
+                "height": 215
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8245234489440918,
+              "bbox": {
+                "x": 543,
+                "y": 890,
+                "width": 719,
+                "height": 173
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5804858207702637,
+              "bbox": {
+                "x": 2131,
+                "y": 972,
+                "width": 173,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5095884799957275,
+              "bbox": {
+                "x": 1867,
+                "y": 983,
+                "width": 101,
+                "height": 37
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7451834678649902,
+              "bbox": {
+                "x": 2529,
+                "y": 1212,
+                "width": 192,
+                "height": 181
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.45343226194381714,
+              "bbox": {
+                "x": 2132,
+                "y": 1246,
+                "width": 354,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.17885389924049377,
+              "bbox": {
+                "x": 1871,
+                "y": 1261,
+                "width": 122,
+                "height": 35
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8601656556129456,
+              "bbox": {
+                "x": 536,
+                "y": 1532,
+                "width": 2309,
+                "height": 132
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8943433165550232,
+              "bbox": {
+                "x": 537,
+                "y": 1753,
+                "width": 781,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9249602556228638,
+              "bbox": {
+                "x": 531,
+                "y": 1855,
+                "width": 2266,
+                "height": 245
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7698366045951843,
+              "bbox": {
+                "x": 536,
+                "y": 2170,
+                "width": 997,
+                "height": 52
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9005205631256104,
+              "bbox": {
+                "x": 630,
+                "y": 2261,
+                "width": 875,
+                "height": 53
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9004732370376587,
+              "bbox": {
+                "x": 631,
+                "y": 2329,
+                "width": 589,
+                "height": 55
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9108538031578064,
+              "bbox": {
+                "x": 633,
+                "y": 2390,
+                "width": 765,
+                "height": 56
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8737460374832153,
+              "bbox": {
+                "x": 636,
+                "y": 2467,
+                "width": 436,
+                "height": 50
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6755156517028809,
+              "bbox": {
+                "x": 637,
+                "y": 2529,
+                "width": 434,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7857674360275269,
+              "bbox": {
+                "x": 549,
+                "y": 2590,
+                "width": 2297,
+                "height": 224
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8699229955673218,
+              "bbox": {
+                "x": 563,
+                "y": 2848,
+                "width": 2224,
+                "height": 206
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.767727255821228,
+              "bbox": {
+                "x": 567,
+                "y": 3094,
+                "width": 2036,
+                "height": 76
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6649352312088013,
+              "bbox": {
+                "x": 665,
+                "y": 3208,
+                "width": 1602,
+                "height": 58
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8745840787887573,
+              "bbox": {
+                "x": 662,
+                "y": 3280,
+                "width": 1017,
+                "height": 55
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6549888849258423,
+              "bbox": {
+                "x": 581,
+                "y": 3381,
+                "width": 127,
+                "height": 37
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1075562834739685,
+              "bbox": {
+                "x": 2520,
+                "y": 3415,
+                "width": 296,
+                "height": 249
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.39241617918014526,
+              "bbox": {
+                "x": 588,
+                "y": 3477,
+                "width": 386,
+                "height": 110
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2801932096481323,
+              "bbox": {
+                "x": 1073,
+                "y": 3479,
+                "width": 426,
+                "height": 307
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6298699975013733,
+              "bbox": {
+                "x": 597,
+                "y": 3678,
+                "width": 279,
+                "height": 105
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      }
+    ]
+  },
+  "bestWithTableEnabled": {
+    "iterationId": 3,
+    "customWER": 0.5653363867940732,
+    "customCER": 0.4380819094056838,
+    "parameters": [
+      {
+        "path": "preprocessing.inversionDetection.enabled",
+        "value": true
+      },
+      {
+        "path": "preprocessing.inversionDetection.brightnessThreshold",
+        "value": 106.667
+      },
+      {
+        "path": "table.enabled",
+        "value": true
+      },
+      {
+        "path": "table.outputFormat",
+        "value": "plain"
+      },
+      {
+        "path": "table.rowClusterTolerance",
+        "value": 40
+      },
+      {
+        "path": "table.colClusterTolerance",
+        "value": 10
+      }
+    ],
+    "droppedImage": "rechnung-schreiben-beispiel-muster.jpg",
+    "droppedWER": 0.9166666666666666,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "ocrText": "Techniker Krankenkasse, 20905 Hamburg\n00 3020 B310 EF ADDO 50AB\nDV 01 1.10 Deutsche Post\n*K4000*\n\nFachzentrum\nAmbulante Leistungen\n\nTel. 040 - 46 06 62 01 90\n\nHerrn\nReyk Buchenberg\nVorderhs Etage 3 re\nKörtestr 16\n10967 Berlın\n\nGeschäftszeichen\nH041574180\n\nInformation zur Früherkennung und Vorbeugung von Darmkrebs\n\nGuten Tag Herr Buchenberg,\n\nalle gesetzlich Krankenversicherten ab 50 Jahre haben in Deutschland Anspruch auf eine\nkostenfreie Darmkrebs-Früherkennung. Wir möchten Sie über diese Angebote informieren und\nIhnen dabei helfen, zu entscheiden, ob Sie die Darmkrebs-Früherkennung wahrnehmen wollen\n\neinen Darmkrebs entdecken, bevor er Beschwerden verur-\ngschancen. Zum anderen sollen sie Darmpolypen finden, aus\nDie Untersuchungen sollen zum\ntwickeln kann. Die Entfernung von Polypen senkt das Risiko,\nsacht. Das verbessert dıe Heılun\ndenen sich mit der Zeıt Krebs en\nan Darmkrebs zu erkranken.\n\nZur Früherkennung von Darmkrebs gibt es 2 Möglichkeiten:\n\nauf nicht sichtbares Blut untersucht. Dies\nn Finden sich Blutspuren, wird zu ener\nst wird eine Stuhlprobe\nt manchmal Darmkrebs,\n= Stuhltest Bei diesem Te\nkann auf Darmpolypen oder Darmkrebs hinweise\nDer Nachteil des Stuhltests: Er ubersieh\nDarmspiegelung geraten\nkann aber auch falschen Alarm auslosen.\n\n| - 8696/59 -\n\n= Darmspiegelung Hierbe\nden wird, kann er vorsorg\nund viele Polypen. Ihr Nachtel\nlen Komplikationen wie Blutung\n| wird der ganze Dickdarm u\nlich entfernt werden. Die Dar\n| Es ist eine Vorbereitung nötig und e\nen und Darmverletzungen auftreten.\nntersucht. Wenn dabei ein Polyp gefun-\nmspiegelung findet fast alle Tumore\ns können In seltenen Fal-\n\n-\nund Nachteilen enthalt die beiliegende\nur Untersuchung und ihren Vor-\nr Ihrem Arzt beraten \\assen.\nNähere Informationen z\nkönnen Sie sich von Ihrer Arztin ode\nBroschüre. Außerdem\n— . 84 . - um Ihrar\n\nen Stuhltest zum Beispiel In Ihrer\nSie einen Termin bei einer Fach-\nen. können Sie d\nterologie (Magen-\nWenn Sie das Angebot annehmen mocht\nHausarztpraxis erhalten. Zur Darmspiegelung vereinbaren\nmit Schwerpunkt Gastroen\närztin bzw. einem Facharzt fur Innere Medizin\nDarm-Spezialistinnen).\n\nkasse, Tel 040 - 46 06 62 01 90\nTechniker Kranken\n8-18 Uhr, Fr. 8 - 16 Uhr | tk de\nTelefonservice: Mo - Do\n\norsitzender), Thomas Ballast (stellv Vorsitzender), Karen \\Walkenhorst\nts: Dominik Kruchen, Dieter F.Märtens\nVorstand: Dr. Jens Baas (V\nVorsitzende des Verwaltungsra",
+        "groundTruth": "Kein Text erkennbar.\nHerrn\nReyk Buchenberg\nVorderhs Etage 3 re\nKörtestr. 16\n10967 Berlin\nTK\nDie Techniker\n\nFachzentrum\nAmbulante Leistungen\nTel. 040 - 46 06 62 01 90\nGeschäftszeichen\nH041574180\n16. Januar 2026\n\nvon Darmkrebs\nInformation zur Früherkennung und Vorbeugung von Darmkrebs\n\nGuten Tag Herr Buchenberg,\n\nalle gesetzlich Krankenversicherten ab 50 Jahre haben in Deutschland Anspruch auf eine\nkostenfreie Darmkrebs-Früherkennung. Wir möchten Sie über diese Angebote informieren und\nIhnen dabei helfen, zu entscheiden, ob Sie die Darmkrebs-Früherkennung wahrnehmen wollen.\n\nDie Untersuchungen sollen zum einen Darmkrebs entdecken, bevor er Beschwerden verur-\nsacht. Das verbessert die Heilungschancen. Zum anderen sollen sie Darmpolypen finden, aus\ndenen sich mit der Zeit Krebs entwickeln kann. Die Entfernung von Polypen senkt das Risiko,\nan Darmkrebs zu erkranken.\n\nZur Früherkennung von Darmkrebs gibt es 2 Möglichkeiten:\n\n- Stuhltest: Bei diesem Test wird eine Stuhlprobe auf nicht sichtbares Blut untersucht. Dies\nkann auf Darmpolypen oder Darmkrebs hinweisen. Finden sich Blutspuren, wird zu einer\nDarmspiegelung geraten. Der Nachteil des Stuhltests: Er übersieht manchmal Darmkrebs,\nkann aber auch falschen Alarm auslösen.\n\n- Darmspiegelung: Hierbei wird der ganze Dickdarm untersucht. Wenn dabei ein Polyp gefun-\nden wird, kann er vorsorglich entfernt werden. Die Darmspiegelung findet fast alle Tumore\nund viele Polypen. Ihr Nachteil: Es ist eine Vorbereitung nötig und es können in seltenen Fäl-\nlen Komplikationen wie Blutungen und Darmverletzungen auftreten.\n\nNähere Informationen zur Untersuchung und ihren Vor- und Nachteilen enthält die beiliegende\nBroschüre. Außerdem können Sie sich von Ihrer Ärztin oder Ihrem Arzt beraten lassen.\n\nWenn Sie das Angebot annehmen möchten, können Sie den Stuhltest zum Beispiel in Ihrer\nHausarztpraxis erhalten. Zur Darmspiegelung vereinbaren Sie einen Termin bei einer Fach-\närztin bzw. einem Facharzt für Innere Medizin mit Schwerpunkt Gastroenterologie (Magen-\nDarm-Spezialist:innen).\n\nTechniker Krankenkasse, Tel. 040 - 46 06 62 01 90\nTelefon service: Mo.- Do. 8 - 18 Uhr, Fr. 8 - 16 Uhr | tk.de\nVorstand: Dr. Jens Baas (Vorsitzender), Thomas Ballast (stellv. Vorsitzender), Karen Walkenhorst\nVorsitzende des Verwaltungsrats: Dominik Kruchen, Dieter F. Märtens\n510",
+        "cer": 0.490272373540856,
+        "wer": 0.7217125382262997,
+        "ocrLength": 2379,
+        "groundTruthLength": 2313,
+        "lengthRatio": 1.0285343709468222,
+        "underproductionRate": 0,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8565211296081543,
+              "bbox": {
+                "x": 2147,
+                "y": 623,
+                "width": 281,
+                "height": 213
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7176832556724548,
+              "bbox": {
+                "x": 732,
+                "y": 922,
+                "width": 686,
+                "height": 154
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.23146319389343262,
+              "bbox": {
+                "x": 2024,
+                "y": 925,
+                "width": 417,
+                "height": 75
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.20032215118408203,
+              "bbox": {
+                "x": 2023,
+                "y": 1030,
+                "width": 430,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2676941156387329,
+              "bbox": {
+                "x": 721,
+                "y": 1083,
+                "width": 375,
+                "height": 184
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.4415958821773529,
+              "bbox": {
+                "x": 2149,
+                "y": 1102,
+                "width": 326,
+                "height": 70
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8296308517456055,
+              "bbox": {
+                "x": 705,
+                "y": 1449,
+                "width": 1268,
+                "height": 39
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8362331390380859,
+              "bbox": {
+                "x": 705,
+                "y": 1585,
+                "width": 547,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8701766133308411,
+              "bbox": {
+                "x": 699,
+                "y": 1635,
+                "width": 1779,
+                "height": 147
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.62126225233078,
+              "bbox": {
+                "x": 689,
+                "y": 1809,
+                "width": 1780,
+                "height": 206
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8434855937957764,
+              "bbox": {
+                "x": 682,
+                "y": 2054,
+                "width": 1154,
+                "height": 44
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8985581994056702,
+              "bbox": {
+                "x": 677,
+                "y": 2122,
+                "width": 1827,
+                "height": 209
+              }
+            },
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.5585823655128479,
+              "bbox": {
+                "x": 436,
+                "y": 2237,
+                "width": 83,
+                "height": 651
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8772661685943604,
+              "bbox": {
+                "x": 665,
+                "y": 2350,
+                "width": 1916,
+                "height": 222
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.47394242882728577,
+              "bbox": {
+                "x": 652,
+                "y": 2592,
+                "width": 1935,
+                "height": 148
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9470868706703186,
+              "bbox": {
+                "x": 644,
+                "y": 2742,
+                "width": 1909,
+                "height": 265
+              }
+            },
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.7167273759841919,
+              "bbox": {
+                "x": 459,
+                "y": 3285,
+                "width": 42,
+                "height": 266
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.43110933899879456,
+              "bbox": {
+                "x": 2013,
+                "y": 3288,
+                "width": 784,
+                "height": 81
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5564169883728027,
+              "bbox": {
+                "x": 1453,
+                "y": 3391,
+                "width": 1351,
+                "height": 91
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000013.jpg",
+        "ocrText": "Packliste\n\nEmpfänger: Buchenberg Revk\n\nWeserstr. 14\n12047 Berlin\nVS Unternehmen: DHL\nS. Material Bezeichnung\n1 10349432 VT WL FRITZBox 753\nEAN Code\nKunden Material-Nr\n\nIstmenge Gewicht (Kg)\n1 0,75\n0,89\n\nGesamt Brutto (Kg)\nGesamtanzahl Packstücke\n\nGepackt von: TWISNER\n\nAchtung bitt\n\nnd erforderlich.\n\naufbewahren: Packliste ist im Reklamationsfall als Nachweis zwi\n\nv3\n2024 11",
+        "groundTruth": "Packliste\n\nEmpfänger: Buchenberg Reyk\n-\nWeserstr. 14\n12047\n\nDatum: 25 November 2024\nLieferschein Nr: 6086161956\nBestell Nr: H XX 6000\nWeserstr. 14\n12047 Berlin\nLieferchein Nr:\n25 November 2024\n6086161956\nBestell Nr:\nH-XX-62061798-1-D010-1\nVersand Nr:\n00340434325968315431\n\nIstmenge  Gewicht (Kg)\n1          0,75\n\n0,89\n1\nGesamt Brutto (Kg)\nGesamtanzahl Packstücke\n0,89\n1\nGepackt von: TWISNER\nAchtung bitte aufbewahren: Packliste ist im Reklamationsfall als Nachweis zwingend erforderlich.\nSeite 1 / 1\nDruckzeitpunkt: 25.11.2024 11:09\nVersand-Nr: 00340434325968315431\nSeite 1 / 1",
+        "cer": 0.5275310834813499,
+        "wer": 0.6623376623376623,
+        "ocrLength": 367,
+        "groundTruthLength": 563,
+        "lengthRatio": 0.6518650088809946,
+        "underproductionRate": 0.3481349911190053,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.18740206956863403,
+              "bbox": {
+                "x": 2912,
+                "y": 2,
+                "width": 146,
+                "height": 2470
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11627990007400513,
+              "bbox": {
+                "x": 1437,
+                "y": 283,
+                "width": 342,
+                "height": 79
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.10180643200874329,
+              "bbox": {
+                "x": 355,
+                "y": 367,
+                "width": 816,
+                "height": 44
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.4988126754760742,
+              "bbox": {
+                "x": 2030,
+                "y": 709,
+                "width": 743,
+                "height": 115
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11214014887809753,
+              "bbox": {
+                "x": 345,
+                "y": 1316,
+                "width": 596,
+                "height": 109
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.39834314584732056,
+              "bbox": {
+                "x": 359,
+                "y": 1467,
+                "width": 824,
+                "height": 57
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.10200536251068115,
+              "bbox": {
+                "x": 744,
+                "y": 1620,
+                "width": 1537,
+                "height": 52
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000014.jpg",
+        "ocrText": "Absender:\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\n\nK\nTeleton 0800 / 9898 666\n\nDHL Retoure\n\nAuftrag 62061798-1\n25. November 2024\n\nRetourenlager 10527054\n\nOpmunder Weg 80\n59494 Soest\n\nAit diesem Adre ufkleber ist Ihre Rücksendung für Sie kostenfrei. Unfreie Pakete können wır leider nich\n\n2024-11-25 102206\n\nBestellnummer:\n\nLieferanschrift\n\nBuchenberg Reyk\nWeserstr 14\n12047 Berlin\n\nH-XX-62061798-1-D010-1\n\nVT WL FRITZBox 7530AX FTTX VDSL\n\nMAINGAU Energie GmbH | Ringstr. 4-6 | 63179 Obertshausen\nGaschafisfuhrer Betriebswirt (VWA) Dirk Schneider\n\nStellv. Geschäftsführer BetrieDsw\n\n5065 2124 0014 1210 40. BIL\n\n- -\n-\n- ’ ‘ 4\ny / » -",
+        "groundTruth": "MAINGAU\nAbsender:\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\nMAINGAU\nEnergie\n\nKundenbetreuung\nTelefon: 0800 / 9898 666\n\nMaingau Energie\nEmail: dsl@maingau-energie.de\nAuftrag: 62061798-1\n\n25. November 2024\n\nte können wir leider nicht annehmen.\nMit diesem Adressaufkleber ist Ihre Rücksendung für Sie kostenfrei. Unfreie Pakete können wir leider nicht annehmen.\nLieferanschrift\nBuchenberg Reyk\nWeserstr. 14\n12047 Berlin\nBestellnummer:\nH-XX-62061798-1-D010-1\n2024-11-25 10:22:06\nMaterial\nbezeichnung\nMenge\ngeliefert\nEinheit\n10349432\nVT WL FRITZBox 7530AX FTTX VDSL\n1\nST\nMAINGAU Energie GmbH | Ringstr. 4-6 | 63179 Obertshausen\nGeschäftsführung: Dipl.-Kfm. Richard Schmitz Stellv. Geschäftsführer: Betriebswirt (VWA) Dirk Schneider\nSitz der Gesellschaft: Obertshausen | Amtsgericht Offenbach / Main HRB 12523\nSparkasse Langen-Seligenstadt, IBAN DE19 5065 2124 0014 1210 40, BIC HELADEF1SLS\n(hier abtrennen)\nTrennen Sie bitte diesen Abschnitt ab und legen ihn ausgefüllt der Rücksendung bei.\nBuchenberg Reyk Weserstr. 14, 12047 Berlin,\n2024-11-25* 10:22:06\nBestellnummer:\nH-XX-62061798-1-D010-1\n7061382180\nArt.-Nr.\nBezeichnung\nRetourengrund**\nAnzahl\nL F DL D U K\n10349432\nVT WL FRITZBox 7530AX FTTX VDSL\n**Zutreffendes bitte ankreuzen. Pro Artikel bitte nur einen Retourengrund ankreuzen.\nBedeutung: L=Leitung nicht geschaltet, F=Falschlieferung, DL=Doppellieferung, D=Gerät defekt, U=Paketinhalt unvollständig, K=Kündigung\nBemerkung:\nKein Text erkennbar.",
+        "cer": 0.6678200692041523,
+        "wer": 0.712707182320442,
+        "ocrLength": 617,
+        "groundTruthLength": 1445,
+        "lengthRatio": 0.4269896193771626,
+        "underproductionRate": 0.5730103806228374,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.5187809467315674,
+              "bbox": {
+                "x": 1900,
+                "y": 472,
+                "width": 588,
+                "height": 168
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5574613809585571,
+              "bbox": {
+                "x": 472,
+                "y": 560,
+                "width": 346,
+                "height": 165
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7790336608886719,
+              "bbox": {
+                "x": 1422,
+                "y": 562,
+                "width": 375,
+                "height": 266
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.35759204626083374,
+              "bbox": {
+                "x": 2069,
+                "y": 678,
+                "width": 292,
+                "height": 56
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3112356662750244,
+              "bbox": {
+                "x": 2082,
+                "y": 785,
+                "width": 195,
+                "height": 31
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.34206485748291016,
+              "bbox": {
+                "x": 471,
+                "y": 793,
+                "width": 431,
+                "height": 84
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.43041107058525085,
+              "bbox": {
+                "x": 2097,
+                "y": 841,
+                "width": 369,
+                "height": 108
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.41723138093948364,
+              "bbox": {
+                "x": 1082,
+                "y": 945,
+                "width": 456,
+                "height": 42
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.9143350124359131,
+              "bbox": {
+                "x": 479,
+                "y": 950,
+                "width": 481,
+                "height": 329
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7844651937484741,
+              "bbox": {
+                "x": 1089,
+                "y": 1034,
+                "width": 352,
+                "height": 87
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15470772981643677,
+              "bbox": {
+                "x": 540,
+                "y": 1423,
+                "width": 1516,
+                "height": 40
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1694408655166626,
+              "bbox": {
+                "x": 2348,
+                "y": 1463,
+                "width": 262,
+                "height": 32
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.21144479513168335,
+              "bbox": {
+                "x": 1271,
+                "y": 1474,
+                "width": 251,
+                "height": 41
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.1124250590801239,
+              "bbox": {
+                "x": 514,
+                "y": 1484,
+                "width": 257,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1501634418964386,
+              "bbox": {
+                "x": 518,
+                "y": 1530,
+                "width": 288,
+                "height": 118
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.20397481322288513,
+              "bbox": {
+                "x": 1272,
+                "y": 1533,
+                "width": 839,
+                "height": 77
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11803320050239563,
+              "bbox": {
+                "x": 856,
+                "y": 1885,
+                "width": 592,
+                "height": 40
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.18021076917648315,
+              "bbox": {
+                "x": 546,
+                "y": 2223,
+                "width": 1306,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.21030756831169128,
+              "bbox": {
+                "x": 547,
+                "y": 2266,
+                "width": 1004,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.28577280044555664,
+              "bbox": {
+                "x": 551,
+                "y": 2341,
+                "width": 1765,
+                "height": 56
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.5630778074264526,
+              "bbox": {
+                "x": 547,
+                "y": 2439,
+                "width": 2227,
+                "height": 738
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4102
+        }
+      },
+      {
+        "filename": "000015.jpg",
+        "ocrText": "Absender:\n\nPaketinhaltsschein\n\nBAUHAUS E-Business GmbH and Co.KG\nVor der Hecke 13\n34355 Staufenberg DE\nDE\n\n34129424\n\nLieferanschrift:\n\nLS-Nummer:\n\n7013626669\n\nReyk Buchenberg\nWeserstraße 14\n12047 Berlin\nDE\n\nKunden-Nr:\n\n1024282277\n\nDO-Nummer:\n\nPos Artikel-Nr\n\n13688773\nKOMPLETTSPUELE SAMARA 100X60 M. ST\n\n10\n\nBAUHAUS dankt für Ihren Einkauf\n\n» * A\n- ih 4\n\\ NIN\n-\n¥ - > Ad P\n| >) - -",
+        "groundTruth": "Absender\nBAU\nVord\n34355\nDE\nLiefers\nReyk\nWesen\n12047\nDE\nPos\n10\nKOMPLETTSPUELE\nAbsender:\nRAUHAUS E-Business GmbH and Co.\nfor der Hecke 13\n4355 Staufenberg DE\nReferanschrift:\neyk Buchenberg\neserstraße 14\n047 Berlin\nPos\nArtikel-Nr\n10\n13688773\nBAUHAUS dankt für Ihren Einkauf\nSPUELE SAMARA 100X60 M. ST\nH and Co.KG\nBAUHAUS\nPaketinhaltsschein\n18-11-2024 1\nSe\nLS-Nummer:\n34129424\nKunden-Nr:\n7013626669\nDO-Nummer:\n1024282277\nSeite 1 / 1\n24 11:08:22\nMenge\n1",
+        "cer": 0.6339285714285714,
+        "wer": 0.8695652173913043,
+        "ocrLength": 366,
+        "groundTruthLength": 448,
+        "lengthRatio": 0.8169642857142857,
+        "underproductionRate": 0.18303571428571427,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7705045938491821,
+              "bbox": {
+                "x": 1062,
+                "y": 319,
+                "width": 1176,
+                "height": 201
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.20825731754302979,
+              "bbox": {
+                "x": 2429,
+                "y": 337,
+                "width": 411,
+                "height": 120
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.351302832365036,
+              "bbox": {
+                "x": 347,
+                "y": 706,
+                "width": 246,
+                "height": 41
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.12855717539787292,
+              "bbox": {
+                "x": 2191,
+                "y": 712,
+                "width": 433,
+                "height": 54
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8125708103179932,
+              "bbox": {
+                "x": 329,
+                "y": 780,
+                "width": 971,
+                "height": 223
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6464536786079407,
+              "bbox": {
+                "x": 2116,
+                "y": 788,
+                "width": 602,
+                "height": 144
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3823001980781555,
+              "bbox": {
+                "x": 2304,
+                "y": 975,
+                "width": 215,
+                "height": 51
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6615843176841736,
+              "bbox": {
+                "x": 319,
+                "y": 1129,
+                "width": 376,
+                "height": 45
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1092546284198761,
+              "bbox": {
+                "x": 1926,
+                "y": 1138,
+                "width": 280,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.14602625370025635,
+              "bbox": {
+                "x": 2317,
+                "y": 1158,
+                "width": 283,
+                "height": 55
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8335710763931274,
+              "bbox": {
+                "x": 303,
+                "y": 1226,
+                "width": 423,
+                "height": 224
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.11684966087341309,
+              "bbox": {
+                "x": 1925,
+                "y": 1238,
+                "width": 270,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.12230616807937622,
+              "bbox": {
+                "x": 2328,
+                "y": 1258,
+                "width": 273,
+                "height": 54
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15923523902893066,
+              "bbox": {
+                "x": 1923,
+                "y": 1335,
+                "width": 303,
+                "height": 53
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.3825191557407379,
+              "bbox": {
+                "x": 2285,
+                "y": 1346,
+                "width": 543,
+                "height": 86
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.28076523542404175,
+              "bbox": {
+                "x": 355,
+                "y": 1649,
+                "width": 534,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.23593491315841675,
+              "bbox": {
+                "x": 2703,
+                "y": 1698,
+                "width": 138,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3672547936439514,
+              "bbox": {
+                "x": 680,
+                "y": 1810,
+                "width": 1123,
+                "height": 113
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.15787085890769958,
+              "bbox": {
+                "x": 395,
+                "y": 1810,
+                "width": 58,
+                "height": 46
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2587059736251831,
+              "bbox": {
+                "x": 1262,
+                "y": 2077,
+                "width": 850,
+                "height": 53
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "000017.jpg",
+        "ocrText": "B Deutschlandradio\n\nARD®\n\nBEITRAGSSERVICE\n\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären,\nKostenpflichtig erreichen Sie uns\nMontag - Freitag 7 - 19 Uhr für\n20 Cent pro Anruf aus allen deutschen Netzen\nunter 01806 999 555 20\n\n07 2FC7 F7B2 04 C003 1DB2\nDV 08 0,95 Deutsche Post\n* 8268 * 0012763 °\n\n* 8268 * 0012763 *\n* 0300\nReyk Buchenberg\nZusatz: Hinterhaus 3. Etage rechts\nWeserstr. 14\n12047 Berlin\n\nPostanschrift\nARD ZDF Deutschlandradio\nBeitragsservice, 50656 Köln\n\nDatum 19.08.2025\n\nBeitragsnummer 182 889 190\n\nZahlungserinnerung - Beitragsnummer 182 889 190 -\n\nSehr geehrte Dame, sehr geehrter Herr,\n\nEUR fiir den Zeitraum vom 01.01 2025 bis 31.07.2025 waren am\nIhre Rundfunkbeitrage von 128,52\nfür das Beitragskonto 182 889 190 jedoch nicht erfolgt.\n15.07.2025 fällig. Eine Zahlung Ist\n\nZahlen Sie umgehend den rückständigen Betrag von 128,52 EUR.\n\nh. erhalten Sie einen förmlichen Festsetzungsbescheid, der zu-\nr Festsetzungsbescheid ist ein vollstreckbarer Titel, der im Wege\nane durchgesetzt werden kann.\nKommen Sie dieser Aufforderung nicht nac\nsätzlich einen Säumniszuschlag enthält. De\nder Zwangsvollstreckung durch die zuständigen Vollstreckungsorg\n\nEinfach zahlen Sie die Rundfunkbeiträge im | astschriftverfahren. Ein Formular zur Erteilung eines SEPA-\nLastschriftmandats finden Sie unter rundfunkbeitrag.de.\n\nMit freundlichen Grüßen\nIhr Beitragsservice von ARD, ZDF und Deutschlandradio",
+        "groundTruth": "EU-Datenschutzinfo\nrundfunkbeitrag.de/EU-DSGVO\n\nARD\nZDF\nDeutschlandradio\n\nBEITRAGSSERVICE\n\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären.\nKostenpflichtig erreichen Sie uns\nReyk Buchenberg\nZusatz: Hinterhaus 3. Etage rechts\nWeserstr. 14\n12047 Berlin\nOnline-Service rundfunkbeitrag.de\nHier können Sie rund um die Uhr kostenlos\nIhr Anliegen klären.\nKostenpflichtig erreichen Sie uns\nMontag - Freitag 7 - 19 Uhr für\n20 Cent pro Anruf aus allen deutschen Netzen\nunter 01806 999 555 20.\n\nPostanschrift\nARD ZDF Deutschlandradio\nBeitragsservice, 50656 Köln\n\nDatum 19.08.2025\n\nBeitragsnummer 182 889 190\nZahlungserinnerung - Beitragsnummer 182 889 190 -\n\nSehr geehrte Dame, sehr geehrter Herr,\n\nIhre Rundfunkbeiträge von 128,52 EUR für den Zeitraum vom 01.01.2025 bis 31.07.2025 waren am\n15.07.2025 fällig. Eine Zahlung ist für das Beitragskonto 182 889 190 jedoch nicht erfolgt.\n\nZahlen Sie umgehend den rückständigen Betrag von 128,52 EUR.\n\nKommen Sie dieser Aufforderung nicht nach, erhalten Sie einen förmlichen Festsetzungsbescheid, der zu-\nsätzlich einen Säumniszuschlag enthält. Der Festsetzungsbescheid ist ein vollstreckbarer Titel, der im Wege\nder Zwangsvollstreckung durch die zuständigen Vollstreckungsorgane durchgesetzt werden kann.\n\nEinfach zahlen Sie die Rundfunkbeiträge im Lastschriftverfahren. Ein Formular zur Erteilung eines SEPA-\nLastschriftmandats finden Sie unter rundfunkbeitrag.de.\n\nMit freundlichen Grüßen\nIhr Beitragsservice von ARD, ZDF und Deutschlandradio\n\nSEPA-Überweisung/Zahlschein\n\nName und Sitz des überweisenden Kreditinstituts\nAngaben zum Zahlungsempfänger: Name, Vorname/Firma (max. 27 Stellen, bei maschineller Beschriftung max. 35 Stellen)\nRundfunk ARD, ZDF, DRadio\nIBAN\nDE8550050000000234567\nBIC des Kreditinstituts/Zahlungsdienstleisters (8 oder 11 Stellen)\nHELADEFFXXX\nBetrag: Euro, Cent\n128,52\nKunden-Referenznummer\nRF41X182889190\nDieser Beleg wird maschinell verarbeitet.\nZusätzliche Angaben sowie Änderungen der\nvorgedruckten Daten sind nicht möglich.\nAngaben zum Kontoinhaber/Zahler: Name, Vorname/Firma, Ort (max. 27 Stellen, keine Straßen- oder Postfachangaben)\nIBAN\nDE\n07\nDatum\nUnterschrift(en)",
+        "cer": 0.5741252302025782,
+        "wer": 0.6764705882352942,
+        "ocrLength": 1436,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6611418047882136,
+        "underproductionRate": 0.3388581952117864,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.10023146867752075,
+              "bbox": {
+                "x": 183,
+                "y": 230,
+                "width": 132,
+                "height": 1164
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.13218900561332703,
+              "bbox": {
+                "x": 2290,
+                "y": 130,
+                "width": 389,
+                "height": 44
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8294512629508972,
+              "bbox": {
+                "x": 548,
+                "y": 132,
+                "width": 901,
+                "height": 326
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.26078277826309204,
+              "bbox": {
+                "x": 1723,
+                "y": 142,
+                "width": 220,
+                "height": 73
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.35318657755851746,
+              "bbox": {
+                "x": 2013,
+                "y": 273,
+                "width": 380,
+                "height": 50
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.918246865272522,
+              "bbox": {
+                "x": 2018,
+                "y": 494,
+                "width": 555,
+                "height": 214
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3524423837661743,
+              "bbox": {
+                "x": 546,
+                "y": 587,
+                "width": 798,
+                "height": 160
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5347211956977844,
+              "bbox": {
+                "x": 544,
+                "y": 700,
+                "width": 675,
+                "height": 253
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9053983688354492,
+              "bbox": {
+                "x": 2023,
+                "y": 735,
+                "width": 449,
+                "height": 113
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6240277290344238,
+              "bbox": {
+                "x": 2025,
+                "y": 881,
+                "width": 306,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5429733395576477,
+              "bbox": {
+                "x": 2030,
+                "y": 948,
+                "width": 496,
+                "height": 35
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6475002765655518,
+              "bbox": {
+                "x": 528,
+                "y": 1352,
+                "width": 1120,
+                "height": 43
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5837917923927307,
+              "bbox": {
+                "x": 535,
+                "y": 1456,
+                "width": 802,
+                "height": 43
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8798414468765259,
+              "bbox": {
+                "x": 542,
+                "y": 1533,
+                "width": 1979,
+                "height": 102
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8906177878379822,
+              "bbox": {
+                "x": 553,
+                "y": 1693,
+                "width": 1312,
+                "height": 41
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8135571479797363,
+              "bbox": {
+                "x": 558,
+                "y": 1770,
+                "width": 2135,
+                "height": 149
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7870054841041565,
+              "bbox": {
+                "x": 561,
+                "y": 1959,
+                "width": 2083,
+                "height": 104
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8418568968772888,
+              "bbox": {
+                "x": 560,
+                "y": 2122,
+                "width": 1119,
+                "height": 91
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6393885016441345,
+              "bbox": {
+                "x": 983,
+                "y": 2631,
+                "width": 1869,
+                "height": 1382
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "ocrText": "33 VJ\n\nKundennummer _ 254\n\nFa. HEYSE GmbH & Co. KG\n\nHannoversche Straße 14\n\n30916 Isernhagen\n\nRECHNUNG\n\nRechnungsnummer:\n\nAussenaufnahmen Am Ortfelde 97 (Ish), Grimmstr. 9, Haltenhoffsstr.20,\nErnst-Grote-Str. 14\n\nX Honorar\n\na 100,00 400,00 EUR\n\nVielen Dank für Ihren Auftrag!\n\nBitte zahlen Sie den vollen Betrag umgehend ohne\nAbzug\nLieferung wie Rechnungsdatum\n\nSparkasse Hannover, BLZ 250 501 80, Kio Nr.\n32660197\nIBAN: DE43 2505 0180 0032 6601 97, BIC/SWIFT: SPKHDE 2H\nSteuernummer 26/139/15557 Ust-ident-Nr_DE 173549620",
+        "groundTruth": "Fa. HEYSE GmbH & Co. KG\nFa. HEYSE GmbH & Co. KG\nHannoversche Straße 14\n30916 Isernhagen\nKundennummer: 254\nDatum: 23.06.2013\nRechnungsnummer: 2248\nstr. 9. Haltenhoffsstr.20.\nRECHNUNG\nRechnungsnummer: 2248\nAussenaufnahmen Am Ortfelde 97 (Ish), Grimmstr. 9, Haltenhoffsstr.20,\nErnst-Grote-Str. 14\n\n4 x Honorar\ná 100,00 400,00 EUR\n\nNettosumme: 400,00 EUR\nMehrwertsteuer 7% 28,00 EUR\nENDBETRAG: 428,00 EUR\n\nVielen Dank für Ihren Auftrag!\n\nBitte zahlen Sie den vollen Betrag umgehend ohne\nBitte zahlen Sie den vollen Betrag umgehend ohne\nAbzug\nLieferung wie Rechnungsdatum\nBankverbindung: Sparkasse Hannover, BLZ 250 501 80, Kto.Nr.\n32660197\nIBAN: DE43 2505 0180 0032 6601 97, BIC/SWIFT: SPKHDE 2H\nSteuernummer 26/139/15557 Ust-Ident-Nr.: DE 173549620",
+        "cer": 0.3481781376518219,
+        "wer": 0.3904761904761905,
+        "ocrLength": 510,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.6882591093117408,
+        "underproductionRate": 0.3117408906882591,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Page-header",
+              "labelId": 5,
+              "score": 0.5049787163734436,
+              "bbox": {
+                "x": 1374,
+                "y": 2,
+                "width": 147,
+                "height": 42
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.793259859085083,
+              "bbox": {
+                "x": 182,
+                "y": 269,
+                "width": 471,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7644387483596802,
+              "bbox": {
+                "x": 180,
+                "y": 403,
+                "width": 408,
+                "height": 34
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8212418556213379,
+              "bbox": {
+                "x": 179,
+                "y": 460,
+                "width": 323,
+                "height": 35
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.3302912414073944,
+              "bbox": {
+                "x": 175,
+                "y": 621,
+                "width": 365,
+                "height": 62
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1509862244129181,
+              "bbox": {
+                "x": 932,
+                "y": 669,
+                "width": 238,
+                "height": 25
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.522291898727417,
+              "bbox": {
+                "x": 177,
+                "y": 717,
+                "width": 1012,
+                "height": 62
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.24321913719177246,
+              "bbox": {
+                "x": 203,
+                "y": 978,
+                "width": 238,
+                "height": 26
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5008985996246338,
+              "bbox": {
+                "x": 962,
+                "y": 989,
+                "width": 362,
+                "height": 30
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.3250386118888855,
+              "bbox": {
+                "x": 794,
+                "y": 1505,
+                "width": 533,
+                "height": 188
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7149861454963684,
+              "bbox": {
+                "x": 162,
+                "y": 1586,
+                "width": 420,
+                "height": 31
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5402796268463135,
+              "bbox": {
+                "x": 146,
+                "y": 1783,
+                "width": 602,
+                "height": 87
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7518510222434998,
+              "bbox": {
+                "x": 144,
+                "y": 1892,
+                "width": 624,
+                "height": 98
+              }
+            }
+          ],
+          "imageWidth": 1534,
+          "imageHeight": 2046
+        }
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "ocrText": "Dear |\n\nGood afternoon. Your second grader participated in gifted screening through the\nIowa and CogAT assessments in December. Because your child showed such strong\npotential, we followed up with a second assessment (the NNAT-3) in January to see\nif they met the state’s criteria for gifted identification in cognition.\n\nWhile your child’s score was above average, it did not quite x 6 thresho\non the NNAT-3 required by the state for formal ed in this speciiiC\ncategory at this time.\n\nThe Good News: Please know that an \"above average\" score is a wonderful J\nachievement! We are sharing these results with your child’s teachers to ensure their\nlessons continue to challenge and support their high ability.\n\nWhat Happens Next?\n\ne Other Areas: Please keep in mind that students can be identified as gifted In\nseveral different categories. Your child may already be identified—or could\nqualify in the future—in areas such as Math, Reading, or Creative Thinking.\n\ne Future Testing: State rules require us to wait until next school year for\nanother cognitive re-test. If you would like to request a re-test then, please\nreach out to me.\n\ne 4th Grade Screening: All students will participate in another full\nround of gifted screening in the fourth grade.\n\nWe are so proud of the hard work your student put into these assessments. If you\nhave any questions about these results, please feel free to contact me using the\ninformation in the letterhead.\n\nSincerely,\n\nElementary Gilted Coordinator",
+        "groundTruth": "Gifted Education Services\nElementary Gifted Coordinator\nElementary G\nSecondary G\nGifted Coordinator,\nJanuary 2026\n\nated in gifted screening through the\nbecause your child showed such strong\nessment (the NNAT-3) in January to see\nification in cognition.\n\nit did not quite reach the 126 threshold\npotential, we followed up with a second assessment (the NNAT-3) in January to see\nif they met the state's criteria for gifted identification in cognition.\n\nWhile your child's score was above average, it did not quite reach the 126 threshold\non the NNAT-3 required by the state for formal gifted identification in this specific\ncategory at this time.\n\nThe Good News: Please know that an \"above average\" score is a wonderful\nachievement! We are sharing these results with your child's teachers to ensure their\nlessons continue to challenge and support their high ability.\n\nWhat Happens Next?\n\n• Other Areas: Please keep in mind that students can be identified as gifted in\nseveral different categories. Your child may already be identified—or could\nqualify in the future—in areas such as Math, Reading, or Creative Thinking.\n\n• Future Testing: State rules require us to wait until next school year for\nanother cognitive re-test. If you would like to request a re-test then, please\nreach out to me.\n\n• 4th Grade Screening: All [redacted] students will participate in another full\nround of gifted screening in the fourth grade.\n\nWe are so proud of the hard work your student put into these assessments. If you\nhave any questions about these results, please feel free to contact me using the\ninformation in the letterhead.\n\nSincerely,\nSincerely,\nElementary Gifted Coordinator",
+        "cer": 0.15468277945619335,
+        "wer": 0.20224719101123595,
+        "ocrLength": 1476,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8918429003021148,
+        "underproductionRate": 0.1081570996978852,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.1896660029888153,
+              "bbox": {
+                "x": 113,
+                "y": 24,
+                "width": 141,
+                "height": 48
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8974413871765137,
+              "bbox": {
+                "x": 244,
+                "y": 122,
+                "width": 512,
+                "height": 434
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7087873220443726,
+              "bbox": {
+                "x": 893,
+                "y": 88,
+                "width": 1200,
+                "height": 482
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1815119981765747,
+              "bbox": {
+                "x": 209,
+                "y": 722,
+                "width": 115,
+                "height": 39
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.931439995765686,
+              "bbox": {
+                "x": 196,
+                "y": 800,
+                "width": 1834,
+                "height": 189
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9121497273445129,
+              "bbox": {
+                "x": 179,
+                "y": 1027,
+                "width": 1868,
+                "height": 158
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9147621989250183,
+              "bbox": {
+                "x": 164,
+                "y": 1226,
+                "width": 1930,
+                "height": 157
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8612970113754272,
+              "bbox": {
+                "x": 151,
+                "y": 1443,
+                "width": 524,
+                "height": 46
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8498086929321289,
+              "bbox": {
+                "x": 213,
+                "y": 1530,
+                "width": 1875,
+                "height": 181
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6903228163719177,
+              "bbox": {
+                "x": 191,
+                "y": 1708,
+                "width": 1894,
+                "height": 178
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8569796085357666,
+              "bbox": {
+                "x": 190,
+                "y": 1882,
+                "width": 1910,
+                "height": 123
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.880614697933197,
+              "bbox": {
+                "x": 88,
+                "y": 2044,
+                "width": 2043,
+                "height": 216
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2162831425666809,
+              "bbox": {
+                "x": 70,
+                "y": 2399,
+                "width": 272,
+                "height": 60
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.36989283561706543,
+              "bbox": {
+                "x": 59,
+                "y": 2518,
+                "width": 837,
+                "height": 69
+              }
+            }
+          ],
+          "imageWidth": 2158,
+          "imageHeight": 2782
+        }
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "ocrText": "Your child was recently administered the Naglieri Nonverbal Ability Test® - Third Edition (NNAT3). This report contains an explanation of NNAT3\nand how your child performed.\n\nYour child's score has been placed on the graph to show how it\nrelates to the scores of other students of the same age. Most\nchildren’s scores will fall between 90 and 110. Scores in this range\nare considered to be average. Fewer children will have scores that\nfall between 70 and 89, or between 111 and 130, and an extremely\nsmall number of children will have scores that fall below 70 or above\n130. Use the Description on the graph to help you understand where\nyour child's score falls.\n\nPercentile Ranks range from a low of 1 to a high of 99. This score is\nused to compare your child's performance to that of a national sample\nof students of the same age. For example, if a child who is six years\nold has a Percentile Rank of 75, this means the student scored as\nwell as or higher than 75 percent of six year old students who were\ntested. Please note that Percentile Rank and percent correct\nrepresent two different performance measurements and have\ndifferent interpretations.\n\nFor Explanation of Scores, visit the Support section of the Platform.\n\nLevels A - D normative data copyright © 2015, 2018 Pearson Education, Inc. All rights reserved.\nLevels E - G normative data copyright © 2016 Pearson Education, Inc. All rights reserved.\n\n01/16/2026",
+        "groundTruth": "Home Report\nSCHOOL: \nElementary School -\nDISTRICT: \nCity School District\nSTUDENT NUMBER:\nTEST DATE: 01/13/2026\nElementary School -\nCity School District\nTEST NUMBER:\n01/13/2026\nAGE:\n8 YRS 1 MOS\n2\nLEVEL/FORM:\nLEVEL C FORM 1\nedition (NNAT3). This report contains an explanation of the NNAT3\n143 NAGLIERI ABILITY INDEX (NAI)\nYour child's score has been placed on the graph to show how it relates to the scores of other students of the same age. Most children's scores will fall between 90 and 110. Scores in this range are considered to be average. Fewer children will have scores that fall between 70 and 89, or between 111 and 130, and an extremely small number of children will have scores that fall below 70 or above 130. Use the Description on the graph to help you understand where your child's score falls.\n\n99 PERCENTILE RANK\nPercentile Ranks range from a low of 1 to a high of 99. This score is used to compare your child's performance to that of a national sample of students of the same age. For example, if a child who is six years old has a Percentile Rank of 75, this means the student scored as well as or higher than 75 percent of six year old students who were tested. Please note that Percentile Rank and percent correct represent two different performance measurements and have different interpretations.\n\nFor Explanation of Scores, visit the Support section of the Platform.\n\nLevels A - D normative data copyright © 2015, 2018 Pearson Education, Inc. All rights reserved.\nLevels E - G normative data copyright © 2016 Pearson Education, Inc. All rights reserved.\n01/16/2026\nKein Text erkennbar.",
+        "cer": 0.1552369077306733,
+        "wer": 0.16967509025270758,
+        "ocrLength": 1419,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8846633416458853,
+        "underproductionRate": 0.11533665835411472,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.6253080368041992,
+              "bbox": {
+                "x": 6,
+                "y": 2,
+                "width": 2150,
+                "height": 142
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.2361253798007965,
+              "bbox": {
+                "x": 13,
+                "y": 262,
+                "width": 2112,
+                "height": 307
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2974815368652344,
+              "bbox": {
+                "x": 38,
+                "y": 643,
+                "width": 2071,
+                "height": 91
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.4642409086227417,
+              "bbox": {
+                "x": 75,
+                "y": 798,
+                "width": 2014,
+                "height": 1046
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9268211126327515,
+              "bbox": {
+                "x": 94,
+                "y": 1862,
+                "width": 961,
+                "height": 291
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9262288212776184,
+              "bbox": {
+                "x": 1121,
+                "y": 1867,
+                "width": 978,
+                "height": 295
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.45473816990852356,
+              "bbox": {
+                "x": 1188,
+                "y": 2205,
+                "width": 942,
+                "height": 30
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.508460283279419,
+              "bbox": {
+                "x": 67,
+                "y": 2321,
+                "width": 1324,
+                "height": 72
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.41690003871917725,
+              "bbox": {
+                "x": 1969,
+                "y": 2377,
+                "width": 162,
+                "height": 31
+              }
+            },
+            {
+              "label": "Page-footer",
+              "labelId": 4,
+              "score": 0.5498917698860168,
+              "bbox": {
+                "x": 4,
+                "y": 2454,
+                "width": 79,
+                "height": 23
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.1912512481212616,
+              "bbox": {
+                "x": 2,
+                "y": 2569,
+                "width": 2154,
+                "height": 305
+              }
+            }
+          ],
+          "imageWidth": 2158,
+          "imageHeight": 2876
+        }
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "ocrText": "Mustermarn GmbH\nkauptstraße 123\n10115 Berlin, Deutschland\nTel +49 1234 456789\n\nbs\nv\n™\narn |\nbe\n\nABC GmbH\nMichael Mayer\nABC Allee 17\n12345 Munchen\n\nDatum 29.04 2025\nKundennummer 21\n\nRechnung\n\nRechnung Re-172/2025\n\nSehr geehrte Damen und Herren\n\nhiermit erlauben wir uns Ihnen die nachstehenden Positionen ın Rechnung zu stel en\n\nPos. Bezeichnung\n1. Material\n1 Farbe blau Eimer 2 5\nPinsel Bren\nZum Malen\n2. Arbeit\nSumme Matenal\nSumme Arbeit.\nNetto\n19% USt.\nBrutto\nGesamtpreis\n41513 ¢\n315.10 ¢\n31510 €\n730.23 €\n138.74 €\n868.97 ¢\n\nPos. Bezeichnung 1. Material 11 Farbe blau Eimer 25 4 x 8202 1 Eimer Farbe mit 25 (her inhalt 2 | Bren 12 0¢ 1 a vel zum Malen Summe Material 2. Arbeit 21 Arbeitsstunde Me ste Std ¢ Summe Arbeit Netto 19% USt Le stongadatons  Datun des Dobument Brutto: Gesamtpreis 12101¢ 41513 € 315.10 ¢ 315,10 € 730,23 € 138,74 € 868,97 €\n\nBEISPIEL-RECHNUNG - ERSTELLT MIT DER RECHNUNGSSOFTWARE EA\n\nschone Gruße\n\nMax Mustermann\n\n.-",
+        "groundTruth": "MM\nMax Mustermann GmbH\n\nAbs.: Mustermann GmbH | Hauptstraße 123 | 10115 Berlin\n\nMustermann GmbH\nHauptstraße 123\n10115 Berlin Deutschland\nABC GmbH\nMichael Mayer\nABC-Allee 11\n12345 München\nHauptstraße 123\n10115 Berlin, Deutschland\nTel.: +49 1234 456789\noffice@mustermaenn.com\n\nRechnung: Re-172/2025\nDatum: 29.04.2025\nKundennummer: 21\nRechnung Re-172/2025\n\nRechnung\n\nSehr geehrte Damen und Herren,\nhiermit erlauben wir uns, Ihnen die nachstehenden Positionen in Rechnung zu stellen:\n\nPos. Bezeichnung Menge Einzelpreis Gesamtpreis\n1. Material\n1.1 Farbe blau - Eimer 2,5 Liter\n1 Eimer Farbe mit 2,5 Liter Inhalt.\n7,00 Eimer 42,02 294,12 €\n1.2 Pinsel - Breit\nPinsel zum Malen.\n12,00 10,08 121,01 €\n\nSumme Material: 415,13 €\n\n2. Arbeit\n2.1 Arbeitsstunde Meister\n5,00 Std. 63,02 315,10 €\n\nSumme Arbeit: 315,10 €\n\nNetto: 730,23 €\n19% USt.: 138,74 €\nBrutto: 868,97 €\n\nLeistungsdatum = Datum des Dokuments\n\nBEISPIEL-RECHNUNG - ERSTELLT MIT DER RECHNUNGS SOFTWARE EASYFIRMA\n\nschöne Grüße\n\nMax Mustermann\nMustermann GmbH\nHauptstraße 123 | 10115 | Berlin | Deutschland\nTel.: +49 1234 456789 | office@mustermann.com\nSt.-Nr.: 23/123/456/789 UID: DE123456789 IBAN: DE491700000122001632",
+        "cer": 0.6277056277056277,
+        "wer": 0.9166666666666666,
+        "ocrLength": 930,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.8051948051948052,
+        "underproductionRate": 0.19480519480519481,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.9389350414276123,
+              "bbox": {
+                "x": 186,
+                "y": 21,
+                "width": 248,
+                "height": 129
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9137293100357056,
+              "bbox": {
+                "x": 755,
+                "y": 187,
+                "width": 228,
+                "height": 126
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6329167485237122,
+              "bbox": {
+                "x": 129,
+                "y": 237,
+                "width": 402,
+                "height": 17
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8743879795074463,
+              "bbox": {
+                "x": 145,
+                "y": 284,
+                "width": 143,
+                "height": 106
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8799989819526672,
+              "bbox": {
+                "x": 858,
+                "y": 427,
+                "width": 213,
+                "height": 77
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.873083770275116,
+              "bbox": {
+                "x": 528,
+                "y": 522,
+                "width": 149,
+                "height": 29
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.7493137121200562,
+              "bbox": {
+                "x": 129,
+                "y": 565,
+                "width": 220,
+                "height": 19
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.3940907418727875,
+              "bbox": {
+                "x": 129,
+                "y": 607,
+                "width": 288,
+                "height": 17
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8488509654998779,
+              "bbox": {
+                "x": 130,
+                "y": 643,
+                "width": 748,
+                "height": 18
+              }
+            },
+            {
+              "label": "Table",
+              "labelId": 8,
+              "score": 0.8865796327590942,
+              "bbox": {
+                "x": 124,
+                "y": 693,
+                "width": 954,
+                "height": 396
+              }
+            },
+            {
+              "label": "Section-header",
+              "labelId": 7,
+              "score": 0.4817195534706116,
+              "bbox": {
+                "x": 241,
+                "y": 1172,
+                "width": 628,
+                "height": 19
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6503319144248962,
+              "bbox": {
+                "x": 126,
+                "y": 1231,
+                "width": 120,
+                "height": 18
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2759384512901306,
+              "bbox": {
+                "x": 125,
+                "y": 1286,
+                "width": 157,
+                "height": 16
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8527835011482239,
+              "bbox": {
+                "x": 340,
+                "y": 1548,
+                "width": 519,
+                "height": 79
+              }
+            }
+          ],
+          "imageWidth": 1186,
+          "imageHeight": 1672
+        }
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "ocrText": "Agentur für Arbeit Berlin Mitte, 10956 Berlin\n\nIhr Zeichen\nIhre Nachricht\nMein Zeichen\nKundennummer 9220567410\n(Bei jeder Antwort bitte angeben)\n\nReyk Christoph Joachim Buchenberg\nKörtestr. 16\n10967 Berlin\n\nHerr Altun\n\nName\n\n26. September 2025\n\nDatum\n\n. . .. se\nIhr Antrag auf Förderung einer Existenzgründung mit einem Gründungszuschuss (1. Pha )\nvom 26.09.2025\n\nSehr geehrter Herr Buchenberg,\n\nein Grundungszuschuss kann grundsätzlich gezahlt werden, wenn eine fachkundige Stelle Ihre\nGeschäftsidee geprüft hat und für tragfähig hält. Nur wenn zu erwarten ist, dass Sie nach einer\nAnlaufphase von der Umsetzung Ihrer Geschäftsidee leben können, kommt eine Forderung Ihrer\nselbständigen Tätigkeit in Betracht.\n\nFachkundige Stellen sind insbesondere:\n\ne Industrie- und Handelskammern,\n\nHandwerkskammern\n\ne berufsständische Kammern,\n\ne Fachverbände\n\ne Kreditinstitute\n\neuerberatende und unternehmensberatende\nEinrichtungen sein, deren Ta-\ntung ausgerichtet Ist.\nAls weitere fachkundige Stellen kommen aber auch st\nBerufe in Frage. Darüber hinaus können fachkundige Stellen auch\ntigkeitsschwerpunkt auf Existenzgründungsberatung und -vorberel\n\ne wählen. Bıtte beachten Sie aber,\nge Stelle Si\nKostenübernahme\nSie können selbst entscheiden, welche fachkundı\nIbst tragen mussen Eine\nSie Kosten die möglicherweise anfallen, Se\nurch die Agentur für Arbeit ist nicht möglich.\n\nDie fachkundige Stelle benötigt von Ihnen für ihre Stellungnahme folgende Unterlagen.\n\ne Beschreibung des Existenzgründungsvorhabens (Businessplan)\n\n© Kapitalbedarfs- und Finanzierungsplan\n\nÖffnungszeiten Sie erreichen uns:\nMo 08 00-12 30 U-Bhf Kochstraße\nDi: 08 00-12 30\nDo: 08 00-12 30 u. 14:00-16:00\nFr. 08:00-12 30\n\\ \\ 1 \\\n\\ \\\n\\ \\ \\\n\\ \\ \\\n\\ \\\nan \\\n\nBA GZ 01\n\nJugendberufsagentur\nMo 0800 - 16.00 Uhr\nDi 08 00 - 16.00 Uhr\nMi 08 00 - 12 30 Uhr\nDo 0800 - 18.00 Uhr\nFr 0800 - 12 30 Uhr\n\nPostanschrift\nAgentur für Arbeit Berlin Mitte\n10956 Berlin\n\nBankverbindung\nBA-Service-Haus\nBundesbank\nIBAN\nDESO 7600 0000 0076 0016 17\nBIC\nMARKDEF 1760\nInternet: www arbeitsagentur de\n\nBesucheradresse\nCharlottenstr 87 - 90\n10969 Berlin",
+        "groundTruth": "Bundesagentur für Arbeit\nAgentur für Arbeit Berlin Mitte\nReyk Christoph Joachim Buchenberg\nKörtestr. 16\n10967 Berlin\nIhr Zeichen:\nIhre Nachricht:\nMein Zeichen: 227.P-922D567410\nKundennummer: 922D567410\n(Bei jeder Antwort bitte angeben)\nName: Herr Altun\nDatum: 26. September 2025\nIhr Antrag auf Förderung einer Existenzgründung mit einem Gründungszuschuss (1. Phase)\nvom 26.09.2025\n\nSehr geehrter Herr Buchenberg,\n\nein Gründungszuschuss kann grundsätzlich gezahlt werden, wenn eine fachkundige Stelle Ihre\nGeschäftsidee geprüft hat und für tragfähig hält. Nur wenn zu erwarten ist, dass Sie nach einer\nAnlaufphase von der Umsetzung Ihrer Geschäftsidee leben können, kommt eine Förderung Ihrer\nselbständigen Tätigkeit in Betracht.\n\nFachkundige Stellen sind insbesondere:\n• Industrie- und Handelskammern,\n• Handwerkskammern\n• berufsständische Kammern,\n• Fachverbände\n• Kreditinstitute\n\nAls weitere fachkundige Stellen kommen aber auch steuerberatende und unternehmensberatende\nEinrichtungen in Frage. Darüber hinaus können fachkundige Stellen auch Einrichtungen sein, deren Tä-\ntigkeitsschwerpunkt auf Existenzgründungsberatung und -vorbereitung ausgerichtet ist.\n\nSie können selbst entscheiden, welche fachkundige Stelle Sie wählen. Bitte beachten Sie aber,\ndass Sie Kosten, die möglicherweise anfallen, selbst tragen müssen. Eine Kostenübernahme\ndurch die Agentur für Arbeit ist nicht möglich.\n\nDie fachkundige Stelle benötigt von Ihnen für ihre Stellungnahme folgende Unterlagen:\n• Beschreibung des Existenzgründungsvorhabens (Businessplan)\n• Kapitalbedarfs- und Finanzierungsplan\nPostanschrift\nAgentur für Arbeit Berlin Mitte\n10956 Berlin\n\nBesucheradresse\nCharlottenstr. 87 - 90\n10969 Berlin\n\nBankverbindung\nBA-Service-Haus\nBundesbank\nIBAN:\nDE50 7600 0000 0076 0016 17\nBIC:\nMARKDEF1760\nInternet: www.arbeitsagentur.de\n\nÖffnungszeiten\nMo: 08:00-12:30\nDi: 08:00-12:30\nMi: 08:00 - 12:30 Uhr\nDo: 08:00-12:30 u. 14.00-16.00\nFr: 08:00-12:30\n\nU-Bhf Kochstraße\nMo. 08:00 - 16:00 Uhr\nDi. 08:00 - 16:00 Uhr\nMi. 08:00 - 12:30 Uhr\nDo. 08:00 - 18:00 Uhr\nFr. 08:00 - 12:30 Uhr",
+        "cer": 0.4310764734534827,
+        "wer": 0.6828358208955224,
+        "ocrLength": 2064,
+        "groundTruthLength": 2053,
+        "lengthRatio": 1.0053580126643935,
+        "underproductionRate": 0,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false,
+        "layout": {
+          "regions": [
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.43582963943481445,
+              "bbox": {
+                "x": 1828,
+                "y": 121,
+                "width": 909,
+                "height": 304
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.8211766481399536,
+              "bbox": {
+                "x": 852,
+                "y": 222,
+                "width": 290,
+                "height": 230
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.2639070153236389,
+              "bbox": {
+                "x": 1655,
+                "y": 227,
+                "width": 145,
+                "height": 139
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.24726518988609314,
+              "bbox": {
+                "x": 539,
+                "y": 689,
+                "width": 557,
+                "height": 28
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8103100061416626,
+              "bbox": {
+                "x": 1861,
+                "y": 709,
+                "width": 604,
+                "height": 215
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8245234489440918,
+              "bbox": {
+                "x": 543,
+                "y": 890,
+                "width": 719,
+                "height": 173
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5804858207702637,
+              "bbox": {
+                "x": 2131,
+                "y": 972,
+                "width": 173,
+                "height": 36
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.5095884799957275,
+              "bbox": {
+                "x": 1867,
+                "y": 983,
+                "width": 101,
+                "height": 37
+              }
+            },
+            {
+              "label": "Picture",
+              "labelId": 6,
+              "score": 0.7451834678649902,
+              "bbox": {
+                "x": 2529,
+                "y": 1212,
+                "width": 192,
+                "height": 181
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.45343226194381714,
+              "bbox": {
+                "x": 2132,
+                "y": 1246,
+                "width": 354,
+                "height": 38
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.17885389924049377,
+              "bbox": {
+                "x": 1871,
+                "y": 1261,
+                "width": 122,
+                "height": 35
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8601656556129456,
+              "bbox": {
+                "x": 536,
+                "y": 1532,
+                "width": 2309,
+                "height": 132
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8943433165550232,
+              "bbox": {
+                "x": 537,
+                "y": 1753,
+                "width": 781,
+                "height": 47
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.9249602556228638,
+              "bbox": {
+                "x": 531,
+                "y": 1855,
+                "width": 2266,
+                "height": 245
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7698366045951843,
+              "bbox": {
+                "x": 536,
+                "y": 2170,
+                "width": 997,
+                "height": 52
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9005205631256104,
+              "bbox": {
+                "x": 630,
+                "y": 2261,
+                "width": 875,
+                "height": 53
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9004732370376587,
+              "bbox": {
+                "x": 631,
+                "y": 2329,
+                "width": 589,
+                "height": 55
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.9108538031578064,
+              "bbox": {
+                "x": 633,
+                "y": 2390,
+                "width": 765,
+                "height": 56
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8737460374832153,
+              "bbox": {
+                "x": 636,
+                "y": 2467,
+                "width": 436,
+                "height": 50
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6755156517028809,
+              "bbox": {
+                "x": 637,
+                "y": 2529,
+                "width": 434,
+                "height": 52
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.7857674360275269,
+              "bbox": {
+                "x": 549,
+                "y": 2590,
+                "width": 2297,
+                "height": 224
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.8699229955673218,
+              "bbox": {
+                "x": 563,
+                "y": 2848,
+                "width": 2224,
+                "height": 206
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.767727255821228,
+              "bbox": {
+                "x": 567,
+                "y": 3094,
+                "width": 2036,
+                "height": 76
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.6649352312088013,
+              "bbox": {
+                "x": 665,
+                "y": 3208,
+                "width": 1602,
+                "height": 58
+              }
+            },
+            {
+              "label": "List-item",
+              "labelId": 3,
+              "score": 0.8745840787887573,
+              "bbox": {
+                "x": 662,
+                "y": 3280,
+                "width": 1017,
+                "height": 55
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6549888849258423,
+              "bbox": {
+                "x": 581,
+                "y": 3381,
+                "width": 127,
+                "height": 37
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.1075562834739685,
+              "bbox": {
+                "x": 2520,
+                "y": 3415,
+                "width": 296,
+                "height": 249
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.39241617918014526,
+              "bbox": {
+                "x": 588,
+                "y": 3477,
+                "width": 386,
+                "height": 110
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.2801932096481323,
+              "bbox": {
+                "x": 1073,
+                "y": 3479,
+                "width": 426,
+                "height": 307
+              }
+            },
+            {
+              "label": "Text",
+              "labelId": 9,
+              "score": 0.6298699975013733,
+              "bbox": {
+                "x": 597,
+                "y": 3678,
+                "width": 279,
+                "height": 105
+              }
+            }
+          ],
+          "imageWidth": 3070,
+          "imageHeight": 4094
+        }
+      }
+    ]
+  },
+  "analysis": {
+    "tableEnabledVsDisabled": {
+      "tableEnabledCount": 32,
+      "tableDisabledCount": 28,
+      "bestTableEnabled": "56.53%",
+      "bestTableDisabled": "55.34%",
+      "conclusion": "Table processing DISABLED produces slightly better results (55.34% vs 56.53%). The difference is ~1.2 percentage points."
+    },
+    "inversionDetectionImpact": {
+      "invEnabledCount": 24,
+      "invDisabledCount": 36,
+      "bestInvEnabled": "55.34%",
+      "bestInvDisabled": "55.34%",
+      "conclusion": "Inversion detection has no measurable impact when table is disabled - both enabled and disabled produce 55.34% custom WER."
+    },
+    "distinctWERValues": 7,
+    "convergenceNote": "Only 7 distinct custom WER values observed across 60 iterations. The optimizer converged quickly, with the best result found at iteration 2. Table parameters have limited effect since most images in the dataset are not table-heavy."
+  },
+  "topResults": [
+    {
+      "iterationId": 2,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 106.667
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "markdown"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "iterationId": 4,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 106.667
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "plain"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "iterationId": 6,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 64
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "plain"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "iterationId": 7,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 192
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "plain"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 5
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "iterationId": 8,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 64
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "markdown"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "iterationId": 12,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 64
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "markdown"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "iterationId": 14,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 192
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "markdown"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 22.5
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "iterationId": 18,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 64
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "plain"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 5
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "iterationId": 19,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 64
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "markdown"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 5
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "iterationId": 22,
+      "customWER": 0.5533741139622351,
+      "customCER": 0.43288710421087867,
+      "parameters": [
+        {
+          "path": "preprocessing.inversionDetection.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.inversionDetection.brightnessThreshold",
+          "value": 192
+        },
+        {
+          "path": "table.enabled",
+          "value": false
+        },
+        {
+          "path": "table.outputFormat",
+          "value": "plain"
+        },
+        {
+          "path": "table.rowClusterTolerance",
+          "value": 40
+        },
+        {
+          "path": "table.colClusterTolerance",
+          "value": 10
+        }
+      ]
+    }
+  ]
+}

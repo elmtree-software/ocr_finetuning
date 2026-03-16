@@ -1,0 +1,132 @@
+{
+    "baseConfig": {
+        "engine": "tesseract",
+        "rectification": {
+            "enabled": true,
+            "minContourConfidence": 0.5,
+            "minDocumentArea": 0.3,
+            "cannyLow": 125,
+            "cannyHigh": 100,
+            "blurSize": 3,
+            "useAdaptiveThreshold": true
+        },
+        "preprocessing": {
+            "enabled": true,
+            "grayscale": true,
+            "contrastBoost": 2.0,
+            "dpiScaling": {
+                "enabled": true,
+                "minCapitalHeightPx": 20,
+                "maxScale": 4
+            },
+            "inversionDetection": {
+                "enabled": true,
+                "brightnessThreshold": 128
+            },
+            "clahe": {
+                "enabled": true,
+                "clipLimit": 2.0,
+                "tileSize": 8
+            },
+            "bilateralFilter": {
+                "enabled": false,
+                "diameter": 5,
+                "sigmaColor": 75,
+                "sigmaSpace": 75
+            },
+            "threshold": {
+                "enabled": false,
+                "type": "otsu",
+                "value": 128
+            }
+        },
+        "layout": {
+            "enabled": true,
+            "detectionThreshold": 0.1,
+            "regionPadding": 15,
+            "internalPadding": 5,
+            "nms": {
+                "iouThreshold": 0.6,
+                "containmentThreshold": 0.3
+            },
+            "xyCut": {
+                "enabled": true,
+                "minGapThreshold": 25,
+                "spanningThreshold": 0.7,
+                "maxDepth": 14
+            }
+        },
+        "rotation": {
+            "enabled": true,
+            "fastMode": false,
+            "skipThreshold": 70,
+            "minImprovement": 5,
+            "angleStep": 90
+        },
+        "fallback": {
+            "enabled": true,
+            "gridSize": 80,
+            "minAreaRatio": 0.14,
+            "minConfidence": 0.45
+        },
+        "table": {
+            "enabled": true,
+            "outputFormat": "markdown",
+            "rowClusterTolerance": 15,
+            "colClusterTolerance": 30
+        },
+        "output": {
+            "minTextLength": 2,
+            "minLineConfidence": 0.4,
+            "minWordConfidence": 0.5
+        }
+    },
+    "iterateParams": {
+        "output.minTextLength": {
+            "enabled": true,
+            "min": 1,
+            "max": 3,
+            "steps": 3
+        },
+        "output.minLineConfidence": {
+            "enabled": true,
+            "min": 0.05,
+            "max": 0.5,
+            "steps": 5
+        },
+        "output.minWordConfidence": {
+            "enabled": true,
+            "min": 0.05,
+            "max": 0.6,
+            "steps": 5
+        },
+        "fallback.enabled": {
+            "enabled": true
+        },
+        "fallback.gridSize": {
+            "enabled": true,
+            "min": 40,
+            "max": 120,
+            "steps": 3
+        },
+        "fallback.minAreaRatio": {
+            "enabled": true,
+            "min": 0.05,
+            "max": 0.25,
+            "steps": 3
+        },
+        "fallback.minConfidence": {
+            "enabled": true,
+            "min": 0.2,
+            "max": 0.6,
+            "steps": 3
+        }
+    },
+    "optimizer": {
+        "iterations": 100,
+        "initialSamples": 25,
+        "candidateSamples": 400
+    },
+    "scoringMode": "fulltext",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-zoom: 1;
+
+  /* --- Light Mode Palette --- */
+  /* Inspired by modern gallery/museum aesthetics: warm stone, cream, subtle warmth */
+
+  /* Backgrounds - subtle warm gray gradients like gallery walls */
+  --bg-gradient-start: #F8F7F5;
+  /* warm cream */
+  --bg-gradient-end: #EFEDEA;
+  /* soft stone */
+  --bg-gradient-accent: rgba(255, 142, 152, 0.03);
+  /* hint of accent */
+
+  /* Surfaces (Glassmorphism with warmth) */
+  --bg-workspace: rgba(252, 251, 249, 0.85);
+  /* warm white/85 */
+
+  /* Text - refined, high contrast but not harsh */
+  --text-heading: #1A1A1A;
+  /* near black, elegant */
+  --text-normal: #3D3D3D;
+  /* charcoal */
+  --text-muted: #7A7A7A;
+  /* warm gray */
+
+  /* Standard Buttons (Ghost/Outline style) */
+  --btn-std-bg: rgba(255, 255, 255, 0.7);
+  --btn-std-text: #4A4A4A;
+  --btn-std-border: #E0DFDD;
+  /* warm gray border */
+  --btn-std-hover-bg: rgba(255, 255, 255, 0.9);
+  --btn-std-hover-text: #FF8E98;
+  /* new accent */
+  --btn-std-glow-color: rgba(255, 142, 152, 0.2);
+  --btn-std-glow-radius: 16px;
+  --btn-std-glow-intensity: -2px;
+
+  /* Special Buttons (Primary Action) */
+  --btn-spec-bg: #FF8E98;
+  /* new accent - coral rose */
+  --btn-spec-text: #FFFFFF;
+  --btn-spec-border: transparent;
+  --btn-spec-hover-bg: #FF7A86;
+  /* slightly darker */
+  --btn-spec-hover-text: #FFFFFF;
+  --btn-spec-glow-color: rgba(255, 142, 152, 0.35);
+  --btn-spec-glow-radius: 20px;
+  --btn-spec-glow-intensity: 0px;
+
+  /* Misc Colors */
+  --color-base: #F8F7F5;
+  --color-surface: #FCFBF9;
+  --color-accent: #FF8E98;
+  --color-accent-green: #10B981;
+  --color-checkbox: #FF8E98;
+  --color-assistant-text: #3D3D3D;
+
+  /* Enhanced Shadows for depth */
+  --shadow-glow-accent: rgba(255, 142, 152, 0.35);
+  --shadow-dark-glow-accent: rgba(255, 142, 152, 0.15);
+  --shadow-surface: 0 4px 24px -4px rgba(0, 0, 0, 0.06), 0 2px 8px -2px rgba(0, 0, 0, 0.04);
+  --shadow-elevated: 0 8px 32px -8px rgba(0, 0, 0, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.06);
+}
+
+.dark {
+  /* --- Dark Mode Palette --- */
+  /* Elegant night gallery: warm dark grays, not black */
+
+  /* Backgrounds - warm dark gray with more contrast */
+  --bg-gradient-start: #1C1C22;
+  /* warm dark gray base */
+  --bg-gradient-end: #252530;
+  /* noticeably lighter for gradient */
+  --bg-gradient-accent: rgba(255, 142, 152, 0.02);
+
+  /* Surfaces - more contrast from background */
+  --bg-workspace: rgba(38, 38, 46, 0.95);
+
+  /* Text - soft, elegant contrast */
+  --text-heading: #F0F0F2;
+  --text-normal: #BDBDC4;
+  --text-muted: #7A7A84;
+
+  /* Standard Buttons */
+  --btn-std-bg: rgba(48, 48, 58, 0.8);
+  --btn-std-text: #A8A8B2;
+  --btn-std-border: #3A3A46;
+  --btn-std-hover-bg: rgba(58, 58, 70, 0.9);
+  --btn-std-hover-text: #FF8E98;
+  --btn-std-glow-color: rgba(255, 142, 152, 0.12);
+  --btn-std-glow-radius: 16px;
+  --btn-std-glow-intensity: -2px;
+
+  /* Special Buttons */
+  --btn-spec-bg: #FF8E98;
+  --btn-spec-text: #1C1C22;
+  --btn-spec-border: transparent;
+  --btn-spec-hover-bg: #FF7A86;
+  --btn-spec-hover-text: #1C1C22;
+  --btn-spec-glow-color: rgba(255, 142, 152, 0.25);
+  --btn-spec-glow-radius: 24px;
+  --btn-spec-glow-intensity: 0px;
+
+  /* Misc Colors */
+  --color-base: #1C1C22;
+  --color-surface: #26262E;
+  --color-accent: #FF8E98;
+  --color-assistant-text: #BDBDC4;
+  --color-border: #3A3A46;
+
+  /* Dark mode shadows */
+  --shadow-surface: 0 4px 24px -4px rgba(0, 0, 0, 0.3), 0 2px 8px -2px rgba(0, 0, 0, 0.2);
+  --shadow-elevated: 0 8px 32px -8px rgba(0, 0, 0, 0.4), 0 4px 16px -4px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: calc(16px * var(--text-zoom));
+}
+
+body {
+  @apply bg-gradient-to-br from-[var(--bg-gradient-start)] to-[var(--bg-gradient-end)] text-[var(--text-normal)] min-h-screen transition-colors duration-300;
+}
+
+/* Checkbox and radio custom styling */
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--color-accent);
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-normal);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(122, 122, 132, 0.4);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(122, 122, 132, 0.6);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--text-muted) transparent;
+}
+
+.dark * {
+  scrollbar-color: rgba(122, 122, 132, 0.4) transparent;
+}

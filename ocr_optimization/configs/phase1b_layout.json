@@ -1,0 +1,50 @@
+{
+    "baseConfig": {
+        "engine": "tesseract"
+    },
+    "iterateParams": {
+        "layout.enabled": {
+            "enabled": true
+        },
+        "layout.detectionThreshold": {
+            "enabled": true,
+            "min": 0.1,
+            "max": 0.5,
+            "steps": 3
+        },
+        "layout.regionPadding": {
+            "enabled": true,
+            "min": 0,
+            "max": 15,
+            "steps": 3
+        },
+        "layout.internalPadding": {
+            "enabled": true,
+            "min": 5,
+            "max": 20,
+            "steps": 3
+        },
+        "layout.nms.iouThreshold": {
+            "enabled": true,
+            "min": 0.3,
+            "max": 0.6,
+            "steps": 3
+        },
+        "layout.nms.containmentThreshold": {
+            "enabled": true,
+            "min": 0.3,
+            "max": 0.7,
+            "steps": 3
+        },
+        "layout.xyCut.enabled": {
+            "enabled": true
+        }
+    },
+    "optimizer": {
+        "iterations": 80,
+        "initialSamples": 20,
+        "candidateSamples": 400
+    },
+    "scoringMode": "fulltext",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

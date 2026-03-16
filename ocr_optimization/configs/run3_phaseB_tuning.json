@@ -1,0 +1,84 @@
+{
+  "_description": "Run 3 Phase B: conservative-centered tuning on train split, evaluated on val/test.",
+  "baseConfig": {
+    "engine": "tesseract",
+    "rectification": {
+      "cannyLow": 175,
+      "cannyHigh": 90
+    },
+    "layout": {
+      "regionPadding": 16,
+      "internalPadding": 5,
+      "detectionThreshold": 0.125
+    },
+    "preprocessing": {
+      "dpiScaling": {
+        "minCapitalHeightPx": 40,
+        "maxScale": 2.75
+      },
+      "clahe": {
+        "tileSize": 28
+      }
+    }
+  },
+  "iterateParams": {
+    "rectification.cannyLow": {
+      "enabled": true,
+      "min": 150,
+      "max": 205,
+      "steps": 12
+    },
+    "rectification.cannyHigh": {
+      "enabled": true,
+      "min": 70,
+      "max": 110,
+      "steps": 9
+    },
+    "layout.regionPadding": {
+      "enabled": true,
+      "min": 12,
+      "max": 22,
+      "steps": 11
+    },
+    "layout.internalPadding": {
+      "enabled": true,
+      "min": 2,
+      "max": 8,
+      "steps": 7
+    },
+    "layout.detectionThreshold": {
+      "enabled": true,
+      "min": 0.08,
+      "max": 0.22,
+      "steps": 15
+    },
+    "preprocessing.dpiScaling.minCapitalHeightPx": {
+      "enabled": true,
+      "min": 32,
+      "max": 52,
+      "steps": 11
+    },
+    "preprocessing.dpiScaling.maxScale": {
+      "enabled": true,
+      "min": 2.2,
+      "max": 3.4,
+      "steps": 13
+    },
+    "preprocessing.clahe.tileSize": {
+      "enabled": true,
+      "min": 20,
+      "max": 36,
+      "steps": 9
+    }
+  },
+  "optimizer": {
+    "iterations": 48,
+    "initialSamples": 12,
+    "candidateSamples": 250
+  },
+  "scoringMode": "customWER",
+  "imagesDir": "./ocr_trainingdata",
+  "splitManifest": "./ocr_optimization/configs/run3_split_manifest.json",
+  "tuneSplit": "train",
+  "appUrl": "http://localhost:5173/ocr_finetuning.html"
+}

@@ -1,0 +1,3013 @@
+{
+  "runTimestamp": "2026-02-27T11:46:26.773Z",
+  "configFile": "ocr_optimization/configs/run2/phase2a_preprocessing.json",
+  "totalIterations": 100,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 78,
+    "parameters": [
+      {
+        "path": "preprocessing.contrastBoost",
+        "value": 1.149
+      },
+      {
+        "path": "preprocessing.clahe.clipLimit",
+        "value": 0.5
+      },
+      {
+        "path": "preprocessing.clahe.tileSize",
+        "value": 32
+      },
+      {
+        "path": "preprocessing.dpiScaling.maxScale",
+        "value": 3.25
+      },
+      {
+        "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+        "value": 46
+      }
+    ],
+    "customWER": 0.3558472665874492,
+    "customCER": 0.2808500648512997,
+    "originalWER": 0.3848438755623514,
+    "originalCER": 0.3117625654526531,
+    "combinedScore": 0.3558472665874492,
+    "feasible": true,
+    "droppedImage": "000017.jpg",
+    "droppedWER": 0.5588235294117647,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.3817552961521833,
+        "wer": 0.4434250764525994,
+        "ocrLength": 2020,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.8733246865542585,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.4972375690607735,
+        "wer": 0.5588235294117647,
+        "ocrLength": 1401,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.6450276243093923,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.2874493927125506,
+        "wer": 0.3238095238095238,
+        "ocrLength": 538,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7260458839406208,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.16676737160120847,
+        "wer": 0.2209737827715356,
+        "ocrLength": 1462,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8833836858006042,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.1527431421446384,
+        "wer": 0.16606498194945848,
+        "ocrLength": 1423,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8871571072319202,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.296969696969697,
+        "wer": 0.42857142857142855,
+        "ocrLength": 1051,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.90995670995671,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.3994154895275207,
+        "wer": 0.5522388059701493,
+        "ocrLength": 1913,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9318071115440818,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 78,
+      "customWER": 0.3558472665874492,
+      "customCER": 0.2808500648512997,
+      "originalWER": 0.3848438755623514,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.35825739129045003,
+      "customCER": 0.31091092959903827,
+      "originalWER": 0.40161557908929335,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.046
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 22
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.3673122918626726,
+      "customCER": 0.3028490584602902,
+      "originalWER": 0.4078012921848118,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 87,
+      "customWER": 0.37254229712421966,
+      "customCER": 0.29442401881777264,
+      "originalWER": 0.40931760024365177,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.251
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.374302797291124,
+      "customCER": 0.2938780328990121,
+      "originalWER": 0.41799483465289605,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.37710424078157256,
+      "customCER": 0.28639299542013713,
+      "originalWER": 0.41987086184638983,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.251
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.3782535172842459,
+      "customCER": 0.3170398554355625,
+      "originalWER": 0.4182299055713705,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.37919961751482906,
+      "customCER": 0.32056189109360167,
+      "originalWER": 0.4132635377017863,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.6
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.38538017490545085,
+      "customCER": 0.3245392614199118,
+      "originalWER": 0.42643930958282344,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 95,
+      "customWER": 0.38556189662929086,
+      "customCER": 0.3057370398357156,
+      "originalWER": 0.4265934649133546,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.38566793882256706,
+      "customCER": 0.2962166728013595,
+      "originalWER": 0.426247486225372,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.3886479361069799,
+      "customCER": 0.2890375838060537,
+      "originalWER": 0.42766461750346174,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 20
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.38953226387147444,
+      "customCER": 0.3255894815849041,
+      "originalWER": 0.42212009172176795,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.046
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.38976402104167507,
+      "customCER": 0.3269429664291144,
+      "originalWER": 0.4192734859256297,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.251
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.39213987683987206,
+      "customCER": 0.29883762833074945,
+      "originalWER": 0.4322333398123273,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.39268739104370903,
+      "customCER": 0.34786201528861677,
+      "originalWER": 0.4257110796102041,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.046
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 20
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.39341556858988785,
+      "customCER": 0.3116794012328401,
+      "originalWER": 0.42754947895939965,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.3937194439789197,
+      "customCER": 0.35429566940482626,
+      "originalWER": 0.42703256840831827,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.046
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.39475144825937053,
+      "customCER": 0.31471112614515556,
+      "originalWER": 0.4197659472475276,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.251
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 94,
+      "customWER": 0.397493160714076,
+      "customCER": 0.3311809914128855,
+      "originalWER": 0.4368218688473592,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 80,
+      "customWER": 0.3982255795428775,
+      "customCER": 0.3392288013859755,
+      "originalWER": 0.4409430262398977,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.3990445599097953,
+      "customCER": 0.3419551595507078,
+      "originalWER": 0.4286978580739422,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.399064513788665,
+      "customCER": 0.31049245209061216,
+      "originalWER": 0.43449227232305737,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.39926506318680294,
+      "customCER": 0.3399234469715693,
+      "originalWER": 0.4388658524794445,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.40067734156027995,
+      "customCER": 0.3424218627510028,
+      "originalWER": 0.43850074654746685,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.4012346293965592,
+      "customCER": 0.34963493626392284,
+      "originalWER": 0.43950363191973985,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 22
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.40159201341787454,
+      "customCER": 0.3416308993539239,
+      "originalWER": 0.4356082804085983,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.4016738495780728,
+      "customCER": 0.2993027244418343,
+      "originalWER": 0.4356784256887683,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.6
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 20
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.4030036831530541,
+      "customCER": 0.3080358341218338,
+      "originalWER": 0.44522164438329004,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 81,
+      "customWER": 0.40494892327975784,
+      "customCER": 0.35280127263082667,
+      "originalWER": 0.44268731239105286,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.4054970756324219,
+      "customCER": 0.33102880019886577,
+      "originalWER": 0.44368236734879857,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.4072449400299123,
+      "customCER": 0.34678987308883674,
+      "originalWER": 0.4467561670844626,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 22
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.4086738375663373,
+      "customCER": 0.34939293090020906,
+      "originalWER": 0.4458800960652639,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.40867847010102226,
+      "customCER": 0.3624452178281264,
+      "originalWER": 0.4429126947742271,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.4091488635587201,
+      "customCER": 0.3171782361463645,
+      "originalWER": 0.45030584111061983,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 92,
+      "customWER": 0.4091488635587201,
+      "customCER": 0.3171782361463645,
+      "originalWER": 0.45030584111061983,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.41213471927954953,
+      "customCER": 0.34085849373687505,
+      "originalWER": 0.4419433461015624,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.251
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.41235188294824693,
+      "customCER": 0.35368598525356676,
+      "originalWER": 0.4516587568127831,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 22
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.41258210364389697,
+      "customCER": 0.3216502599493373,
+      "originalWER": 0.44407430639988016,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.4144513871898954,
+      "customCER": 0.3123759293655671,
+      "originalWER": 0.45703522134843805,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 89,
+      "customWER": 0.4147108246331032,
+      "customCER": 0.3220446823431671,
+      "originalWER": 0.4616263162648093,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 99,
+      "customWER": 0.4167192336431797,
+      "customCER": 0.3558892668109525,
+      "originalWER": 0.451115393799877,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.149
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.41724014485780764,
+      "customCER": 0.36377937041253133,
+      "originalWER": 0.45584869559240665,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.41727267460138867,
+      "customCER": 0.30719280794413284,
+      "originalWER": 0.46076408369066163,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.41793213762364395,
+      "customCER": 0.31503746073659555,
+      "originalWER": 0.46366972340530027,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.42031917259631807,
+      "customCER": 0.32225416615991304,
+      "originalWER": 0.45721235202133387,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.42070620364829653,
+      "customCER": 0.3711386088413106,
+      "originalWER": 0.45987002329517856,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.4211275371470426,
+      "customCER": 0.3250850947838524,
+      "originalWER": 0.4576051158739355,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.4212869654641647,
+      "customCER": 0.3712213594533811,
+      "originalWER": 0.45225449918250366,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.943
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 22
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.4219911385139241,
+      "customCER": 0.3233878566360057,
+      "originalWER": 0.4652453533264827,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.4231936794553943,
+      "customCER": 0.3215368702654821,
+      "originalWER": 0.4662761027048858,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.42522307274325905,
+      "customCER": 0.3227242425908938,
+      "originalWER": 0.4658312226833875,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.42561005883066727,
+      "customCER": 0.3261172981269645,
+      "originalWER": 0.47184226099858856,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 83,
+      "customWER": 0.42817254421870077,
+      "customCER": 0.34537553031054885,
+      "originalWER": 0.4581564238292489,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 97,
+      "customWER": 0.42910540450653056,
+      "customCER": 0.3363836035880336,
+      "originalWER": 0.4661008316477994,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.42999279895906595,
+      "customCER": 0.39050867180122895,
+      "originalWER": 0.46817207145377343,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.43044607809832364,
+      "customCER": 0.33002080984166066,
+      "originalWER": 0.4658925567373386,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.6
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.43131014086471064,
+      "customCER": 0.3465048140435191,
+      "originalWER": 0.4666799896795816,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.43206962608434646,
+      "customCER": 0.36614157654999735,
+      "originalWER": 0.4615018563716167,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.43232556331931987,
+      "customCER": 0.3757345679293654,
+      "originalWER": 0.49845592502200203,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 30
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 90,
+      "customWER": 0.4328350312445867,
+      "customCER": 0.346059805994904,
+      "originalWER": 0.4675501665801132,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 85,
+      "customWER": 0.4348763689601642,
+      "customCER": 0.37745358106100396,
+      "originalWER": 0.46308730784820795,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.43527097028379297,
+      "customCER": 0.3357946005986047,
+      "originalWER": 0.47087851874665254,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.4369846072693886,
+      "customCER": 0.37966515891635444,
+      "originalWER": 0.502449391264918,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 91,
+      "customWER": 0.4369846072693886,
+      "customCER": 0.37966515891635444,
+      "originalWER": 0.502449391264918,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.43709874451310143,
+      "customCER": 0.32998002681418753,
+      "originalWER": 0.4723451423557676,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.354
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.4374097948169044,
+      "customCER": 0.328828586890338,
+      "originalWER": 0.47313696698591806,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.43744193453846464,
+      "customCER": 0.33263756686179774,
+      "originalWER": 0.47444002552276554,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.43808072519029245,
+      "customCER": 0.37303417538106926,
+      "originalWER": 0.4716112098269733,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 93,
+      "customWER": 0.4390949155717314,
+      "customCER": 0.3380990013445295,
+      "originalWER": 0.4716051657281507,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 9,
+      "customWER": 0.4393936853644013,
+      "customCER": 0.3707319968336746,
+      "originalWER": 0.46380803283335237,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.4401083043491565,
+      "customCER": 0.367656933042956,
+      "originalWER": 0.4722987146522181,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.4405728825932618,
+      "customCER": 0.33285183071398533,
+      "originalWER": 0.4805250558282381,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.44173800981591493,
+      "customCER": 0.33758231079237694,
+      "originalWER": 0.4843556029964286,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.4420128055318476,
+      "customCER": 0.3520955937527077,
+      "originalWER": 0.47580689453750197,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.4429596273838546,
+      "customCER": 0.3420925998476834,
+      "originalWER": 0.4859721976215353,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 37.2
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 86,
+      "customWER": 0.4443269012182425,
+      "customCER": 0.3513190387792478,
+      "originalWER": 0.47779040512584053,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.4443348991822906,
+      "customCER": 0.3535271381348362,
+      "originalWER": 0.48204896120386803,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.457
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 20
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.44514493856557974,
+      "customCER": 0.3908860274447365,
+      "originalWER": 0.47810151571239295,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.4471389295371641,
+      "customCER": 0.3910603536467511,
+      "originalWER": 0.5070714634128073,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 82,
+      "customWER": 0.44785712317993864,
+      "customCER": 0.35267194494814813,
+      "originalWER": 0.47996596952838283,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.4480122855140654,
+      "customCER": 0.34545288278468816,
+      "originalWER": 0.4894527073113758,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 18
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 96,
+      "customWER": 0.44866443190314853,
+      "customCER": 0.40140435843861066,
+      "originalWER": 0.48854504822803735,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.4501633198055212,
+      "customCER": 0.38063975066720795,
+      "originalWER": 0.4824529135748003,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.4506701604329382,
+      "customCER": 0.3578730107742083,
+      "originalWER": 0.4972541960547946,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.45410740957844836,
+      "customCER": 0.3974232818115637,
+      "originalWER": 0.5171260789583979,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.55
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.45542737258606486,
+      "customCER": 0.35854885603367664,
+      "originalWER": 0.4869150305870945,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.4598566747458388,
+      "customCER": 0.38818521879173135,
+      "originalWER": 0.5193329320950727,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.5
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.4602472288644251,
+      "customCER": 0.3538349748590132,
+      "originalWER": 0.4975994159161214,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.46294816235985353,
+      "customCER": 0.36414711995585364,
+      "originalWER": 0.5069044537134263,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.5
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 28
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 28.4
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.4665369840760322,
+      "customCER": 0.3980094850939097,
+      "originalWER": 0.5264194557386398,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.4676612966771796,
+      "customCER": 0.409768092155383,
+      "originalWER": 0.5273831522539091,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 88,
+      "customWER": 0.4676612966771796,
+      "customCER": 0.409768092155383,
+      "originalWER": 0.5273831522539091,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.45
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 24
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.46804941048009224,
+      "customCER": 0.41243390709945343,
+      "originalWER": 0.5249947327924599,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 98,
+      "customWER": 0.4692853186377597,
+      "customCER": 0.36815147061222286,
+      "originalWER": 0.504035734018036,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 46
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.4797038368456019,
+      "customCER": 0.4119635811664902,
+      "originalWER": 0.5309026084526928,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 26
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 2.25
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 84,
+      "customWER": 0.48024407122727736,
+      "customCER": 0.371763398415498,
+      "originalWER": 0.5196309726165779,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 32.8
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.4817425185225768,
+      "customCER": 0.37309838696674685,
+      "originalWER": 0.517334565898338,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.56
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.65
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 32
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.48368416246026563,
+      "customCER": 0.42050676847942176,
+      "originalWER": 0.542477581428527,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.4
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 24
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.4872701488974827,
+      "customCER": 0.42894843391773985,
+      "originalWER": 0.5441907398713118,
+      "parameters": [
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 0.84
+        },
+        {
+          "path": "preprocessing.clahe.clipLimit",
+          "value": 0.35
+        },
+        {
+          "path": "preprocessing.clahe.tileSize",
+          "value": 16
+        },
+        {
+          "path": "preprocessing.dpiScaling.maxScale",
+          "value": 1.75
+        },
+        {
+          "path": "preprocessing.dpiScaling.minCapitalHeightPx",
+          "value": 41.6
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

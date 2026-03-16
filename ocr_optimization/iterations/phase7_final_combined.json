@@ -1,0 +1,267 @@
+{
+  "phase": "Phase 7: Final Combined",
+  "description": "Best preprocessing combos with output improvements",
+  "runDirectory": "2026-02-26_21-15-59-578",
+  "completionStatus": {
+    "completed": 98,
+    "total": 120,
+    "percentage": "81.7%",
+    "timedOut": true,
+    "note": "Run timed out at 98/120 iterations (2 hour limit)"
+  },
+  "bestResult": {
+    "customWER": 0.48199937972563256,
+    "customWERPercent": "48.20%",
+    "customCER": 0.398490819220499,
+    "customCERPercent": "39.85%",
+    "combinedScore": 0.6486945929498048,
+    "droppedImage": {
+      "filename": "000014.jpg",
+      "wer": 0.8453038674033149,
+      "werPercent": "84.5%"
+    },
+    "parameters": {
+      "preprocessing.contrastBoost": 1,
+      "preprocessing.clahe.clipLimit": 0.9,
+      "preprocessing.clahe.tileSize": 28,
+      "preprocessing.dpiScaling.maxScale": 3,
+      "output.minWordConfidence": 0.2
+    },
+    "perImageResults": [
+      {
+        "filename": "000014.jpg",
+        "wer": 0.8453038674033149,
+        "cer": 0.7197231833910035
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.8311688311688312,
+        "cer": 0.5932504440497336
+      },
+      {
+        "filename": "000015.jpg",
+        "wer": 0.8115942028985508,
+        "cer": 0.6897321428571429
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.5073529411764706,
+        "cer": 0.4516574585635359
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.5045871559633027,
+        "cer": 0.3990488543017726
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.42857142857142855,
+        "cer": 0.40350877192982454
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.4141791044776119,
+        "cer": 0.30832927423283
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.39880952380952384,
+        "cer": 0.34545454545454546
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.23595505617977527,
+        "cer": 0.17099697885196374
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.20577617328519857,
+        "cer": 0.22443890274314215
+      }
+    ]
+  },
+  "top10": [
+    {
+      "rank": 1,
+      "customWER": 0.48199937972563256,
+      "customCER": 0.398490819220499,
+      "combinedScore": 0.6486945929498048,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.9,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.2
+      }
+    },
+    {
+      "rank": 2,
+      "customWER": 0.48199937972563256,
+      "customCER": 0.398490819220499,
+      "combinedScore": 0.6486945929498048,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.9,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.1
+      }
+    },
+    {
+      "rank": 3,
+      "customWER": 0.48524194512087576,
+      "customCER": 0.40813066312965085,
+      "combinedScore": 0.6890504143786936,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.8,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.5
+      }
+    },
+    {
+      "rank": 4,
+      "customWER": 0.487554148412172,
+      "customCER": 0.4114955208807665,
+      "combinedScore": 0.7761239874722443,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.3,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.5
+      }
+    },
+    {
+      "rank": 5,
+      "customWER": 0.48825467577767373,
+      "customCER": 0.39581963264111003,
+      "combinedScore": 0.6963751432430828,
+      "parameters": {
+        "preprocessing.contrastBoost": 1.3,
+        "preprocessing.clahe.clipLimit": 0.9,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.1
+      }
+    },
+    {
+      "rank": 6,
+      "customWER": 0.4897186856604757,
+      "customCER": 0.4068737962289391,
+      "combinedScore": 0.7602337927984864,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.3,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.1
+      }
+    },
+    {
+      "rank": 7,
+      "customWER": 0.4918264836573108,
+      "customCER": 0.41474884264738787,
+      "combinedScore": 0.7214841906573672,
+      "parameters": {
+        "preprocessing.contrastBoost": 1,
+        "preprocessing.clahe.clipLimit": 0.7,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 2.5,
+        "output.minWordConfidence": 0.1
+      }
+    },
+    {
+      "rank": 8,
+      "customWER": 0.49285116346316343,
+      "customCER": 0.4164643596135228,
+      "combinedScore": 0.6812150637074686,
+      "parameters": {
+        "preprocessing.contrastBoost": 1.2,
+        "preprocessing.clahe.clipLimit": 0.5,
+        "preprocessing.clahe.tileSize": 12,
+        "preprocessing.dpiScaling.maxScale": 2.5,
+        "output.minWordConfidence": 0.1
+      }
+    },
+    {
+      "rank": 9,
+      "customWER": 0.49727424390429775,
+      "customCER": 0.4096126673732113,
+      "combinedScore": 0.7549515421127222,
+      "parameters": {
+        "preprocessing.contrastBoost": 1.3,
+        "preprocessing.clahe.clipLimit": 0.7,
+        "preprocessing.clahe.tileSize": 12,
+        "preprocessing.dpiScaling.maxScale": 3,
+        "output.minWordConfidence": 0.5
+      }
+    },
+    {
+      "rank": 10,
+      "customWER": 0.49755808811482005,
+      "customCER": 0.40399009909492345,
+      "combinedScore": 0.6738324019893737,
+      "parameters": {
+        "preprocessing.contrastBoost": 1.3,
+        "preprocessing.clahe.clipLimit": 0.3,
+        "preprocessing.clahe.tileSize": 28,
+        "preprocessing.dpiScaling.maxScale": 1.5,
+        "output.minWordConfidence": 0.5
+      }
+    }
+  ],
+  "parameterRanges": {
+    "preprocessing.contrastBoost": {
+      "enabled": true,
+      "min": 1,
+      "max": 1.6,
+      "steps": 7
+    },
+    "preprocessing.clahe.clipLimit": {
+      "enabled": true,
+      "min": 0.3,
+      "max": 0.9,
+      "steps": 7
+    },
+    "preprocessing.clahe.tileSize": {
+      "enabled": true,
+      "min": 12,
+      "max": 28,
+      "steps": 5
+    },
+    "preprocessing.dpiScaling.maxScale": {
+      "enabled": true,
+      "min": 1.5,
+      "max": 3,
+      "steps": 4
+    },
+    "output.minWordConfidence": {
+      "enabled": true,
+      "min": 0.1,
+      "max": 0.5,
+      "steps": 5
+    }
+  },
+  "optimizerSettings": {
+    "iterations": 120,
+    "initialSamples": 30,
+    "candidateSamples": 400,
+    "totalIterations": 120
+  },
+  "patterns": {
+    "tileSize": "All top 5 results use tileSize=28 (maximum value)",
+    "maxScale": "All top 5 results use maxScale=3.0 (maximum value)",
+    "contrastBoost": "Best results use contrastBoost=1.0 (no boost) or 1.3 (mild boost)",
+    "clipLimit": "clipLimit varies (0.3-0.9), with 0.9 in #1 and #2",
+    "minWordConfidence": "minWordConfidence varies (0.1-0.5), less impact on results",
+    "droppedImage": "000014.jpg consistently worst performer across all iterations"
+  },
+  "errors": [
+    "Run timed out at 98/120 iterations",
+    "Some iterations had 'Image too small to scale' warnings",
+    "Some iterations had 'Line cannot be recognized' warnings",
+    "No critical errors - all 98 completed iterations produced valid results"
+  ]
+}

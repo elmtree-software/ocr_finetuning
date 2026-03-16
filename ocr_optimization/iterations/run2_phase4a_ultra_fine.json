@@ -1,0 +1,2926 @@
+{
+  "runTimestamp": "2026-02-27T15:49:04.698Z",
+  "configFile": "ocr_optimization/configs/run2/phase4a_ultra_fine.json",
+  "totalIterations": 97,
+  "scoringMode": "customWER",
+  "best": {
+    "iterationId": 9,
+    "parameters": [
+      {
+        "path": "layout.regionPadding",
+        "value": 15
+      },
+      {
+        "path": "layout.internalPadding",
+        "value": 3
+      },
+      {
+        "path": "layout.detectionThreshold",
+        "value": 0.17
+      },
+      {
+        "path": "rectification.cannyLow",
+        "value": 176
+      },
+      {
+        "path": "rectification.cannyHigh",
+        "value": 101.25
+      }
+    ],
+    "customWER": 0.3564742868212725,
+    "customCER": 0.2894952812046891,
+    "originalWER": 0.3885325819812588,
+    "originalCER": 0.3194358395592941,
+    "combinedScore": 0.3564742868212725,
+    "feasible": true,
+    "droppedImage": "000017.jpg",
+    "droppedWER": 0.5808823529411765,
+    "imageScores": [
+      {
+        "filename": "000011.jpg",
+        "cer": 0.4409857328145266,
+        "wer": 0.5015290519877675,
+        "ocrLength": 2099,
+        "groundTruthLength": 2313,
+        "lengthRatio": 0.9074794638996974,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "000017.jpg",
+        "cer": 0.4990791896869245,
+        "wer": 0.5808823529411765,
+        "ocrLength": 1406,
+        "groundTruthLength": 2172,
+        "lengthRatio": 0.647329650092081,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "cer": 0.2874493927125506,
+        "wer": 0.3142857142857143,
+        "ocrLength": 538,
+        "groundTruthLength": 741,
+        "lengthRatio": 0.7260458839406208,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "cer": 0.1595166163141994,
+        "wer": 0.20973782771535582,
+        "ocrLength": 1478,
+        "groundTruthLength": 1655,
+        "lengthRatio": 0.8930513595166163,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "cer": 0.1527431421446384,
+        "wer": 0.16606498194945848,
+        "ocrLength": 1423,
+        "groundTruthLength": 1604,
+        "lengthRatio": 0.8871571072319202,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "cer": 0.29783549783549784,
+        "wer": 0.42857142857142855,
+        "ocrLength": 1051,
+        "groundTruthLength": 1155,
+        "lengthRatio": 0.90995670995671,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "cer": 0.39844130540672185,
+        "wer": 0.5186567164179104,
+        "ocrLength": 1969,
+        "groundTruthLength": 2053,
+        "lengthRatio": 0.9590842669264491,
+        "isEmptyOutput": false,
+        "isVeryShortOutput": false
+      }
+    ]
+  },
+  "allResults": [
+    {
+      "id": 9,
+      "customWER": 0.3564742868212725,
+      "customCER": 0.2894952812046891,
+      "originalWER": 0.3885325819812588,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 17,
+      "customWER": 0.3564742868212725,
+      "customCER": 0.2894952812046891,
+      "originalWER": 0.3885325819812588,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 1,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.19
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 13,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 14,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 33,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 41,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 75,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 78,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 89,
+      "customWER": 0.35899565480979345,
+      "customCER": 0.2867386779194059,
+      "originalWER": 0.4081911204616927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 0,
+      "customWER": 0.36061197185783395,
+      "customCER": 0.2910865822553637,
+      "originalWER": 0.3920791691554543,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 3,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 12,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 22,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.19
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 24,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 56,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 81,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 93,
+      "customWER": 0.36242236779954734,
+      "customCER": 0.28530241092881087,
+      "originalWER": 0.4046603488702002,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 4,
+      "customWER": 0.3632120196111741,
+      "customCER": 0.2922071992240362,
+      "originalWER": 0.39483299159949375,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 59,
+      "customWER": 0.3632120196111741,
+      "customCER": 0.2922071992240362,
+      "originalWER": 0.39483299159949375,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 77,
+      "customWER": 0.3632120196111741,
+      "customCER": 0.2922071992240362,
+      "originalWER": 0.39483299159949375,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 11,
+      "customWER": 0.3637575595716982,
+      "customCER": 0.2894377332500402,
+      "originalWER": 0.412272753114754,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 28,
+      "customWER": 0.3637575595716982,
+      "customCER": 0.2894377332500402,
+      "originalWER": 0.412272753114754,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 60,
+      "customWER": 0.3637575595716982,
+      "customCER": 0.2894377332500402,
+      "originalWER": 0.412272753114754,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 205.25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 72,
+      "customWER": 0.365762403060434,
+      "customCER": 0.29334865771960505,
+      "originalWER": 0.39701903455600224,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 62,
+      "customWER": 0.3671842725614521,
+      "customCER": 0.28800146625944517,
+      "originalWER": 0.4087419815232614,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 79,
+      "customWER": 0.3671842725614521,
+      "customCER": 0.28800146625944517,
+      "originalWER": 0.4087419815232614,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 83,
+      "customWER": 0.3671842725614521,
+      "customCER": 0.28800146625944517,
+      "originalWER": 0.4087419815232614,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 88,
+      "customWER": 0.3671842725614521,
+      "customCER": 0.28800146625944517,
+      "originalWER": 0.4087419815232614,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 8,
+      "customWER": 0.368734254677042,
+      "customCER": 0.29730672575489375,
+      "originalWER": 0.4073641798498717,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 5,
+      "customWER": 0.3688188225792662,
+      "customCER": 0.29405944236463544,
+      "originalWER": 0.3996388227150013,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 68,
+      "customWER": 0.3688188225792662,
+      "customCER": 0.29405944236463544,
+      "originalWER": 0.3996388227150013,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 7,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 19,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 205.25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 32,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 42,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 205.25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 54,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 65,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 76,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 91,
+      "customWER": 0.3693584744023853,
+      "customCER": 0.29841448003485344,
+      "originalWER": 0.4078992253287374,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 87,
+      "customWER": 0.36944304230460956,
+      "customCER": 0.2951671966445952,
+      "originalWER": 0.40017386819386697,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 92,
+      "customWER": 0.36944304230460956,
+      "customCER": 0.2951671966445952,
+      "originalWER": 0.40017386819386697,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 10,
+      "customWER": 0.3706697351132771,
+      "customCER": 0.2989146593008627,
+      "originalWER": 0.40115946714383993,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 71,
+      "customWER": 0.3731839813134545,
+      "customCER": 0.2946417840898456,
+      "originalWER": 0.4096829083527088,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 96,
+      "customWER": 0.3731839813134545,
+      "customCER": 0.2946417840898456,
+      "originalWER": 0.4096829083527088,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 30,
+      "customWER": 0.37349615943894676,
+      "customCER": 0.300005781085528,
+      "originalWER": 0.41144581250293294,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 37,
+      "customWER": 0.37349615943894676,
+      "customCER": 0.300005781085528,
+      "originalWER": 0.41144581250293294,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 52,
+      "customWER": 0.37349615943894676,
+      "customCER": 0.300005781085528,
+      "originalWER": 0.41144581250293294,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 64,
+      "customWER": 0.37349615943894676,
+      "customCER": 0.300005781085528,
+      "originalWER": 0.41144581250293294,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 70,
+      "customWER": 0.37349615943894676,
+      "customCER": 0.300005781085528,
+      "originalWER": 0.41144581250293294,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 25,
+      "customWER": 0.37358072734117104,
+      "customCER": 0.2967584976952697,
+      "originalWER": 0.4037204553680625,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 53,
+      "customWER": 0.37358072734117104,
+      "customCER": 0.2967584976952697,
+      "originalWER": 0.4037204553680625,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 95,
+      "customWER": 0.37358072734117104,
+      "customCER": 0.2967584976952697,
+      "originalWER": 0.4037204553680625,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 20,
+      "customWER": 0.3738082010387978,
+      "customCER": 0.29574953836980533,
+      "originalWER": 0.4102179538315745,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 205.25
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 67,
+      "customWER": 0.3738082010387978,
+      "customCER": 0.29574953836980533,
+      "originalWER": 0.4102179538315745,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 49,
+      "customWER": 0.37518477733677397,
+      "customCER": 0.30716728779154634,
+      "originalWER": 0.4115825832829841,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 58,
+      "customWER": 0.37518477733677397,
+      "customCER": 0.30716728779154634,
+      "originalWER": 0.4115825832829841,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.19
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 27,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 35,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 101.25
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 39,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 47,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 74,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.17
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 90,
+      "customWER": 0.37580899706211723,
+      "customCER": 0.3082750420715061,
+      "originalWER": 0.4121176287618497,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 86,
+      "customWER": 0.3762644208605706,
+      "customCER": 0.299580720208586,
+      "originalWER": 0.40813927205261663,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 6,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3012927040957965,
+      "originalWER": 0.4112955495105125,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.16
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 185.75
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 16,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3012927040957965,
+      "originalWER": 0.4112955495105125,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 51,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3006884744885457,
+      "originalWER": 0.4086743175314823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 57,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3006884744885457,
+      "originalWER": 0.4086743175314823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 66,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3006884744885457,
+      "originalWER": 0.4086743175314823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 80,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3006884744885457,
+      "originalWER": 0.4086743175314823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 84,
+      "customWER": 0.3768886405859139,
+      "customCER": 0.3006884744885457,
+      "originalWER": 0.4086743175314823,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 2,
+      "customWER": 0.37756608888090076,
+      "customCER": 0.3051759511211258,
+      "originalWER": 0.4136237074636642,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 21,
+      "customWER": 0.37756608888090076,
+      "customCER": 0.3051759511211258,
+      "originalWER": 0.4136237074636642,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 18,
+      "customWER": 0.3779458860753592,
+      "customCER": 0.2973408394204799,
+      "originalWER": 0.41376454100577004,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 14
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 15,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.19
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 26,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 29,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 36,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 45,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 63,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 85,
+      "customWER": 0.37854067668684316,
+      "customCER": 0.3062873070462144,
+      "originalWER": 0.4183909164087315,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.18
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 31,
+      "customWER": 0.3799466820986787,
+      "customCER": 0.30986634312218064,
+      "originalWER": 0.41566421593604524,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 40,
+      "customWER": 0.3799466820986787,
+      "customCER": 0.30986634312218064,
+      "originalWER": 0.41566421593604524,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 61,
+      "customWER": 0.3799466820986787,
+      "customCER": 0.30986634312218064,
+      "originalWER": 0.41566421593604524,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 91.75
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 94,
+      "customWER": 0.3799466820986787,
+      "customCER": 0.30986634312218064,
+      "originalWER": 0.41566421593604524,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 46,
+      "customWER": 0.38102632562247535,
+      "customCER": 0.3022797755392203,
+      "originalWER": 0.41222090470567785,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 55,
+      "customWER": 0.38102632562247535,
+      "customCER": 0.3022797755392203,
+      "originalWER": 0.41222090470567785,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 82,
+      "customWER": 0.38102632562247535,
+      "customCER": 0.3022797755392203,
+      "originalWER": 0.41222090470567785,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 16
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 4
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 34,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 195.5
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 43,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 48,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 50,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 69,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 73,
+      "customWER": 0.3833025814487479,
+      "customCER": 0.3076368347115315,
+      "originalWER": 0.4224725490617927,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 12
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 5
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 96.5
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 38,
+      "customWER": 0.3901133359646524,
+      "customCER": 0.31873277462369376,
+      "originalWER": 0.4287472106433587,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 44,
+      "customWER": 0.3901133359646524,
+      "customCER": 0.31873277462369376,
+      "originalWER": 0.4287472106433587,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.15
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 176
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 106
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "id": 23,
+      "customWER": 0.39425102100121384,
+      "customCER": 0.3203240756743683,
+      "originalWER": 0.4322937978175542,
+      "parameters": [
+        {
+          "path": "layout.regionPadding",
+          "value": 13
+        },
+        {
+          "path": "layout.internalPadding",
+          "value": 3
+        },
+        {
+          "path": "layout.detectionThreshold",
+          "value": 0.2
+        },
+        {
+          "path": "rectification.cannyLow",
+          "value": 215
+        },
+        {
+          "path": "rectification.cannyHigh",
+          "value": 87
+        }
+      ],
+      "feasible": true
+    }
+  ]
+}

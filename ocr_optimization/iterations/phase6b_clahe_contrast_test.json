@@ -1,0 +1,330 @@
+{
+  "phase": "6B",
+  "description": "CLAHE enabled/disabled + contrast + output confidence + region padding",
+  "runDirectory": "2026-02-26_19-09-28-727",
+  "completedIterations": 80,
+  "totalIterations": 80,
+  "feasibleIterations": 67,
+  "infeasibleIterations": 13,
+  "errors": 0,
+  "bestResult": {
+    "customWER": 0.5026871796033837,
+    "customCER": 0.4012782479294368,
+    "combinedScore": 0.6624298287175243,
+    "droppedImage": "000013.jpg",
+    "droppedImageWER": 0.8701298701298701,
+    "parameters": [
+      {
+        "path": "preprocessing.clahe.enabled",
+        "value": true
+      },
+      {
+        "path": "preprocessing.contrastBoost",
+        "value": 1.3
+      },
+      {
+        "path": "output.minLineConfidence",
+        "value": 0.5
+      },
+      {
+        "path": "output.minWordConfidence",
+        "value": 0.15
+      },
+      {
+        "path": "layout.regionPadding",
+        "value": 20
+      }
+    ],
+    "perImage": [
+      {
+        "file": "000013.jpg",
+        "wer": 0.8701298701298701,
+        "cer": 0.7690941385435168
+      },
+      {
+        "file": "000015.jpg",
+        "wer": 0.8115942028985508,
+        "cer": 0.6785714285714286
+      },
+      {
+        "file": "000014.jpg",
+        "wer": 0.8066298342541437,
+        "cer": 0.756401384083045
+      },
+      {
+        "file": "000017.jpg",
+        "wer": 0.6544117647058824,
+        "cer": 0.574585635359116
+      },
+      {
+        "file": "000011.jpg",
+        "wer": 0.5351681957186545,
+        "cer": 0.39299610894941633
+      },
+      {
+        "file": "signal-2026-01-12-111456.jpg",
+        "wer": 0.5335820895522388,
+        "cer": 0.3852898197759376
+      },
+      {
+        "file": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.47023809523809523,
+        "cer": 0.30562770562770564
+      },
+      {
+        "file": "IMG_0173.jpg",
+        "wer": 0.3142857142857143,
+        "cer": 0.19973009446693657
+      },
+      {
+        "file": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.23220973782771537,
+        "cer": 0.16555891238670695
+      },
+      {
+        "file": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16606498194945848,
+        "cer": 0.1527431421446384
+      }
+    ]
+  },
+  "claheComparison": {
+    "claheOnCount": 44,
+    "claheOffCount": 36,
+    "claheOnBestWER": 0.5026871796033837,
+    "claheOffBestWER": 0.5115129091619492,
+    "claheOnAvgTop5": 0.508102898606347,
+    "claheOffAvgTop5": 0.5166508104385595,
+    "verdict": "CLAHE enabled provides modest improvement (~0.9% WER advantage)"
+  },
+  "top5": [
+    {
+      "rank": 1,
+      "customWER": 0.5026871796033837,
+      "customCER": 0.4012782479294368,
+      "claheEnabled": true,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.5
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "customWER": 0.506378358686881,
+      "customCER": 0.40863607785715195,
+      "claheEnabled": true,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.33
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "customWER": 0.5099884019662806,
+      "customCER": 0.40697969152379615,
+      "claheEnabled": true,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.3
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.33
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "customWER": 0.5100639350542775,
+      "customCER": 0.43081065370770744,
+      "claheEnabled": true,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "customWER": 0.5113966177209124,
+      "customCER": 0.4059301584071723,
+      "claheEnabled": true,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": true
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.5
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 10
+        }
+      ]
+    }
+  ],
+  "top3ClaheOff": [
+    {
+      "rank": 1,
+      "customWER": 0.5115129091619492,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.5
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.7
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.33
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "customWER": 0.5130424962598363,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.5
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.8
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.6
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "customWER": 0.5164095106782436,
+      "parameters": [
+        {
+          "path": "preprocessing.clahe.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.contrastBoost",
+          "value": 1.1
+        },
+        {
+          "path": "output.minLineConfidence",
+          "value": 0.3
+        },
+        {
+          "path": "output.minWordConfidence",
+          "value": 0.15
+        },
+        {
+          "path": "layout.regionPadding",
+          "value": 25
+        }
+      ]
+    }
+  ],
+  "patterns": {
+    "contrastBoost": "Best results cluster around 1.1-1.5; 1.3 appears optimal",
+    "regionPadding": "Best results favor 15-25px padding; 20px is the sweet spot",
+    "minLineConfidence": "Wide range works (0.3-0.8); low values can be equally effective",
+    "minWordConfidence": "Low values (0.15-0.33) generally perform better; very strict filtering (0.6) hurts",
+    "clahe": "Enabled is slightly better; consistent advantage across parameter combinations"
+  },
+  "timestamp": "2026-02-26T19:55:40.203Z"
+}

@@ -1,0 +1,119 @@
+{
+    "_description": "Run 2 Phase 1A: PSM Default + Core Regions - Explore PSM modes for main region types",
+    "baseConfig": {
+        "engine": "tesseract",
+        "rectification": {
+            "enabled": true,
+            "minContourConfidence": 0.8,
+            "minDocumentArea": 0.475,
+            "cannyLow": 162.5,
+            "cannyHigh": 87.5,
+            "blurSize": 1,
+            "useAdaptiveThreshold": true
+        },
+        "preprocessing": {
+            "enabled": true,
+            "grayscale": true,
+            "contrastBoost": 1.2,
+            "dpiScaling": {
+                "enabled": true,
+                "minCapitalHeightPx": 35,
+                "maxScale": 2.5
+            },
+            "inversionDetection": {
+                "enabled": true,
+                "brightnessThreshold": 106.667
+            },
+            "clahe": {
+                "enabled": true,
+                "clipLimit": 0.5,
+                "tileSize": 24
+            },
+            "bilateralFilter": {
+                "enabled": false
+            },
+            "threshold": {
+                "enabled": false
+            }
+        },
+        "layout": {
+            "enabled": true,
+            "detectionThreshold": 0.1,
+            "regionPadding": 20,
+            "internalPadding": 5,
+            "psmModes": {
+                "default": 6,
+                "regionOverrides": {
+                    "Caption": 7,
+                    "Footnote": 7,
+                    "Page-header": 7,
+                    "Page-footer": 7
+                }
+            },
+            "nms": {
+                "iouThreshold": 0.6,
+                "containmentThreshold": 0.3
+            },
+            "xyCut": {
+                "enabled": true,
+                "minGapThreshold": 30,
+                "spanningThreshold": 0.7,
+                "maxDepth": 14
+            }
+        },
+        "rotation": {
+            "enabled": true,
+            "fastMode": true,
+            "skipThreshold": 65,
+            "minImprovement": 3,
+            "angleStep": 90
+        },
+        "fallback": {
+            "enabled": true,
+            "gridSize": 120,
+            "minAreaRatio": 0.053,
+            "minConfidence": 0.4
+        },
+        "table": {
+            "enabled": false
+        },
+        "output": {
+            "minTextLength": 1,
+            "minLineConfidence": 0.6,
+            "minWordConfidence": 0.15
+        }
+    },
+    "iterateParams": {
+        "layout.psmModes.default": {
+            "enabled": true,
+            "min": 3,
+            "max": 13,
+            "steps": 11
+        },
+        "layout.psmModes.regionOverrides.Title": {
+            "enabled": true,
+            "min": 3,
+            "max": 13,
+            "steps": 11
+        },
+        "layout.psmModes.regionOverrides.Section-header": {
+            "enabled": true,
+            "min": 3,
+            "max": 13,
+            "steps": 11
+        },
+        "layout.psmModes.regionOverrides.List-item": {
+            "enabled": true,
+            "min": 3,
+            "max": 13,
+            "steps": 11
+        }
+    },
+    "optimizer": {
+        "iterations": 80,
+        "initialSamples": 20,
+        "candidateSamples": 400
+    },
+    "scoringMode": "customWER",
+    "imagesDir": "./ocr_trainingdata/sel_gt"
+}

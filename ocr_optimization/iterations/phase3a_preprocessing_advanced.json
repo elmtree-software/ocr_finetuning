@@ -1,0 +1,357 @@
+{
+  "phase": "3a",
+  "name": "Phase 3A - Advanced Preprocessing (Bilateral Filter + Threshold)",
+  "runDirectory": "2026-02-26_12-55-52-142",
+  "configFile": "ocr_optimization/configs/phase3a_preprocessing_advanced.json",
+  "completedIterations": 80,
+  "totalIterations": 80,
+  "parametersExplored": [
+    "preprocessing.bilateralFilter.enabled",
+    "preprocessing.bilateralFilter.diameter (3-11, 3 steps)",
+    "preprocessing.bilateralFilter.sigmaColor (25-150, 4 steps)",
+    "preprocessing.bilateralFilter.sigmaSpace (25-150, 4 steps)",
+    "preprocessing.threshold.enabled",
+    "preprocessing.threshold.type (otsu, adaptive, binary)"
+  ],
+  "bestOverall": {
+    "iteration": 0,
+    "customWER": 0.5250935112899292,
+    "customCER": 0.425996076488986,
+    "combinedScore": 0.7388895013873104,
+    "averageWER": 0.5660365411133172,
+    "averageCER": 0.45259289741151587,
+    "droppedFile": "rechnung-schreiben-beispiel-muster.jpg",
+    "parameters": [
+      {
+        "path": "preprocessing.bilateralFilter.enabled",
+        "value": false
+      },
+      {
+        "path": "preprocessing.bilateralFilter.diameter",
+        "value": 7
+      },
+      {
+        "path": "preprocessing.bilateralFilter.sigmaColor",
+        "value": 108.333
+      },
+      {
+        "path": "preprocessing.bilateralFilter.sigmaSpace",
+        "value": 25
+      },
+      {
+        "path": "preprocessing.threshold.enabled",
+        "value": false
+      },
+      {
+        "path": "preprocessing.threshold.type",
+        "value": "adaptive"
+      }
+    ],
+    "perImage": [
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.9345238095238095,
+        "cer": 0.6337662337662338
+      },
+      {
+        "filename": "000015.jpg",
+        "wer": 0.782608695652174,
+        "cer": 0.6919642857142857
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.712707182320442,
+        "cer": 0.6678200692041523
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.6828358208955224,
+        "cer": 0.4310764734534827
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.6764705882352942,
+        "cer": 0.5741252302025782
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.6623376623376623,
+        "cer": 0.5275310834813499
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.44648318042813456,
+        "cer": 0.34154777345438825
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3904761904761905,
+        "cer": 0.3481781376518219
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.20224719101123595,
+        "cer": 0.15468277945619335
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16967509025270758,
+        "cer": 0.1552369077306733
+      }
+    ],
+    "note": "Best result has both bilateral filter and threshold DISABLED - same as baseline"
+  },
+  "bestWithFeaturesEnabled": {
+    "iteration": 31,
+    "customWER": 0.540747135993585,
+    "customCER": 0.4297206220586591,
+    "combinedScore": 0.7469662019509644,
+    "averageWER": 0.5694105176323218,
+    "averageCER": 0.4567139577766686,
+    "droppedFile": "rechnung-schreiben-beispiel-muster.jpg",
+    "parameters": [
+      {
+        "path": "preprocessing.bilateralFilter.enabled",
+        "value": true
+      },
+      {
+        "path": "preprocessing.bilateralFilter.diameter",
+        "value": 3
+      },
+      {
+        "path": "preprocessing.bilateralFilter.sigmaColor",
+        "value": 25
+      },
+      {
+        "path": "preprocessing.bilateralFilter.sigmaSpace",
+        "value": 25
+      },
+      {
+        "path": "preprocessing.threshold.enabled",
+        "value": false
+      },
+      {
+        "path": "preprocessing.threshold.type",
+        "value": "otsu"
+      }
+    ],
+    "perImage": [
+      {
+        "filename": "rechnung-schreiben-beispiel-muster.jpg",
+        "wer": 0.8273809523809523,
+        "cer": 0.5151515151515151
+      },
+      {
+        "filename": "000015.jpg",
+        "wer": 0.7681159420289855,
+        "cer": 0.6808035714285714
+      },
+      {
+        "filename": "000014.jpg",
+        "wer": 0.7513812154696132,
+        "cer": 0.6996539792387543
+      },
+      {
+        "filename": "000013.jpg",
+        "wer": 0.7012987012987013,
+        "cer": 0.5399644760213144
+      },
+      {
+        "filename": "000017.jpg",
+        "wer": 0.6764705882352942,
+        "cer": 0.5718232044198895
+      },
+      {
+        "filename": "signal-2026-01-12-111456.jpg",
+        "wer": 0.6044776119402985,
+        "cer": 0.4111056989771067
+      },
+      {
+        "filename": "000011.jpg",
+        "wer": 0.6024464831804281,
+        "cer": 0.48940769563337655
+      },
+      {
+        "filename": "IMG_0173.jpg",
+        "wer": 0.3904761904761905,
+        "cer": 0.3481781376518219
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-0uuhv5xs1egg1.jpg",
+        "wer": 0.20599250936329588,
+        "cer": 0.1583081570996979
+      },
+      {
+        "filename": "got-a-letter-from-the-school-today-informing-me-my-daughter-v0-3jg7f5xs1egg1.jpg",
+        "wer": 0.16606498194945848,
+        "cer": 0.1527431421446384
+      }
+    ]
+  },
+  "analysis": {
+    "summary": "Neither bilateral filter nor threshold preprocessing improves OCR accuracy. The baseline configuration (both disabled) achieves the best custom WER of 52.51%. Enabling bilateral filter alone raises custom WER to 54.07% (+1.56pp). Enabling threshold alone raises it to 62.24% (+9.73pp). Enabling both raises it to 63.61% (+11.10pp). These advanced preprocessing steps are harmful to OCR quality across this test set.",
+    "baselineCustomWER": 0.5251,
+    "bestBilateralOnlyCustomWER": 0.5407,
+    "bestThresholdOnlyCustomWER": 0.6224,
+    "bestBothEnabledCustomWER": 0.6361,
+    "bilateralFilterImpact": "Slight negative impact (+1.56pp WER). Smallest diameter (3) with lowest sigmaColor (25) is least harmful.",
+    "thresholdImpact": "Significantly negative impact (+9.73pp WER). Otsu thresholding is least harmful among threshold types.",
+    "combinedImpact": "Both enabled together is worst (+11.10pp WER). These features compound negatively.",
+    "recommendation": "Keep both bilateral filter and threshold DISABLED in the final configuration."
+  },
+  "top5": [
+    {
+      "iteration": 0,
+      "customWER": 0.5250935112899292,
+      "parameters": [
+        {
+          "path": "preprocessing.bilateralFilter.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.bilateralFilter.diameter",
+          "value": 7
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaColor",
+          "value": 108.333
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaSpace",
+          "value": 25
+        },
+        {
+          "path": "preprocessing.threshold.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.threshold.type",
+          "value": "adaptive"
+        }
+      ]
+    },
+    {
+      "iteration": 2,
+      "customWER": 0.5250935112899292,
+      "parameters": [
+        {
+          "path": "preprocessing.bilateralFilter.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.bilateralFilter.diameter",
+          "value": 7
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaColor",
+          "value": 66.667
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaSpace",
+          "value": 25
+        },
+        {
+          "path": "preprocessing.threshold.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.threshold.type",
+          "value": "otsu"
+        }
+      ]
+    },
+    {
+      "iteration": 4,
+      "customWER": 0.5250935112899292,
+      "parameters": [
+        {
+          "path": "preprocessing.bilateralFilter.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.bilateralFilter.diameter",
+          "value": 11
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaColor",
+          "value": 66.667
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaSpace",
+          "value": 66.667
+        },
+        {
+          "path": "preprocessing.threshold.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.threshold.type",
+          "value": "otsu"
+        }
+      ]
+    },
+    {
+      "iteration": 6,
+      "customWER": 0.5250935112899292,
+      "parameters": [
+        {
+          "path": "preprocessing.bilateralFilter.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.bilateralFilter.diameter",
+          "value": 11
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaColor",
+          "value": 150
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaSpace",
+          "value": 150
+        },
+        {
+          "path": "preprocessing.threshold.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.threshold.type",
+          "value": "binary"
+        }
+      ]
+    },
+    {
+      "iteration": 21,
+      "customWER": 0.5250935112899292,
+      "parameters": [
+        {
+          "path": "preprocessing.bilateralFilter.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.bilateralFilter.diameter",
+          "value": 3
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaColor",
+          "value": 25
+        },
+        {
+          "path": "preprocessing.bilateralFilter.sigmaSpace",
+          "value": 150
+        },
+        {
+          "path": "preprocessing.threshold.enabled",
+          "value": false
+        },
+        {
+          "path": "preprocessing.threshold.type",
+          "value": "otsu"
+        }
+      ]
+    }
+  ],
+  "errors": [
+    "Some iterations showed \"Image too small to scale\" warnings and \"Line cannot be recognized\" errors, but all 80 iterations completed successfully."
+  ]
+}
