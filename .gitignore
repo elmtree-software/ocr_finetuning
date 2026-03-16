@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Models (assets downloaded at runtime)
+backend/models/opencv/
+backend/models/paddleocr-onnx/
+frontend/public/models/
+frontend/public/ort-wasm/
+
+# Experiments and Runs
+ocr_trainingdata/runs/*
+!ocr_trainingdata/runs/.gitkeep
+
+# Local Environment
+.env
+.env.local
+.env.*.local
