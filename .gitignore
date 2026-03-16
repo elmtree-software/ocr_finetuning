@@ -23,11 +23,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Models (assets downloaded at runtime)
+# Models and Assets (downloaded or synced at runtime)
 backend/models/opencv/
 backend/models/paddleocr-onnx/
 frontend/public/models/
-frontend/public/ort-wasm/
+frontend/public/ort-wasm*
+frontend/public/tesseract/
 
 # Experiments and Runs
 ocr_trainingdata/runs/*
